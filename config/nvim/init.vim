@@ -19,7 +19,7 @@ set nocompatible
 set t_Co=256
 set termguicolors
 set background=dark
-" colorscheme gruvbox
+colorscheme gruvbox
 highlight Comment cterm=italic gui=italic
 
 filetype plugin on
