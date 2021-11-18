@@ -1,0 +1,14 @@
+#!/bin/sh
+
+case $BLOCK_BUTTON in
+    4)
+	xbacklight +2
+	;;
+    5)
+	xbacklight -2
+	;;
+    *)
+	;;
+esac
+
+xbacklight | cut -d "." -f 1 | xargs printf "%s%%"

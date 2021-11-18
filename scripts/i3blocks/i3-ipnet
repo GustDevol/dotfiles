@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# if [ $# -eq 1 ]; then
+#         ifconfig | grep wlp2s0 > /dev/null && echo "" && echo "" && echo "#00FF60" || echo "#FF0000"
+#         exit 0
+# fi
+
+if [ $BLOCK_BUTTON -eq 3 ]; then
+  $(urxvt -e nmtui)
+fi
+
+ipaddr=`ifconfig | grep Mask | awk '{print $2}' | cut -d ":" -f 2 | grep -v "127.*"`
+
+[ $? -ne 0 ] && echo " " && echo "" && echo "#FF0000" && exit 0
+
+echo "$ipaddr" | head -1
+

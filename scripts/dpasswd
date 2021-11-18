@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# /usr/bin/dmenu -nb "#000" -nf "#000" -p "Password" <&- && echo
+dmenu -nb "#000" -nf "#000" -p "Password" <&- && echo

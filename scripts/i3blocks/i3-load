@@ -1,0 +1,15 @@
+#!/bin/sh
+
+load="$(cut -d ' ' -f1 /proc/loadavg)"
+cpus="$(nproc)"
+echo "$load"
+
+# awk -v cpus=$cpus -v cpuload=$load '
+# BEGIN {
+#         if (cpus <= cpuload) {
+#                 print "#FF0000";
+#                 exit 33;
+                
+#         }
+# }'
+

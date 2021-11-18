@@ -1,0 +1,378 @@
+"           _                    
+"    __   _(_)_ __ ___  _ __ ___ 
+"    \ \ / / | '_ ` _ \| '__/ __|
+"  _  \ V /| | | | | | | | | (__ 
+" (_)  \_/ |_|_| |_| |_|_|  \___|
+syn on
+set nu
+set rnu
+set laststatus=2
+set bs=2 
+set tabstop=4 softtabstop=0 expandtab smarttab
+set clipboard=unnamedplus
+set magic
+set smartindent
+set nocompatible
+set t_Co=256
+set path=**
+" set cursorline
+" set guifont=Hack
+
+" highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
+if $TERM == "st-256color"
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+endif
+
+" set termguicolors
+" colorscheme gruvbox
+set background=dark
+highlight Comment cterm=italic gui=italic
+" highlight Normal     ctermbg=NONE guibg=NONE
+" highlight LineNr     ctermbg=NONE guibg=NONE
+" highlight SignColumn ctermbg=NONE guibg=NONE
+
+" map leader=" "
+map <F2> :bprev<CR>
+map <F3> :bnext<CR>
+map <F6> :source ~/.vimrc
+map <F4> :e ~/.vimrc 
+map <F9> :w<CR> 
+map <F5> :set relativenumber!<CR>
+" map no :set nonu
+" map nu :set nu 
+map <Del> dl
+map dr :set background=dark<CR>
+map nd :set background=light<CR>
+map pon :set paste
+map pno :set nopaste
+map ;, :tabp<CR>
+map ;. :tabn<CR>
+
+" autocmd VimEnter * silent exec "! echo -ne '\e[1 q'"
+" autocmd VimLeave * silent exec "! echo -ne '\e[5 q'" 
+" autocmd VimEnter * silent exec "! echo -ne '\e[1 q'"
+" autocmd VimLeave * silent exec "! echo -ne '\e[5 q'" 
+
+autocmd InsertEnter * silent exec "! echo -ne '\e[5 q'"
+autocmd InsertLeave * silent exec "! echo -ne '\e[1 q'" 
+
+" :augroup numbertoggle
+" :  autocmd!
+" :  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+" :  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+" :augroup END
+
+nnoremap nt  :NERDTreeToggle<CR>
+"nnoremap ,te :w<CR>  :!groff -e -me -Tpdf % > %:r.pdf<CR><CR>
+"nnoremap ,ts :w<CR>  :!groff -e -Ppa4 -ms -Tpdf % > %:r.pdf<CR><CR>
+nnoremap ,tg :!ctags -R .<CR><CR>
+nnoremap ,mk :!make<CR><CR>
+nnoremap ,ma :!make 
+" nnoremap ,ga :G add .<CR>
+nnoremap ga  :G add 
+nnoremap gm  :G commit -S -m ""<LEFT>
+nnoremap ,gP :G push<CR>
+nnoremap ,gp :G pull<CR>
+inoremap <C-Space> <C-[>
+inoremap <C-b> <C-x><C-o>
+
+" nnoremap ,cp :-1r !cat ~/.vim/snippets/fastio.snip.cpp<CR>gg13jO
+
+let g:user_emmet_leader_key=','
+let g:user_emmet_install_global = 0
+autocmd FileType html,css,javascript,typescript,htmldjango,jinja.html EmmetInstall
+let g:closetag_filetypes = 'html,xhtml,phtml,js,ts'
+let g:closetag_xhtml_filetypes = 'html,xhtml,phtml,js,ts'
+
+" let g:go_version_warning = 0
+" let g:ale_version_warning = 0
+
+filetype plugin on
+filetype indent on
+set omnifunc=syntaxcomplete#Complete
+
+ " Python Indent
+au BufNewFile,BufRead *.py
+   \ set tabstop=4
+   \ set softtabstop=4
+   \ set textwidth=79
+   \ set expandtab
+   \ set autoindent
+   \ set fileformat=unix
+
+au BufNewFile,BufRead *.js, *.html, *.css
+   \ set tabstop=2
+   \ set softtabstop=2
+   \ set shiftwidth=2
+
+          " A.L.E
+" ---------------------------------
+" let g:ale_completion_enabled = 1
+" let g:ale_completion_autoimport = 1
+" set omnifunc=ale#completion#OmniFunc
+" let g:ale_fix_on_save = 1
+" set completeopt=menu,menuone,preview,noselect,noinsert
+
+" let g:indent_guides_enable_on_vim_startup = 1
+"
+let g:lightline = {
+  \ 'active': {
+  \    'left': [ [ 'mode', 'paste' ],
+  \              ['readonly', 'filename', 'modified']],
+  \    'right': [ [ 'lineinfo' ],
+  \               [ 'percent' ],
+  \               ['fileformat', 'filencoding', 'filetype'] ] 
+  \  },
+  \ 'colorscheme': 'gruvbox',
+  \ }
+
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
+nnoremap <C-w>E :SyntasticCheck<CR>
+
+"----------------------------------------------------------------------------------------------------
+"Vim-Rainbow
+" \	'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick'],
+let g:rainbow_conf = {
+\	'guifgs': ['royalblue3', 'orange', 'seagreen3', 'lightmagenta'],
+\	'ctermfgs': ['lightblue', 'lightyellow', 'lightcyan', 'lightmagenta'],
+\	'guis': [''],
+\	'cterms': [''],
+\	'operators': '_,_',
+\	'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/{/ end=/}/ fold'],
+\	'separately': {
+\		'*': {},
+\		'markdown': {
+\			'parentheses_options': 'containedin=markdownCode contained', 
+\		},
+\		'lisp': {
+\			'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick', 'darkorchid3'], 
+\		},
+\		'haskell': {
+\			'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/\v\{\ze[^-]/ end=/}/ fold'], 
+\		},
+\		'vim': {
+\			'parentheses_options': 'containedin=vimFuncBody', 
+\		},
+\		'perl': {
+\			'syn_name_prefix': 'perlBlockFoldRainbow', 
+\		},
+\		'stylus': {
+\			'parentheses': ['start=/{/ end=/}/ fold contains=@colorableGroup'], 
+\		},
+\		'css': 0, 
+\	}
+\}
+
+" let g:rainbow_active = 1
+" let g:rainbow_load_separately = [
+"     \ [ '*' , [['(', ')'], ['\[', '\]'], ['{', '}']] ],
+"     \ [ '*.tex'  , [['(', ')'], ['\[', '\]']] ],
+"     \ [ '*.cpp' , [['(', ')'], ['\[', '\]'], ['{', '}']] ],
+"     \ [ '*.{html,htm}' , [['(', ')'], ['\[', '\]'], ['{', '}'], ['<\a[^>]*>', '</[^>]*>']] ],
+"     \ ]
+
+" let g:rainbow_guifgs = ['RoyalBlue3', 'DarkOrange3', 'DarkOrchid3', 'FireBrick']
+" let g:rainbow_ctermfgs = ['lightblue', 'lightgreen', 'yellow', 'white', 'magenta']
+
+"--you can use it to toggle this plugin.
+" :RainbowToggle
+"--you can use it to load/reload this plugin.
+" :RainbowLoad
+
+"----------------------------------------------------------------------------------------------------
+
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+
+" Set a language to use its alternate delimiters by default
+let g:NERDAltDelims_java = 1
+
+" Add your own custom formats or override the defaults
+let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+
+" Enable trimming of trailing whitespace when uncommenting
+
+
+" Enable NERDCommenterToggle to check all selected lines is commented or not 
+let g:NERDToggleCheckAllLines = 1
+
+"-------------------------------------------------------------------------
+
+
+" X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X
+
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin('~/.vim/plugged')
+
+" Make sure you use single quotes
+
+" Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
+" Plug 'junegunn/vim-easy-align'
+
+" Any valid git URL is allowed
+" Plug 'https://github.com/junegunn/vim-github-dashboard.git'
+
+" Multiple Plug commands can be written in a single line using | separators
+" Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+
+" On-demand loading
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+" Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+
+" Using a non-master branch
+"Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
+
+" Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
+" Plug 'fatih/vim-go', { 'tag': '*' }
+
+" Plugin options
+" Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
+
+" Plugin outside ~/.vim/plugged with post-update hook
+" Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
+" Unmanaged plugin (manually installed and updated)
+" Plug '~/my-prototype-plugin'
+
+" Python Plugin
+" Plug 'python-mode/python-mode'
+
+" Dracula theme
+" Plug 'dracula/vim',{'as':'dracula'}
+
+" Solarized theme
+" Plug 'altercation/solarized'
+
+" Snazzy theme
+" Plug 'pveyes/atom-snazzy-clear-syntax'
+
+" Vim Atom Dark
+" Plug 'gosukiwi/vim-atom-dark'
+
+" OneHalf theme
+" Plug 'sonph/onehalf'
+
+" Plug 'sheerun/vim-wombat-scheme'
+Plug 'sheerun/vim-polyglot'
+
+Plug 'vim-syntastic/syntastic'
+
+" Plug 'nvie/vim-flake8'
+
+" Plug 'altercation/vim-colors-solarized'
+
+" Plug 'vifm/vifm.vim'
+
+" multi theme one .
+"Plug 'vim-scripts/lightline'
+
+"Plug 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+
+" Plug 'itchyny/lightline.vim'
+
+Plug 'vim-scripts/indentpython.vim'
+
+" Indentation visual helper
+" -------------------------
+" Plug 'Yggdroot/indentLine'
+" Plug 'nathanaelkane/vim-indent-guides'
+
+" Plug 'frazrepo/vim-rainbow'
+" Plug 'luochen1990/rainbow'
+
+" Plug 'artur-shaik/vim-javacomplete2'
+
+Plug 'morhetz/gruvbox' 
+
+" Plug 'ludokng/vim-odyssey'
+
+" Plug 'Manu-sh/NeonVimColorscheme'
+
+" Plug 'joshdick/onedark.vim'
+
+" Plug 'embark-theme/vim', { 'as': 'embark' }
+
+" Plug 'tomasiser/vim-code-dark'
+
+" Plug 'cormacrelf/vim-colors-github'
+
+" Plug 'jdkanani/vim-material-theme'
+" Plug 'kaicataldo/material.vim', {'branch': 'main'}
+
+" Plug 'arcticicestudio/nord-vim'
+
+" Plug 'arzg/vim-colors-xcode'
+
+" Plug 'preservim/nerdcommenter'
+
+Plug 'jiangmiao/auto-pairs'
+
+" Plug 'dense-analysis/ale'
+
+Plug 'tpope/vim-surround' | Plug 'tpope/vim-commentary' | Plug 'tpope/vim-fugitive'
+
+" Vim css / sass
+" --------------
+Plug 'ap/vim-css-color'
+
+" Emmet HTML
+" ----------
+Plug 'mattn/emmet-vim'
+
+Plug 'alvan/vim-closetag'
+
+" JavaScript / Typescript
+" -----------------------
+"Plug 'pangloss/vim-javascript'
+"Plug 'leafgarland/typescript-vim'
+"Plug 'peitalin/vim-jsx-typescript'
+"Plug 'maxmellon/vim-jsx-pretty'
+
+" Jinja
+" -----
+" Plug 'lepture/vim-jinja'
+
+" Vim Move
+" --------
+Plug 'matze/vim-move'
+
+" Initialize plugin system
+call plug#end()
+
+
+" hiding vim statusbar
+let s:hidden_all = 0
+
+function! ToggleHidden()
+  if s:hidden_all == 0
+    let s:hidden_all = 1
+    set noshowmode
+    set noruler
+    set laststatus=0
+    set noshowcmd
+  else
+    let s:hidden_all = 0
+    set showmode
+    set ruler
+    set laststatus=2
+    set showcmd
+  endif
+endfunction
+
+nnoremap <C-h> :call ToggleHidden()<CR>
+colorscheme gruvbox

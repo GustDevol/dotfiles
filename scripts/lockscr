@@ -1,0 +1,15 @@
+#!/bin/sh
+# suspend notification message display
+pkill -u "$USER" -USR1 dunst
+
+# Prepare img for lock screen
+scrot /tmp/lock_img.png
+[ -f /tmp/lock_img.png ] && convert /tmp/lock_img.png -filter Gaussian -blur 0x5 /tmp/lock_img.png 
+
+i3lock -n -i /tmp/lock_img.png # lock the screen
+
+# resume notification message display
+pkill -u "$USER" -USR2 dunst
+
+# Remove img for lock screen
+[ -f /tmp.lock_img.png ] && rm /tmp/lock_img.png

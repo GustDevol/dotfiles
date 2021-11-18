@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Sink='alsa_output.pci-0000_00_1b.0.analog-stereo'
+# Source='alsa_input.pci-0000_00_1b.0.analog-stereo'
+Sink='@DEFAULT_SINK@'
+Source='@DEFAULT_SOURCE@'
+
+if [[  $# == 1 && $1 = "off" ]]; then
+    if [ -f /tmp/paloopbackmodules ]; then 
+        for moduleid in `cat /tmp/paloopbackmodules`
+        do
+            pactl unload-module $moduleid
+        done
+        rm /tmp/paloopbackmodules
+    fi
+    # systemctl --user restart pulseaudio
+else
+    pactl load-module module-null-sink sink_name=stream >> /tmp/paloopbackmodules
+    pactl load-module module-combine-sink sink_name=streamandmain slaves=$Sink,stream >> /tmp/paloopbackmodules
+    pactl load-module module-loopback source=$Source sink=stream >> /tmp/paloopbackmodules
+    # pactl load-module module-loopback source=StreamSink.monitor sink=$Sink >> /tmp/paloopbackmodules
+fi

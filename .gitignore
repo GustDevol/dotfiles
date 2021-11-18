@@ -1,0 +1,17 @@
+/config/*
+
+!/config/compton.conf
+!/config/user-dirs.dirs
+!/config/user-dirs.locale
+
+!/config/alacritty/
+!/config/bash/
+!/config/less/
+!/config/nvim/
+!/config/openbox/
+!/config/shell/
+!/config/stumpwm/
+!/config/tint2/
+!/config/vim/
+!/config/X11/
+!/config/zathura/

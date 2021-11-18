@@ -1,0 +1,55 @@
+#!/usr/bin/python3
+
+
+from sys import argv
+from os import popen, system, getenv
+
+def is_muted(device):
+    return popen("audioctl -mst " + device).read().split()[1] == 'yes'
+
+
+def get_level(device):
+    return popen("audioctl -v " + device).read().rstrip() + "%"
+
+
+def mute_it(device):
+    system("audioctl -m " + device)
+
+
+def change_level(device, by):
+    if by < 0:
+        system("audioctl {} -d {}".format(device, 0 - by))
+    else:
+        system("audioctl {} -i {}".format(device, by))
+
+
+def status(device):
+    muted = is_muted(device)
+    status = ''
+    if device == "spk":
+        status += '' if muted else ''
+    else:
+        status += '' if muted else ''
+
+    color = "#FF0000" if muted else '#FF8800'
+    
+    status += get_level(device)
+    # print(status, '', color, sep='\n', flush=True)
+    print(status, end='\n\n', flush=True)
+    print(color, flush=True)
+
+
+# if len(argv) == 1:
+#     device = 'spk'
+device = argv[1]
+
+triggered = int(getenv('BLOCK_BUTTON', '0'))
+# system('notify-send %s' %triggered)
+if triggered == 3:
+    mute_it(device)
+elif triggered == 4:
+    change_level(device=device, by=3)
+elif triggered == 5:
+    change_level(device=device, by=-3)
+status(device)
+

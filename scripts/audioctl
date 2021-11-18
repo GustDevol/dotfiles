@@ -1,0 +1,110 @@
+#!/usr/bin/python3
+
+from sys import argv
+from os import system as command
+
+# Increases the volume for speaker or mic, or both
+def inc(value, device='all'):
+    if device == 'all' or device == 'spk':
+        command("pactl set-sink-volume @DEFAULT_SINK@ +{}%".format(value))
+
+    if device == 'all' or device == 'mic':
+        command("pactl set-source-volume @DEFAULT_SOURCE@ +{}%".format(value))
+
+
+# Decreases the volume for speaker or mic, or both
+def dec(value, device='all'):
+    if device == 'all' or device == 'spk':
+        command("pactl set-sink-volume @DEFAULT_SINK@ -{}%".format(value))
+
+    if device == 'all' or device == 'mic':
+        command("pactl set-source-volume @DEFAULT_SOURCE@ -{}%".format(value))
+
+
+# Mute the speaker or mic, or both
+def mute(device='all'):
+    if device == 'all' or device == 'spk':
+        command("pactl set-sink-mute @DEFAULT_SINK@ toggle")
+
+    if device == 'all' or device == 'mic':
+        command("pactl set-source-mute @DEFAULT_SOURCE@ toggle")
+
+
+# Shows mute status of particular device
+def is_muted(value, device):
+    if device == 'spk':
+        command("pactl list | sed -n '/^Sink/,/^$/p' | grep Mute | head -n {} | tail -n 1".format(value + 1))
+    if device == 'mic':
+        command("pactl list | sed -n '/^Source/,/^$/p' | grep Mute | head -n {} | tail -n 1".format(value + 1))
+
+
+# Shows volume of particular device
+def volume(value, device):
+    if device == 'spk':
+        command("""
+                pactl list sinks | grep '^[[:space:]]Volume:' | head -n {} | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\\1,'
+                """.format(value + 1)
+               )
+    if device == 'mic':
+        command("""
+              pactl list sources | grep '^[[:space:]]Volume:' | head -n {} | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\\1,'
+                """.format(value + 1)
+               )
+
+
+if __name__ == '__main__':
+    # Uncomment for debugging purposes.
+    # print(len(argv), ":", argv)
+
+    if '-l' in argv:
+        all = False
+        if len(argv) == 2:
+            all = True
+        if all or 'spk' in argv:
+            print("Speaker :")
+            command("pactl list | sed -n '/^Sink/,/^$/p' | grep Mute")
+        if all or 'mic' in argv:
+            print("Microphone :")
+            command("pactl list | sed -n '/^Source/,/^$/p' | grep Mute")
+
+    elif '-i' in argv:
+        if 'spk' in argv and 'mic' in argv:
+            inc(argv[-1])
+        elif 'mic' in argv:
+            inc(argv[-1], device='mic')
+        else:
+            inc(argv[-1], device='spk')
+
+    elif '-d' in argv:
+        if 'spk' in argv and 'mic' in argv:
+            dec(argv[-1])
+        elif 'mic' in argv:
+            dec(argv[-1], device='mic')
+        else:
+            dec(argv[-1], device='spk')
+
+    elif '-m' in argv:
+        if 'spk' in argv and 'mic' in argv:
+            mute()
+        elif 'mic' in argv:
+            mute(device='mic')
+        else:
+            mute(device='spk')
+
+    elif '-mst' in argv:
+        if 'mic' in argv:
+            is_muted(1, device='mic')
+        else:
+            is_muted(0, device='spk')
+
+    elif '-v' in argv:
+        if 'mic' in argv:
+            volume(1, device='mic')
+        else:
+            volume(0, device='spk')
+
+    else:
+        print("Oh crap!!! I made a mistake")
+
+# pactl list sinks | grep '^[[:space:]]Volume:' |     head -n 1 | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,'
+# pactl list sources | grep '^[[:space:]]Volume:' |     head -n 2 | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,'

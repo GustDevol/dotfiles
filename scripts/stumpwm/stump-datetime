@@ -1,0 +1,3 @@
+#!/bin/sh
+
+date +"%a %d-%m-%y %H:%M:%S" | tr -d "\n"

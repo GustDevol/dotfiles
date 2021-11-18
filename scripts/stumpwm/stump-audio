@@ -1,0 +1,38 @@
+#!/usr/bin/python3
+
+from sys import argv
+from os import popen, system, getenv
+
+def is_muted(device):
+    return popen("audioctl -mst " + device).read().split()[1] == 'yes'
+
+
+def get_level(device):
+    return popen("audioctl -v " + device).read().rstrip() + "%"
+
+
+def mute_it(device):
+    system("audioctl -m " + device)
+
+
+def change_level(device, by):
+    if by < 0:
+        system("audioctl {} -d {}".format(device, 0 - by))
+    else:
+        system("audioctl {} -i {}".format(device, by))
+
+
+def status(device):
+    muted = is_muted(device)
+    level = get_level(device)
+    status = ''
+    if device == "spk":
+        status += 'Spk: X' if muted else f'Spk: {level}'
+    else:
+        status += 'Mic: X' if muted else f'Mic: {level}'
+
+    print(status, end='\n', flush=True)
+
+
+device = argv[1]
+status(device)

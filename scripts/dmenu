@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# /usr/bin/dmenu -fn "Ubuntu Mono:pixelsize=21" -nb "#000" -nf "#fff" -sb "#b57614" -sf "#000" $@
+/usr/bin/dmenu -fn "Hack:pixelsize=16" -nb '#151617' -nf '#d8d8d8' -sb '#d8d8d8' -sf '#151617' $@
+

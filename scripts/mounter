@@ -1,0 +1,122 @@
+#!/bin/bash
+
+# mounts or unmounts android device
+function phone_mounter {
+
+        if [ ! "$(ls -A $HOME/android/)" ]; then
+                jmtpfs $HOME/android
+        else
+                fusermount -u $HOME/android
+        fi
+}
+
+# available dirs where partitions will be mounted
+mount_dir=/media/$USER
+
+##### DEPRECATED
+### Uses a STATIC approach of reading partitions from
+### a file avl_partitions which stores all mountable
+### partition names, each in new line, should be done
+### manually. Helpful for cases when only a selective
+### partitions are required to be shown by the script.
+### If required, uncomment the below function and comment
+### the one further below.
+### It is recommended to use the below function which
+### uses a more DYNAMIC approach to get mountable
+### partitions from "lsblk".
+
+# function show_partitions {
+
+#         # reads list of partitions into array from file avl_partitions
+#         # file avl_partitions is located at $avl_partitions
+#         avl_partitions=$HOME/.scripts/helpers/avl_partitions
+#         readarray partitions < $avl_partitions
+
+#         for i in ${partitions[@]}
+#         do
+#                 df | grep $i > /dev/null
+#                 [ $? -eq 0 ] && mounted=$mounted\\n$i || umounted=$umounted\\n$i
+#         done
+
+#         if [ $# -eq 0 ]; then
+#                 echo -e ${mounted:2} | dmenu
+#         else
+#                 echo -e ${umounted:2} | dmenu
+#         fi
+# }
+
+### Uses DYNAMIC approach
+function show_partitions {
+    if [ $# -eq 0 ]; then
+	echo $(lsblk -l| grep -E sda[0-9]+ | grep -v M  | awk '{ if (!$7) print substr($1, 3) }' | dmenu)
+    else	
+	echo $(lsblk -l| grep -E sda[0-9]+ | grep -v M  | awk '{ if ($7 && $7 != "/" && $7 != "[SWAP]") print substr($1, 3) }' | dmenu)
+    fi
+}
+
+function show_ext_partitions {
+    if [ $# -eq 0 ]; then
+	echo $(lsblk -l| grep -E sd[^a][0-9]+ | grep -v M  | awk '{ if (!$7) print substr($1, 3) }' | dmenu)
+    else	
+	echo $(lsblk -l| grep -E sd[^a][0-9]+ | grep -v M  | awk '{ if ($7 && $7 != "/" && $7 != "[SWAP]") print substr($1, 3) }' | dmenu)
+    fi
+}
+
+function show_mnt_dirs {
+
+        if [ $# -eq 0 ]; then
+                echo $( find /media/$USER -mindepth 1 -maxdepth 1 -type d -empty | awk -F / '{print $4}' | dmenu )
+        else
+                echo $( find /media/$USER -mindepth 1 -maxdepth 1 -type d -not -empty | awk -F / '{print $4}' | dmenu )
+        fi
+}
+
+if [ $# -eq 0 ]; then
+
+        partition=$(show_partitions)
+        dir=$(show_mnt_dirs)
+        sudo -A mount /dev/$partition $mount_dir/$dir
+
+elif [ $# -eq 1 ]; then
+        
+        if [ $1 == "-p" ]; then
+                $(phone_mounter)
+
+        elif [ $1 == "-u" ]; then
+                partition=$(show_partitions -u)
+                sudo -A umount /dev/$partition
+
+        elif [ $1 == "-ud" ]; then
+                dir=$(show_mnt_dirs -u)
+                sudo -A umount $mount_dir/$dir
+
+        elif [ $1 == "-e" ]; then
+                partition=$(show_ext_partitions)
+                dir=$(show_mnt_dirs)
+                udevil mount /dev/$partition $mount_dir/$dir
+
+        elif [ $1 == "-ue" ]; then
+                partition=$(show_ext_partitions -u)
+                udevil umount /dev/$partition
+
+        else
+                sudo umount $mount_dir/$1
+                
+        fi
+        
+elif [ $# -eq 2 ]; then
+        if [ $1 == "-ue" ]; then
+                udevil umount /dev/$2
+        else
+                sudo mount /dev/$1 $mount_dir/$2
+        fi
+
+elif [ $# -eq 3 ]; then
+        udevil mount /dev/$2 $mount_dir/$3
+
+else
+        echo "Oh crap!! made some mistake I guess"
+fi
+
+# lsblk | grep -E sd.[0-9]+ | grep -v M  | awk '{ if (!$7) print substr($1, 3) }'
+# lsblk | grep -E sd.[0-9]+ | grep -v M  | awk '{ if ($7 && $7 != "/" && $7 != "[SWAP]") print substr($1, 3) }'

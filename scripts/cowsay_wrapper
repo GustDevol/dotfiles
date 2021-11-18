@@ -1,0 +1,30 @@
+#!/usr/bin/python3
+
+from random import choice
+from os import system
+
+# List of Quotes
+quotes = [
+    "If at first you don't succeed; call it version 1.0",
+    "Unix is user-friendly. It's just very selective about who its friends are.",
+    "Life would be so much easier if we only had the source code.",
+    "There are 10 types of people in the world: those who understand binary, and those who don't.",
+    "To go forward, you must backup.",
+    "I would love to change the world, but they won't give me the source code",
+    "My software never has bugs. It just develops random features.",
+    "A Windows user spends 1/3 of his life sleeping, 1/3 working, 1/3 waiting.",
+    "Evolution is God's way of issuing upgrades.",
+    "Computer are like air conditioners: they stop working when you open windows.",
+    "I'm not anti-social; I'm just not user friendly",
+    "One of the main causes of the fall of the Roman Empire was that, lacking zero, they had no way to indicate successful termination of their C programs.",
+    "The only problem with troubleshooting is that sometimes trouble shoots back.",
+    "Almost everytime accidents happens due to fault of drivers."
+]
+
+# Random quote choice
+quote = choice(quotes)
+col_code = choice(list(range(31, 38)))
+
+# Passing quote to cowsay
+system(f"printf '\033[01;{col_code}m'")
+system(f'cowsay -f toungie -W 30 "{quote}"')

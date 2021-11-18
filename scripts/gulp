@@ -1,0 +1,6 @@
+#!/bin/sh
+
+wpid=$(xdo pid)
+xdo hide -p $wpid
+$@
+xdo show -p $wpid

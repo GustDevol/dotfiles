@@ -1,0 +1,12 @@
+#!/bin/bash
+
+[ $# -eq 0 ] && device='spk' || device=$1
+
+mute_status=$(audioctl -mst $device | cut -d ' ' -f2)
+volume=$(audioctl -v $device)%%
+    
+if [ $mute_status == 'yes' ]; then
+    [ $device == 'spk' ] && echo 'Spk: X' || echo 'Mic: X'
+else
+    [ $device == 'spk' ] && echo 'Spk: '$volume || echo 'Mic: '$volume
+fi

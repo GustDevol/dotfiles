@@ -1,0 +1,4 @@
+#!/bin/sh
+
+battery=`acpi | cut -d ' ' -f3-5 | sed -e "s/,//g;s/Discharging/D:/g;s/Charging/C:/g;s/Full/F:/g;s/Unknown/?/g;s/ 0*/ /g;s/ :/ /g"`
+echo -n $battery

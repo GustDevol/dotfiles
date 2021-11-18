@@ -1,0 +1,71 @@
+(in-package :stumpwm)
+
+;; Start necessary programs
+(run-shell-command "sh ~/.config/X11/xprofile")
+
+;; Basic stumpwm window settings
+(setf *message-window-gravity* :center
+      *input-window-gravity* :center
+      *window-border-style* :thin
+      *message-window-padding* 10
+      *maxsize-border-width* 2
+      *normal-border-width* 2
+      *transient-border-width* 2
+      stumpwm::*float-window-border* 4
+      stumpwm::*float-window-title-height* 20
+      *mouse-focus-policy* :click)
+
+;; Set Prefix key to Meta-m
+(set-prefix-key (kbd "M-m"))
+
+;; Setting up Groups/Workspaces name
+(defvar *workspaces* (list "1" "2" "3" "4" "5" "6" "7" "8" "9" "10"))
+(stumpwm:grename (nth 0 *workspaces*))
+;; Create Groups/Workspaces
+(dolist (workspace (cdr *workspaces*))
+  (stumpwm:gnewbg workspace))
+
+;; Set keymaps for changing groups and moving windows to groups
+(defvar *move-group-kbd* (list ")" "!" "@" "#" "$" "%" "^" "&" "*" "("))
+(dotimes (y (length *workspaces*))
+  (let ((workspace (write-to-string y)))
+    (define-key *root-map* (kbd workspace) (concat "gselect " workspace))
+    (define-key *root-map* (kbd (nth y *move-group-kbd*)) (concat "gmove-and-follow " workspace))))
+
+;; Set keybind for stumpwm exec and dmenu
+(define-key *root-map* (kbd "D") "exec")
+(define-key *root-map* (kbd "d") "exec dmenu_run")
+
+;; Set keybind for terminal & browser
+(define-key *root-map* (kbd "RET") "exec alacritty")
+(define-key *root-map* (kbd "w") "exec brave-browser")
+
+;; Set keybind for window & frame management
+(define-key *root-map* (kbd "Q") "kill")
+(define-key *root-map* (kbd "M-k") "delete")
+(define-key *root-map* (kbd "q") "delete")
+
+;; Create command and set keybind for checking audio & brightness status
+(defcommand get-audio-status () ()
+  (echo 
+    (concat 
+        (run-shell-command "stump-audio spk" t)
+        (run-shell-command "stump-audio mic" t))))
+(define-key *top-map* (kbd "M-P") "get-audio-status")
+
+(defcommand get-backlight-status () ()
+  (echo
+    (concat "Backlight : "
+        (run-shell-command "xbacklight" t))))
+(define-key *top-map* (kbd "M-B") "get-backlight-status")
+
+;; Modeline
+(setf stumpwm:*mode-line-timeout* 10)
+(stumpwm:toggle-mode-line (stumpwm:current-screen) (stumpwm:current-head))
+(setf stumpwm:*screen-mode-line-format*
+      (list "%n | "
+            "%W | "
+            "^>"
+            ; '(:eval (concat (run-shell-command "stump-network" t) " | "))
+            '(:eval (concat (run-shell-command "stump-battery" t) " | "))
+            '(:eval (run-shell-command "stump-datetime" t))))

@@ -1,0 +1,9 @@
+#!/bin/sh
+
+while :
+do
+        title=`xtitle -s`
+        echo $title
+        echo ${title##- *}
+done
+# xdotool getactivewindow | xargs xprop -id | grep "WM_CLASS(STRING)" | cut -d '"' -f 4

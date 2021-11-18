@@ -1,0 +1,42 @@
+#!/bin/bash
+
+# Uncomment for debugging purposes.
+# echo $@
+# echo $#
+# echo $(cat /sys/class/backlight/intel_backlight/brightness)
+
+function set {
+        brightness=$(($1 * 7812 / 100))
+        if [ $brightness -gt 7812 ];then
+                brightness=7812
+        fi
+        if [ $brightness -lt 0 ];then
+                brightness=0
+        fi
+        echo $brightness
+}
+
+if [[ -z $1 ]] || [[ "$1" == "-g" ]]; then
+        curr_brightness=$(cat /sys/class/backlight/intel_backlight/brightness)
+        echo "Current brightness : $curr_brightness ("$(($curr_brightness * 100 / 7812))"%)"
+
+elif [[ "$1" == "-s" ]]; then
+        brightness_value=$(set $2)
+        echo $brightness_value | sudo --askpass tee /sys/class/backlight/intel_backlight/brightness
+
+elif [[ "$1" == "-i" ]]; then
+        curr_brightness=$(cat /sys/class/backlight/intel_backlight/brightness)
+        brightness_precent=$((($curr_brightness * 100 / 7812 ) + $2))
+        brightness_value=$(set $brightness_precent)
+        echo $brightness_value | sudo --askpass tee /sys/class/backlight/intel_backlight/brightness 
+
+elif [[ "$1" == "-d" ]]; then
+        curr_brightness=$(cat /sys/class/backlight/intel_backlight/brightness)
+        brightness_precent=$((($curr_brightness * 100 / 7812 ) - $2))
+        brightness_value=$(set $brightness_precent)
+        echo $brightness_value | sudo --askpass tee /sys/class/backlight/intel_backlight/brightness
+
+else
+        echo "Oops !! I made some mistake."
+
+fi

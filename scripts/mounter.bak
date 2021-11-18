@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Uncomment for debugging purposes
+# echo $#
+# echo $@
+
+mount_dir="/media/$USER"
+
+if [ $# -eq 1 ]; then
+        sudo -A umount $mount_dir/$1
+elif [ $# -eq 2 ]; then
+        sudo -A mount /dev/$1 $mount_dir/$2
+else
+        echo "Yikes!! probably made some error"
+        echo "Either provided extra args or forget to provide name of mounting partition"
+fi

@@ -1,0 +1,34 @@
+#!/bin/bash
+
+[ $# -eq 0 ] && device='spk' || device=$1
+change_level=3
+
+case $BLOCK_BUTTON in
+    3)
+	$(urxvt -e alsamixer)
+    ;;
+    1)
+	$(audioctl -m $device)
+    ;;
+    4)
+	$(audioctl -i $device $change_level)
+    ;;
+    5)
+	$(audioctl -d $device $change_level)
+    ;;
+    *)
+    ;;
+esac
+
+mute_status=$(audioctl -mst $device | cut -d ' ' -f2)
+volume=$(audioctl -v $device)%
+    
+if [ $mute_status == 'yes' ]; then
+    [ $device == 'spk' ] && echo ''$volume || echo ''$volume
+    echo ''
+    echo '#FF0000'
+else
+    [ $device == 'spk' ] && echo ''$volume || echo ''$volume
+    echo ''
+    echo '#FF8800'
+fi

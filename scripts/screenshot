@@ -1,0 +1,73 @@
+#!/usr/bin/python3
+
+from sys import argv
+from os import system as command
+from datetime import datetime
+
+currtime = datetime.now().strftime("%Y-%m-%d_%H:%M:%S")
+
+dirloc = "$HOME/images/Screenshots/"
+filename = "screenshot_" + currtime + ".png"
+
+
+def copiedshot():
+    command("scrot -s /tmp/tmpshot.png")
+    command("xclip -selection clipbaord -t image/png /tmp/tmpshot.png")
+    command("rm /tmp/tmpshot.png")
+    command("notify-send 'Screenshot Taken' 'Screenshot copied to clipboard'")
+
+
+def namedshot():
+    shotcommand = """
+    user_filename=`echo "{0}" | dmenu -p "Filename "`
+    if [ ! -e {1}"$user_filename" ] 
+    then
+        scrot -s {1}"$user_filename" 
+    else
+        notify-send Screenshot "File {1}$user_filename already exists"
+    fi
+    """ 
+    command(shotcommand.format(filename, dirloc))
+
+
+def delayshot(args, mode='screen'):
+
+    for i in range(len(args)):
+        if args[i] == '-d':
+            break
+    delay = str(args[i + 1])
+
+    if mode == 'window':
+        command("scrot -u " + dirloc + filename + " -d " + delay)
+    else:
+        command("scrot  " + dirloc + filename + " -d " + delay)
+
+
+if len(argv) == 1:
+    command("scrot  " + dirloc + filename)
+    command(f"notify-send 'Screenshot Taken' 'Screenshot saved to {dirloc}{filename}'")
+
+elif "-n" in argv:
+    namedshot()
+    command(f"notify-send 'Screenshot Taken' 'Screenshot saved to {dirloc}{filename}'")
+
+elif "-c" in argv:
+    copiedshot()
+
+elif "-w" in argv:
+    if "-d" not in argv:
+        command("scrot -u " + dirloc + filename)
+    else:
+        delayshot(argv, mode='window')
+    command(f"notify-send 'Screenshot Taken' 'Screenshot saved to {dirloc}{filename}'")
+
+elif "-s" in argv:
+    command("scrot -s " + dirloc + filename)
+    command(f"notify-send 'Screenshot Taken' 'Screenshot saved to {dirloc}{filename}'")
+
+elif "-d" in argv:
+    delayshot(argv)
+    command(f"notify-send 'Screenshot Taken' 'Screenshot saved to {dirloc}{filename}'")
+
+else:
+    print("Oh crap! I specified wrong args")

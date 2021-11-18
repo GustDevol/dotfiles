@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# This script uses dmenu and emoji file to show an emoji picker menu
+# on picking an emoji it gets copied to clipboard using xclip 
+
+emoji_file=$HOME/.scripts/helpers/emoji
+
+cat $emoji_file | dmenu -fn "Symbola" -i -l 20 | cut -d " " -f 1 | tr -d "\n" | xclip -i -selection clipboard
+notify-send -t 3000 "Emoji Picker" "\n`xclip -o -selection clipboard` copied to clipboard.\n"
