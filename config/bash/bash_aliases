@@ -4,11 +4,25 @@
 #  _| |_) | (_| \__ \ | | | | (_| | | | (_| \__ \  __/\__ \
 # (_)_.__/ \__,_|___/_| |_|  \__,_|_|_|\__,_|___/\___||___/
 
+
+# Common Aliases
+# ===============
+
 alias v='vim'
 alias nv='nvim'
 alias rm='rm -i'
-alias a='sudo apt'
 alias py='python3'
-alias nano='nano -$'
+alias nano='nano -lm$'
+alias diff='diff --color'
+alias media='cd /media/$USER/; cd '
 alias mycodes='cd /media/$USER/F/mycodes'
 alias clr_cache='sudo sh -c "sync; echo 3 > /proc/sys/vm/drop_caches"'
+  
+#=========================================================================== 
+
+# Distro Specific
+# ===============
+
+# Debian ( APT )
+# --------------
+alias a='sudo apt'
