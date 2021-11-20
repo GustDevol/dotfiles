@@ -8,7 +8,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'ap/vim-css-color'
 Plug 'mattn/emmet-vim'
 Plug 'alvan/vim-closetag'
-Plug 'matze/vim-move'
 Plug 'tpope/vim-surround' | Plug 'tpope/vim-commentary' | Plug 'tpope/vim-fugitive'
 Plug 'morhetz/gruvbox' 
 
