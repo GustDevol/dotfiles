@@ -12,7 +12,7 @@ filename = "screenshot_" + currtime + ".png"
 
 def copiedshot():
     command("scrot -s /tmp/tmpshot.png")
-    command("xclip -selection clipbaord -t image/png /tmp/tmpshot.png")
+    command("xclip -selection clipboard -t image/png /tmp/tmpshot.png")
     command("rm /tmp/tmpshot.png")
     command("notify-send 'Screenshot Taken' 'Screenshot copied to clipboard'")
 
