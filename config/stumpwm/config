@@ -6,6 +6,7 @@
 ;; Basic stumpwm window settings
 (setf *message-window-gravity* :center
       *input-window-gravity* :center
+      *message-window-input-gravity* :top-right
       *window-border-style* :thin
       *message-window-padding* 10
       *maxsize-border-width* 2
@@ -40,6 +41,13 @@
 (define-key *root-map* (kbd "RET") "exec alacritty")
 (define-key *root-map* (kbd "w") "exec brave-browser")
 
+;; Set keybind for exiting StumpWM
+(defcommand logout () ()
+  (if 
+    (equalp (read-one-line (stumpwm:current-screen) "Quit StumpWM? ") "Y")
+      (quit)))
+(define-key *root-map* (kbd "X") "logout") ;; Quits StumpWM
+
 ;; Set keybind for window & frame management
 (define-key *root-map* (kbd "Q") "kill")
 (define-key *root-map* (kbd "M-k") "delete")
@@ -69,3 +77,6 @@
             ; '(:eval (concat (run-shell-command "stump-network" t) " | "))
             '(:eval (concat (run-shell-command "stump-battery" t) " | "))
             '(:eval (run-shell-command "stump-datetime" t))))
+
+
+ ; vim: syntax=lisp

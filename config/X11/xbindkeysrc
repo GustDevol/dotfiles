@@ -1,28 +1,41 @@
+# Audio
+# =====
 # Increase Sink Volume
+# --------------------
 "audioctl spk -i 5"
   XF86AudioRaiseVolume
 
 # Decrease Sink Volume
+# --------------------
 "audioctl spk -d 5"
   XF86AudioLowerVolume
 
 # Mute Sink
+# ---------
 "audioctl spk -m"
   XF86AudioMute
 
 # Increase Source Volume
+# ----------------------
 "audioctl mic -i 5"
   shift + XF86AudioRaiseVolume
 
 # Decrease Source Volume
+# ----------------------
 "audioctl mic -d 5"
   shift + XF86AudioLowerVolume
 
 # Mute Source
+# -----------
 "audioctl mic -m"
   shift + XF86AudioMute
+  
+# ===============================================
 
+# Backlight
+# =========
 # Backlight Increase
+# ------------------
 "xbacklight +5"
   XF86MonBrightnessUp
 
@@ -30,37 +43,71 @@
   XF86Explorer
 
 # Backlight Decrease
+# ------------------
 "xbacklight -5"
   XF86MonBrightnessDown
 
 "xbacklight -5"
   XF86Tools
+  
+# ===============================================
 
 # Emojipicker
+# ===========
 "emojipicker"
   control + shift + e
+  
+# ===============================================
 
 # Screenshots
+# ===========
 # Full Screen
+# -----------
 "screenshot"
   Print
 
 # Delayed Full Screen
+# -------------------
 "screenshot -d 6"
   control + Print
 
 # Current Window
+# --------------
 "screenshot -w"
   mod4 + Print
 
 # Delayed Current Window
+# ----------------------
 "screenshot -w -d 3"
   mod4 + control + Print
 
 # Selected Area
+# -------------
 "screenshot -s"
   shift + Print
 
 # Select Area Copy to Clipbaord
+# -----------------------------
 "screenshot -c"
   mod4 + shift + Print
+  
+# ===============================================
+
+# Lockscreen, Reboot & Poweroff
+# =============================
+# Lockscreen
+# ----------
+"xscreensaver-command -lock"
+  mod4 + shift + x
+
+# Reboot
+# ------
+"prompt 'Wanna Reboot?' 'sudo -A reboot'"
+  mod4 + z
+
+# Poweroff
+# --------
+"prompt 'Wanna Poweroff?' 'sudo -A poweroff'"
+  mod4 + shift + z
+
+# ===============================================
