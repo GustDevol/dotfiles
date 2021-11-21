@@ -8,6 +8,7 @@ set nu
 set rnu
 set laststatus=2
 set bs=2 
+set path+=**
 set encoding=utf-8
 set tabstop=4 softtabstop=0 expandtab smarttab
 set clipboard=unnamedplus

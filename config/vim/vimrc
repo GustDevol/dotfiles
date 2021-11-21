@@ -14,7 +14,7 @@ set magic
 set smartindent
 set nocompatible
 set t_Co=256
-set path=**
+set path+=**
 " set cursorline
 " set guifont=Hack
 

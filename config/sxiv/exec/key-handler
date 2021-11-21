@@ -1,0 +1,35 @@
+#!/bin/sh
+
+while read file
+do
+    file=$PWD/$file
+    case "$1" in
+        "y")
+            xclip -selection clipboard -t image/png "$file" &&
+                notify-send "Sxiv Copy Image" "$file copied to clipboard"
+            ;;
+        "Y")
+            readlink -f "$file" | xclip -selection clipboard &&
+                notify-send "Sxiv Copy Image Path" "Path $file copied to clipboard"
+            ;;
+        "D")
+            prompt "Remove $file ?" "rm -f $file"
+            ;;
+        "I")
+            notify-send "Sxiv File Info" "`file $file`"
+            ;;
+        # Below options requires imagemagick installed to work
+        "r")
+            convert -rotate 90 "$file" "$file"
+            ;;
+        "R")
+            convert -rotate -90 "$file" "$file"
+            ;;
+        "f")
+            convert -flip "$file" "$file"
+            ;;
+        "F")
+            convert -flop "$file" "$file"
+            ;;
+    esac
+done
