@@ -48,17 +48,17 @@ mount_dir=/media/$USER
 ### Uses DYNAMIC approach
 function show_partitions {
     if [ $# -eq 0 ]; then
-	echo $(lsblk -l| grep -E sda[0-9]+ | grep -v M  | awk '{ if (!$7) print substr($1, 3) }' | dmenu)
+	echo $(lsblk -l| grep -E sda[0-9]+ | grep -v M  | awk '{ if (!$7) print $1 }' | dmenu)
     else	
-	echo $(lsblk -l| grep -E sda[0-9]+ | grep -v M  | awk '{ if ($7 && $7 != "/" && $7 != "[SWAP]") print substr($1, 3) }' | dmenu)
+	echo $(lsblk -l| grep -E sda[0-9]+ | grep -v M  | awk '{ if ($7 && $7 != "/" && $7 != "[SWAP]") print $1 }' | dmenu)
     fi
 }
 
 function show_ext_partitions {
     if [ $# -eq 0 ]; then
-	echo $(lsblk -l| grep -E sd[^a][0-9]+ | grep -v M  | awk '{ if (!$7) print substr($1, 3) }' | dmenu)
+	echo $(lsblk -l| grep -E sd[^a][0-9]+ | grep -v M  | awk '{ if (!$7) print $1 }' | dmenu)
     else	
-	echo $(lsblk -l| grep -E sd[^a][0-9]+ | grep -v M  | awk '{ if ($7 && $7 != "/" && $7 != "[SWAP]") print substr($1, 3) }' | dmenu)
+	echo $(lsblk -l| grep -E sd[^a][0-9]+ | grep -v M  | awk '{ if ($7 && $7 != "/" && $7 != "[SWAP]") print $1 }' | dmenu)
     fi
 }
 
