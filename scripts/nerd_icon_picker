@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# This script uses dmenu and nerd icon file to show an nerd icon picker menu
+# on picking an nerd icon it gets copied to clipboard using xclip 
+
+nerd_icon_file=$HOME/.scripts/helpers/nerd_icons
+
+cat $nerd_icon_file | dmenu -fn "Hack Nerd Font" -i -l 20 | awk '{ printf $1 }' | xclip -i -selection clipboard
+notify-send -t 3000 "Nerd Icon Picker" "\n`xclip -o -selection clipboard`  copied to clipboard.\n"
