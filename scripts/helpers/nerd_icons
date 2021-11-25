@@ -1,0 +1,3672 @@
+⏻	iec power
+⏼	iec toggle power
+⏽	iec power on
+⏾	iec sleep mode
+♥	oct heart
+⚡	oct zap
+⭘	iec power off
+	pom clean code
+	pom pomodoro done
+	pom pomodoro estimated
+	pom pomodoro ticking
+	pom pomodoro squashed
+	pom short pause
+	pom long pause
+	pom away
+	pom pair programming
+	pom internal interruption
+	pom external interruption
+	pl branch
+	pl line number
+	pl hostname
+	ple column number
+	pl left hard divider
+	pl left soft divider
+	pl right hard divider
+	pl right soft divider
+	ple right half circle thick
+	ple right half circle thin
+	ple left half circle thick
+	ple left half circle thin
+	ple lower left triangle
+	ple backslash separator
+	ple lower right triangle
+	ple forwardslash separator
+	ple upper left triangle
+	ple forwardslash separator redundant
+	ple upper right triangle
+	ple backslash separator redundant
+	ple flame thick
+	ple flame thin
+	ple flame thick mirrored
+	ple flame thin mirrored
+	ple pixelated squares small
+	ple pixelated squares small mirrored
+	ple pixelated squares big
+	ple pixelated squares big mirrored
+	ple ice waveform
+	ple ice waveform mirrored
+	ple honeycomb
+	ple honeycomb outline
+	ple lego separator
+	ple lego separator thin
+	ple lego block facing
+	ple lego block sideways
+	ple trapezoid top bottom
+	ple trapezoid top bottom mirrored
+	fae smaller
+	fae snowing
+	fae soda
+	fae sofa
+	fae soup
+	fae spermatozoon
+	fae spin double
+	fae stomach
+	fae storm
+	fae telescope
+	fae thermometer
+	fae thermometer high
+	fae thermometer low
+	fae thin close
+	fae toilet
+	fae tools
+	fae tooth
+	fae uterus
+	fae w3c
+	fae walking
+	fae virus
+	fae telegram circle
+	fae slash
+	fae telegram
+	fae shirt
+	fae tacos
+	fae sushi
+	fae triangle ruler
+	fae tree
+	fae sun cloud
+	fae ruby o
+	fae ruler
+	fae umbrella
+	fae medicine
+	fae microscope
+	fae milk bottle
+	fae minimize
+	fae molecule
+	fae moon cloud
+	fae mushroom
+	fae mustache
+	fae mysql
+	fae nintendo
+	fae palette color
+	fae pi
+	fae pizza
+	fae planet
+	fae plant
+	fae playstation
+	fae poison
+	fae popcorn
+	fae popsicle
+	fae pulse
+	fae python
+	fae quora circle
+	fae quora square
+	fae radioactive
+	fae raining
+	fae real heart
+	fae refrigerator
+	fae restore
+	fae ring
+	fae ruby
+	fae fingerprint
+	fae floppy
+	fae footprint
+	fae freecodecamp
+	fae galaxy
+	fae galery
+	fae glass
+	fae google drive
+	fae google play
+	fae gps
+	fae grav
+	fae guitar
+	fae gut
+	fae halter
+	fae hamburger
+	fae hat
+	fae hexagon
+	fae high heel
+	fae hotdog
+	fae ice cream
+	fae id card
+	fae imdb
+	fae infinity
+	fae java
+	fae layers
+	fae lips
+	fae lipstick
+	fae liver
+	fae lung
+	fae makeup brushes
+	fae maximize
+	fae wallet
+	fae chess horse
+	fae chess king
+	fae chess pawn
+	fae chess queen
+	fae chess tower
+	fae cheese
+	fae chilli
+	fae chip
+	fae cicling
+	fae cloud
+	fae cockroach
+	fae coffe beans
+	fae coins
+	fae comb
+	fae comet
+	fae crown
+	fae cup coffe
+	fae dice
+	fae disco
+	fae dna
+	fae donut
+	fae dress
+	fae drop
+	fae ello
+	fae envelope open
+	fae envelope open o
+	fae equal
+	fae equal bigger
+	fae feedly
+	fae file export
+	fae file import
+	fae wind
+	fae atom
+	fae bacteria
+	fae banana
+	fae bath
+	fae bed
+	fae benzene
+	fae bigger
+	fae biohazard
+	fae blogger circle
+	fae blogger square
+	fae bones
+	fae book open
+	fae book open o
+	fae brain
+	fae bread
+	fae butterfly
+	fae carot
+	fae cc by
+	fae cc cc
+	fae cc nc
+	fae cc nc eu
+	fae cc nc jp
+	fae cc nd
+	fae cc remix
+	fae cc sa
+	fae cc share
+	fae cc zero
+	fae checklist o
+	fae cherry
+	fae chess bishop
+	fae xbox
+	fae apple fruit
+	fae chicken thigh
+	fae gift card
+	fae injection
+	fae isle
+	fae lollipop
+	fae loyalty card
+	fae meat
+	fae mountains
+	fae orange
+	fae peach
+	fae pear
+	weather day cloudy gusts
+	weather day cloudy windy
+	weather day cloudy
+	weather day fog
+	weather day hail
+	weather day lightning
+	weather day rain mix
+	weather day rain wind
+	weather day rain
+	weather day showers
+	weather day snow
+	weather day sprinkle
+	weather day sunny overcast
+	weather day sunny
+	weather day storm showers
+	weather day thunderstorm
+	weather cloudy gusts
+	weather cloudy windy
+	weather cloudy
+	weather fog
+	weather hail
+	weather lightning
+	weather rain mix
+	weather rain wind
+	weather rain
+	weather showers
+	weather snow
+	weather sprinkle
+	weather storm showers
+	weather thunderstorm
+	weather windy
+	weather night alt cloudy gusts
+	weather night alt cloudy windy
+	weather night alt hail
+	weather night alt lightning
+	weather night alt rain mix
+	weather night alt rain wind
+	weather night alt rain
+	weather night alt rain mix
+	weather night alt snow
+	weather night alt sprinkle
+	weather night alt storm showers
+	weather night alt thunderstorm
+	weather night clear
+	weather night cloudy gusts
+	weather night cloudy windy
+	weather night cloudy
+	weather night hail
+	weather night lightning
+	weather night rain mix
+	weather night rain wind
+	weather night rain
+	weather night showers
+	weather night snow
+	weather night sprinkle
+	weather night storm showers
+	weather night thunderstorm
+	weather celsius
+	weather cloud down
+	weather cloud refresh
+	weather cloud up
+	weather cloud
+	weather degrees
+	weather direction down left
+	weather direction down
+	weather fahrenheit
+	weather horizon alt
+	weather horizon
+	weather direction left
+	weather aliens
+	weather night fog
+	weather refresh alt
+	weather refresh
+	weather direction right
+	weather raindrops
+	weather strong wind
+	weather sunrise
+	weather sunset
+	weather thermometer exterior
+	weather thermometer internal
+	weather thermometer
+	weather tornado
+	weather direction up right
+	weather direction up
+	weather wind west
+	weather wind south west
+	weather wind south east
+	weather wind south
+	weather wind north west
+	weather wind north east
+	weather wind north
+	weather wind east
+	weather smoke
+	weather dust
+	weather snow wind
+	weather day snow wind
+	weather night snow wind
+	weather night alt snow wind
+	weather day sleet storm
+	weather night sleet storm
+	weather night alt sleet storm
+	weather day snow thunderstorm
+	weather night snow thunderstorm
+	weather night alt snow thunderstorm
+	weather solar eclipse
+	weather lunar eclipse
+	weather meteor
+	weather hot
+	weather hurricane
+	weather smog
+	weather alien
+	weather snowflake cold
+	weather stars
+	weather raindrop
+	weather barometer
+	weather humidity
+	weather na
+	weather flood
+	weather day cloudy high
+	weather night alt cloudy high
+	weather night cloudy high
+	weather night alt partly cloudy
+	weather sandstorm
+	weather night partly cloudy
+	weather umbrella
+	weather day windy
+	weather night alt cloudy
+	weather direction up left
+	weather direction down right
+	weather time 12
+	weather time 1
+	weather time 2
+	weather time 3
+	weather time 4
+	weather time 5
+	weather time 6
+	weather time 7
+	weather time 8
+	weather time 9
+	weather time 10
+	weather time 11
+	weather moon new
+	weather moon waxing crescent 1
+	weather moon waxing crescent 2
+	weather moon waxing crescent 3
+	weather moon waxing crescent 4
+	weather moon waxing crescent 5
+	weather moon waxing crescent 6
+	weather moon first quarter
+	weather moon waxing gibbous 1
+	weather moon waxing gibbous 2
+	weather moon waxing gibbous 3
+	weather moon waxing gibbous 4
+	weather moon waxing gibbous 5
+	weather moon waxing gibbous 6
+	weather moon full
+	weather moon waning gibbous 1
+	weather moon waning gibbous 2
+	weather moon waning gibbous 3
+	weather moon waning gibbous 4
+	weather moon waning gibbous 5
+	weather moon waning gibbous 6
+	weather moon third quarter
+	weather moon waning crescent 1
+	weather moon waning crescent 2
+	weather moon waning crescent 3
+	weather moon waning crescent 4
+	weather moon waning crescent 5
+	weather moon waning crescent 6
+	weather wind direction
+	weather day sleet
+	weather night sleet
+	weather night alt sleet
+	weather sleet
+	weather day haze
+	weather wind beaufort 0
+	weather wind beaufort 1
+	weather wind beaufort 2
+	weather wind beaufort 3
+	weather wind beaufort 4
+	weather wind beaufort 5
+	weather wind beaufort 6
+	weather wind beaufort 7
+	weather wind beaufort 8
+	weather wind beaufort 9
+	weather wind beaufort 10
+	weather wind beaufort 11
+	weather wind beaufort 12
+	weather day light wind
+	weather tsunami
+	weather earthquake
+	weather fire
+	weather volcano
+	weather moonrise
+	weather moonset
+	weather train
+	weather small craft advisory
+	weather gale warning
+	weather storm warning
+	weather hurricane warning
+	weather moon alt waxing crescent 1
+	weather moon alt waxing crescent 2
+	weather moon alt waxing crescent 3
+	weather moon alt waxing crescent 4
+	weather moon alt waxing crescent 5
+	weather moon alt waxing crescent 6
+	weather moon alt first quarter
+	weather moon alt waxing gibbous 1
+	weather moon alt waxing gibbous 2
+	weather moon alt waxing gibbous 3
+	weather moon alt waxing gibbous 4
+	weather moon alt waxing gibbous 5
+	weather moon alt waxing gibbous 6
+	weather moon alt full
+	weather moon alt waning gibbous 1
+	weather moon alt waning gibbous 2
+	weather moon alt waning gibbous 3
+	weather moon alt waning gibbous 4
+	weather moon alt waning gibbous 5
+	weather moon alt waning gibbous 6
+	weather moon alt third quarter
+	weather moon alt waning crescent 1
+	weather moon alt waning crescent 2
+	weather moon alt waning crescent 3
+	weather moon alt waning crescent 4
+	weather moon alt waning crescent 5
+	weather moon alt waning crescent 6
+	weather moon alt new
+	custom folder npm
+	custom folder git
+	custom folder config
+	custom folder github
+	custom folder open
+	custom folder
+	seti stylus
+	seti project
+	seti play arrow
+	seti sass
+	seti rails
+	seti ruby
+	seti python
+	seti heroku
+	seti php
+	seti markdown
+	seti license
+	seti json
+	seti javascript
+	seti image
+	seti html
+	seti mustache
+	seti gulp
+	seti grunt
+	seti default
+	seti folder
+	seti css
+	seti config
+	seti npm
+	seti home
+	seti ejs
+	seti xml
+	seti bower
+	seti coffee
+	seti twig
+	custom cpp
+	custom c
+	seti haskell
+	seti lua
+	indent line
+	seti karma
+	seti favicon
+	seti julia
+	seti react
+	custom go
+	seti go
+	seti typescript
+	custom msdos
+	custom windows
+	custom vim
+	custom elm
+	custom elixir
+	custom electron
+	custom crystal
+	custom purescript
+	custom puppet
+	dev bing small
+	dev css tricks
+	dev git
+	dev bitbucket
+	dev mysql
+	dev streamline
+	dev database
+	dev dropbox
+	dev github alt
+	dev github badge
+	dev github
+	dev wordpress
+	dev visualstudio
+	dev jekyll small
+	dev android
+	dev windows
+	dev stackoverflow
+	dev apple
+	dev linux
+	dev appstore
+	dev ghost small
+	dev yahoo
+	dev codepen
+	dev github full
+	dev nodejs small
+	dev nodejs
+	dev hackernews
+	dev ember
+	dev dojo
+	dev django
+	dev npm
+	dev ghost
+	dev modernizr
+	dev unity small
+	dev rasberry pi
+	dev blackberry
+	dev go
+	dev git branch
+	dev git pull request
+	dev git merge
+	dev git compare
+	dev git commit
+	dev cssdeck
+	dev yahoo small
+	dev techcrunch
+	dev smashing magazine
+	dev netmagazine
+	dev codrops
+	dev phonegap
+	dev google drive
+	dev html5 multimedia
+	dev html5 device access
+	dev html5 connectivity
+	dev html5 3d effects
+	dev html5
+	dev scala
+	dev java
+	dev ruby
+	dev ubuntu
+	dev ruby on rails
+	dev python
+	dev php
+	dev markdown
+	dev laravel
+	dev magento
+	dev joomla
+	dev drupal
+	dev chrome
+	dev ie
+	dev firefox
+	dev opera
+	dev bootstrap
+	dev safari
+	dev css3
+	dev css3 full
+	dev sass
+	dev grunt
+	dev bower
+	dev javascript
+	dev javascript shield
+	dev jquery
+	dev coffeescript
+	dev backbone
+	dev angular
+	dev jquery ui
+	dev swift
+	dev symfony
+	dev symfony badge
+	dev less
+	dev stylus
+	dev trello
+	dev atlassian
+	dev jira
+	dev envato
+	dev snap svg
+	dev raphael
+	dev chart
+	dev compass
+	dev onedrive
+	dev gulp
+	dev atom
+	dev cisco
+	dev nancy
+	dev jenkins
+	dev clojure
+	dev perl
+	dev clojure alt
+	dev celluloid
+	dev w3c
+	dev redis
+	dev postgresql
+	dev webplatform
+	dev requirejs
+	dev opensource
+	dev typo3
+	dev uikit
+	dev doctrine
+	dev groovy
+	dev nginx
+	dev haskell
+	dev zend
+	dev gnu
+	dev yeoman
+	dev heroku
+	dev msql server
+	dev debian
+	dev travis
+	dev dotnet
+	dev codeigniter
+	dev javascript badge
+	dev yii
+	dev composer
+	dev krakenjs badge
+	dev krakenjs
+	dev mozilla
+	dev firebase
+	dev sizzlejs
+	dev creativecommons
+	dev creativecommons badge
+	dev mitlicence
+	dev senchatouch
+	dev bugsense
+	dev extjs
+	dev mootools badge
+	dev mootools
+	dev ruby rough
+	dev komodo
+	dev coda
+	dev bintray
+	dev terminal
+	dev code
+	dev responsive
+	dev dart
+	dev aptana
+	dev mailchimp
+	dev netbeans
+	dev dreamweaver
+	dev brackets
+	dev eclipse
+	dev cloud9
+	dev scrum
+	dev prolog
+	dev terminal badge
+	dev code badge
+	dev mongodb
+	dev meteor
+	dev meteorfull
+	dev fsharp
+	dev rust
+	dev ionic
+	dev sublime
+	dev appcelerator
+	dev asterisk
+	dev aws
+	dev digital ocean
+	dev dlang
+	dev docker
+	dev erlang
+	dev google cloud platform
+	dev grails
+	dev illustrator
+	dev intellij
+	dev materializecss
+	dev openshift
+	dev photoshop
+	dev rackspace
+	dev react
+	dev redhat
+	dev scriptcs
+
+
+
+
+
+
+
+	dev sqllite
+	dev vim
+	fa glass
+	fa music
+	fa search
+	fa envelope o
+	fa heart
+	fa star
+	fa star o
+	fa user
+	fa film
+	fa th large
+	fa th
+	fa th list
+	fa check
+	fa times
+	fa search plus
+	fa search minus
+	fa power off
+	fa signal
+	fa cog
+	fa trash o
+	fa home
+	fa file o
+	fa clock o
+	fa road
+	fa download
+	fa arrow circle o down
+	fa arrow circle o up
+	fa inbox
+	fa play circle o
+	fa repeat
+	fa refresh
+	fa list alt
+	fa lock
+	fa flag
+	fa headphones
+	fa volume off
+	fa volume down
+	fa volume up
+	fa qrcode
+	fa barcode
+	fa tag
+	fa tags
+	fa book
+	fa bookmark
+	fa print
+	fa camera
+	fa font
+	fa bold
+	fa italic
+	fa text height
+	fa text width
+	fa align left
+	fa align center
+	fa align right
+	fa align justify
+	fa list
+	fa outdent
+	fa indent
+	fa video camera
+	fa picture o
+	fa pencil
+	fa map marker
+	fa adjust
+	fa tint
+	fa pencil square o
+	fa share square o
+	fa check square o
+	fa arrows
+	fa step backward
+	fa fast backward
+	fa backward
+	fa play
+	fa pause
+	fa stop
+	fa forward
+	fa fast forward
+	fa step forward
+	fa eject
+	fa chevron left
+	fa chevron right
+	fa plus circle
+	fa minus circle
+	fa times circle
+	fa check circle
+	fa question circle
+	fa info circle
+	fa crosshairs
+	fa times circle o
+	fa check circle o
+	fa ban
+	fa arrow left
+	fa arrow right
+	fa arrow up
+	fa arrow down
+	fa share
+	fa expand
+	fa compress
+	fa plus
+	fa minus
+	fa asterisk
+	fa exclamation circle
+	fa gift
+	fa leaf
+	fa fire
+	fa eye
+	fa eye slash
+	fa exclamation triangle
+	fa plane
+	fa calendar
+	fa random
+	fa comment
+	fa magnet
+	fa chevron up
+	fa chevron down
+	fa retweet
+	fa shopping cart
+	fa folder
+	fa folder open
+	fa arrows v
+	fa arrows h
+	fa bar chart
+	fa twitter square
+	fa facebook square
+	fa camera retro
+	fa key
+	fa cogs
+	fa comments
+	fa thumbs o up
+	fa thumbs o down
+	fa star half
+	fa heart o
+	fa sign out
+	fa linkedin square
+	fa thumb tack
+	fa external link
+	fa sign in
+	fa trophy
+	fa github square
+	fa upload
+	fa lemon o
+	fa phone
+	fa square o
+	fa bookmark o
+	fa phone square
+	fa twitter
+	fa facebook
+	fa github
+	fa unlock
+	fa credit card
+	fa rss
+	fa hdd o
+	fa bullhorn
+	fa bell o
+	fa certificate
+	fa hand o right
+	fa hand o left
+	fa hand o up
+	fa hand o down
+	fa arrow circle left
+	fa arrow circle right
+	fa arrow circle up
+	fa arrow circle down
+	fa globe
+	fa wrench
+	fa tasks
+	fa filter
+	fa briefcase
+	fa arrows alt
+	fa users
+	fa link
+	fa cloud
+	fa flask
+	fa scissors
+	fa files o
+	fa paperclip
+	fa floppy o
+	fa square
+	fa bars
+	fa list ul
+	fa list ol
+	fa strikethrough
+	fa underline
+	fa table
+	fa magic
+	fa truck
+	fa pinterest
+	fa pinterest square
+	fa google plus square
+	fa google plus
+	fa money
+	fa caret down
+	fa caret up
+	fa caret left
+	fa caret right
+	fa columns
+	fa sort
+	fa sort desc
+	fa sort asc
+	fa envelope
+	fa linkedin
+	fa undo
+	fa gavel
+	fa tachometer
+	fa comment o
+	fa comments o
+	fa bolt
+	fa sitemap
+	fa umbrella
+	fa clipboard
+	fa lightbulb o
+	fa exchange
+	fa cloud download
+	fa cloud upload
+	fa user md
+	fa stethoscope
+	fa suitcase
+	fa bell
+	fa coffee
+	fa cutlery
+	fa file text o
+	fa building o
+	fa hospital o
+	fa ambulance
+	fa medkit
+	fa fighter jet
+	fa beer
+	fa h square
+	fa plus square
+	fa angle double left
+	fa angle double right
+	fa angle double up
+	fa angle double down
+	fa angle left
+	fa angle right
+	fa angle up
+	fa angle down
+	fa desktop
+	fa laptop
+	fa tablet
+	fa mobile
+	fa circle o
+	fa quote left
+	fa quote right
+	fa spinner
+	fa circle
+	fa reply
+	fa github alt
+	fa folder o
+	fa folder open o
+	fa smile o
+	fa frown o
+	fa meh o
+	fa gamepad
+	fa keyboard o
+	fa flag o
+	fa flag checkered
+	fa terminal
+	fa code
+	fa reply all
+	fa star half o
+	fa location arrow
+	fa crop
+	fa code fork
+	fa chain broken
+	fa question
+	fa info
+	fa exclamation
+	fa superscript
+	fa subscript
+	fa eraser
+	fa puzzle piece
+	fa microphone
+	fa microphone slash
+	fa shield
+	fa calendar o
+	fa fire extinguisher
+	fa rocket
+	fa maxcdn
+	fa chevron circle left
+	fa chevron circle right
+	fa chevron circle up
+	fa chevron circle down
+	fa html5
+	fa css3
+	fa anchor
+	fa unlock alt
+	fa bullseye
+	fa ellipsis h
+	fa ellipsis v
+	fa rss square
+	fa play circle
+	fa ticket
+	fa minus square
+	fa minus square o
+	fa level up
+	fa level down
+	fa check square
+	fa pencil square
+	fa external link square
+	fa share square
+	fa compass
+	fa caret square o down
+	fa caret square o up
+	fa caret square o right
+	fa eur
+	fa gbp
+	fa usd
+	fa inr
+	fa jpy
+	fa rub
+	fa krw
+	fa btc
+	fa file
+	fa file text
+	fa sort alpha asc
+	fa sort alpha desc
+	fa sort amount asc
+	fa sort amount desc
+	fa sort numeric asc
+	fa sort numeric desc
+	fa thumbs up
+	fa thumbs down
+	fa youtube square
+	fa youtube
+	fa xing
+	fa xing square
+	fa youtube play
+	fa dropbox
+	fa stack overflow
+	fa instagram
+	fa flickr
+	fa adn
+	fa bitbucket
+	fa bitbucket square
+	fa tumblr
+	fa tumblr square
+	fa long arrow down
+	fa long arrow up
+	fa long arrow left
+	fa long arrow right
+	fa apple
+	fa windows
+	fa android
+	fa linux
+	fa dribbble
+	fa skype
+	fa foursquare
+	fa trello
+	fa female
+	fa male
+	fa gratipay
+	fa sun o
+	fa moon o
+	fa archive
+	fa bug
+	fa vk
+	fa weibo
+	fa renren
+	fa pagelines
+	fa stack exchange
+	fa arrow circle o right
+	fa arrow circle o left
+	fa caret square o left
+	fa dot circle o
+	fa wheelchair
+	fa vimeo square
+	fa try
+	fa plus square o
+	fa space shuttle
+	fa slack
+	fa envelope square
+	fa wordpress
+	fa openid
+	fa university
+	fa graduation cap
+	fa yahoo
+	fa google
+	fa reddit
+	fa reddit square
+	fa stumbleupon circle
+	fa stumbleupon
+	fa delicious
+	fa digg
+	fa pied piper pp
+	fa pied piper alt
+	fa drupal
+	fa joomla
+	fa language
+	fa fax
+	fa building
+	fa child
+	fa paw
+	fa spoon
+	fa cube
+	fa cubes
+	fa behance
+	fa behance square
+	fa steam
+	fa steam square
+	fa recycle
+	fa car
+	fa taxi
+	fa tree
+	fa spotify
+	fa deviantart
+	fa soundcloud
+	fa database
+	fa file pdf o
+	fa file word o
+	fa file excel o
+	fa file powerpoint o
+	fa file image o
+	fa file archive o
+	fa file audio o
+	fa file video o
+	fa file code o
+	fa vine
+	fa codepen
+	fa jsfiddle
+	fa life ring
+	fa circle o notch
+	fa rebel
+	fa empire
+	fa git square
+	fa git
+	fa hacker news
+	fa tencent weibo
+	fa qq
+	fa weixin
+	fa paper plane
+	fa paper plane o
+	fa history
+	fa circle thin
+	fa header
+	fa paragraph
+	fa sliders
+	fa share alt
+	fa share alt square
+	fa bomb
+	fa futbol o
+	fa tty
+	fa binoculars
+	fa plug
+	fa slideshare
+	fa twitch
+	fa yelp
+	fa newspaper o
+	fa wifi
+	fa calculator
+	fa paypal
+	fa google wallet
+	fa cc visa
+	fa cc mastercard
+	fa cc discover
+	fa cc amex
+	fa cc paypal
+	fa cc stripe
+	fa bell slash
+	fa bell slash o
+	fa trash
+	fa copyright
+	fa at
+	fa eyedropper
+	fa paint brush
+	fa birthday cake
+	fa area chart
+	fa pie chart
+	fa line chart
+	fa lastfm
+	fa lastfm square
+	fa toggle off
+	fa toggle on
+	fa bicycle
+	fa bus
+	fa ioxhost
+	fa angellist
+	fa cc
+	fa ils
+	fa meanpath
+	fa buysellads
+	fa connectdevelop
+	fa dashcube
+	fa forumbee
+	fa leanpub
+	fa sellsy
+	fa shirtsinbulk
+	fa simplybuilt
+	fa skyatlas
+	fa cart plus
+	fa cart arrow down
+	fa diamond
+	fa ship
+	fa user secret
+	fa motorcycle
+	fa street view
+	fa heartbeat
+	fa venus
+	fa mars
+	fa mercury
+	fa transgender
+	fa transgender alt
+	fa venus double
+	fa mars double
+	fa venus mars
+	fa mars stroke
+	fa mars stroke v
+	fa mars stroke h
+	fa neuter
+	fa genderless
+	fa facebook official
+	fa pinterest p
+	fa whatsapp
+	fa server
+	fa user plus
+	fa user times
+	fa bed
+	fa viacoin
+	fa train
+	fa subway
+	fa medium
+	fa y combinator
+	fa optin monster
+	fa opencart
+	fa expeditedssl
+	fa battery full
+	fa battery three quarters
+	fa battery half
+	fa battery quarter
+	fa battery empty
+	fa mouse pointer
+	fa i cursor
+	fa object group
+	fa object ungroup
+	fa sticky note
+	fa sticky note o
+	fa cc jcb
+	fa cc diners club
+	fa clone
+	fa balance scale
+	fa hourglass o
+	fa hourglass start
+	fa hourglass half
+	fa hourglass end
+	fa hourglass
+	fa hand rock o
+	fa hand paper o
+	fa hand scissors o
+	fa hand lizard o
+	fa hand spock o
+	fa hand pointer o
+	fa hand peace o
+	fa trademark
+	fa registered
+	fa creative commons
+	fa gg
+	fa gg circle
+	fa tripadvisor
+	fa odnoklassniki
+	fa odnoklassniki square
+	fa get pocket
+	fa wikipedia w
+	fa safari
+	fa chrome
+	fa firefox
+	fa opera
+	fa internet explorer
+	fa television
+	fa contao
+	fa 500px
+	fa amazon
+	fa calendar plus o
+	fa calendar minus o
+	fa calendar times o
+	fa calendar check o
+	fa industry
+	fa map pin
+	fa map signs
+	fa map o
+	fa map
+	fa commenting
+	fa commenting o
+	fa houzz
+	fa vimeo
+	fa black tie
+	fa fonticons
+	fa reddit alien
+	fa edge
+	fa credit card alt
+	fa codiepie
+	fa modx
+	fa fort awesome
+	fa usb
+	fa product hunt
+	fa mixcloud
+	fa scribd
+	fa pause circle
+	fa pause circle o
+	fa stop circle
+	fa stop circle o
+	fa shopping bag
+	fa shopping basket
+	fa hashtag
+	fa bluetooth
+	fa bluetooth b
+	fa percent
+	fa gitlab
+	fa wpbeginner
+	fa wpforms
+	fa envira
+	fa universal access
+	fa wheelchair alt
+	fa question circle o
+	fa blind
+	fa audio description
+	fa volume control phone
+	fa braille
+	fa assistive listening systems
+	fa american sign language interpreting
+	fa deaf
+	fa glide
+	fa glide g
+	fa sign language
+	fa low vision
+	fa viadeo
+	fa viadeo square
+	fa snapchat
+	fa snapchat ghost
+	fa snapchat square
+	fa pied piper
+	fa first order
+	fa yoast
+	fa themeisle
+	fa google plus official
+	fa font awesome
+	fa handshake o
+	fa envelope open
+	fa envelope open o
+	fa linode
+	fa address book
+	fa address book o
+	fa address card
+	fa address card o
+	fa user circle
+	fa user circle o
+	fa user o
+	fa id badge
+	fa id card
+	fa id card o
+	fa quora
+	fa free code camp
+	fa telegram
+	fa thermometer full
+	fa thermometer three quarters
+	fa thermometer half
+	fa thermometer quarter
+	fa thermometer empty
+	fa shower
+	fa bath
+	fa podcast
+	fa window maximize
+	fa window minimize
+	fa window restore
+	fa window close
+	fa window close o
+	fa bandcamp
+	fa grav
+	fa etsy
+	fa imdb
+	fa ravelry
+	fa eercast
+	fa microchip
+	fa snowflake o
+	fa superpowers
+	fa wpexplorer
+	fa meetup
+	oct light bulb
+	oct repo
+	oct repo forked
+	oct repo push
+	oct repo pull
+	oct book
+	oct octoface
+	oct git pull request
+	oct mark github
+	oct cloud download
+	oct cloud upload
+	oct keyboard
+	oct gist
+	oct file code
+	oct file text
+	oct file media
+	oct file zip
+	oct file pdf
+	oct tag
+	oct file directory
+	oct file submodule
+	oct person
+	oct jersey
+	oct git commit
+	oct git branch
+	oct git merge
+	oct mirror
+	oct issue opened
+	oct issue reopened
+	oct issue closed
+	oct star
+	oct comment
+	oct question
+	oct alert
+	oct search
+	oct gear
+	oct radio tower
+	oct tools
+	oct sign out
+	oct rocket
+	oct rss
+	oct clippy
+	oct sign in
+	oct organization
+	oct device mobile
+	oct unfold
+	oct check
+	oct mail
+	oct mail read
+	oct arrow up
+	oct arrow right
+	oct arrow down
+	oct arrow left
+	oct pin
+	oct gift
+	oct graph
+	oct triangle left
+	oct credit card
+	oct clock
+	oct ruby
+	oct broadcast
+	oct key
+	oct repo force push
+	oct repo clone
+	oct diff
+	oct eye
+	oct comment discussion
+	oct mail reply
+	oct primitive dot
+	oct primitive square
+	oct device camera
+	oct device camera video
+	oct pencil
+	oct info
+	oct triangle right
+	oct triangle down
+	oct link
+	oct plus
+	oct three bars
+	oct code
+	oct location
+	oct list unordered
+	oct list ordered
+	oct quote
+	oct versions
+	oct calendar
+	oct lock
+	oct diff added
+	oct diff removed
+	oct diff modified
+	oct diff renamed
+	oct horizontal rule
+	oct arrow small right
+	oct milestone
+	oct checklist
+	oct megaphone
+	oct chevron right
+	oct bookmark
+	oct settings
+	oct dashboard
+	oct history
+	oct link external
+	oct mute
+	oct x
+	oct circle slash
+	oct pulse
+	oct sync
+	oct telescope
+	oct gist secret
+	oct home
+	oct stop
+	oct bug
+	oct logo github
+	oct file binary
+	oct database
+	oct server
+	oct diff ignored
+	oct ellipsis
+	oct no newline
+	oct hubot
+	oct arrow small up
+	oct arrow small down
+	oct arrow small left
+	oct chevron up
+	oct chevron down
+	oct chevron left
+	oct triangle up
+	oct git compare
+	oct logo gist
+	oct file symlink file
+	oct file symlink directory
+	oct squirrel
+	oct globe
+	oct unmute
+	oct mention
+	oct package
+	oct browser
+	oct terminal
+	oct markdown
+	oct dash
+	oct fold
+	oct inbox
+	oct trashcan
+	oct paintcan
+	oct flame
+	oct briefcase
+	oct plug
+	oct circuit board
+	oct mortar board
+	oct law
+	oct thumbsup
+	oct thumbsdown
+	oct desktop download
+	oct beaker
+	oct bell
+	oct watch
+	oct shield
+	oct bold
+	oct text size
+	oct italic
+	oct tasklist
+	oct verified
+	oct smiley
+	oct unverified
+	oct ellipses
+	oct file
+	oct grabber
+	oct plus small
+	oct reply
+	mdi vector square
+	mdi access point
+	mdi access point network
+	mdi account
+	mdi account alert
+	mdi account box
+	mdi account box outline
+	mdi account check
+	mdi account circle
+	mdi account convert
+	mdi account key
+	mdi account location
+	mdi account minus
+	mdi account multiple
+	mdi account multiple outline
+	mdi account multiple plus
+	mdi account network
+	mdi account off
+	mdi account outline
+	mdi account plus
+	mdi account remove
+	mdi account search
+	mdi account star
+	mdi orbit
+	mdi account switch
+	mdi adjust
+	mdi air conditioner
+	mdi airballoon
+	mdi airplane
+	mdi airplane off
+	mdi airplay
+	mdi alarm
+	mdi alarm check
+	mdi alarm multiple
+	mdi alarm off
+	mdi alarm plus
+	mdi album
+	mdi alert
+	mdi alert box
+	mdi alert circle
+	mdi alert octagon
+	mdi alert outline
+	mdi alpha
+	mdi alphabetical
+	mdi amazon
+	mdi amazon clouddrive
+	mdi ambulance
+	mdi amplifier
+	mdi anchor
+	mdi android
+	mdi android debug bridge
+	mdi android studio
+	mdi apple
+	mdi apple finder
+	mdi apple ios
+	mdi apple mobileme
+	mdi apple safari
+	mdi font awesome
+	mdi apps
+	mdi archive
+	mdi arrange bring forward
+	mdi arrange bring to front
+	mdi arrange send backward
+	mdi arrange send to back
+	mdi arrow all
+	mdi arrow bottom left
+	mdi arrow bottom right
+	mdi arrow collapse all
+	mdi arrow down
+	mdi arrow down thick
+	mdi arrow down bold circle
+	mdi arrow down bold circle outline
+	mdi arrow down bold hexagon outline
+	mdi arrow down drop circle
+	mdi arrow down drop circle outline
+	mdi arrow expand all
+	mdi arrow left
+	mdi arrow left thick
+	mdi arrow left bold circle
+	mdi arrow left bold circle outline
+	mdi arrow left bold hexagon outline
+	mdi arrow left drop circle
+	mdi arrow left drop circle outline
+	mdi arrow right
+	mdi arrow right thick
+	mdi arrow right bold circle
+	mdi arrow right bold circle outline
+	mdi arrow right bold hexagon outline
+	mdi arrow right drop circle
+	mdi arrow right drop circle outline
+	mdi arrow top left
+	mdi arrow top right
+	mdi arrow up
+	mdi arrow up thick
+	mdi arrow up bold circle
+	mdi arrow up bold circle outline
+	mdi arrow up bold hexagon outline
+	mdi arrow up drop circle
+	mdi arrow up drop circle outline
+	mdi assistant
+	mdi at
+	mdi attachment
+	mdi audiobook
+	mdi auto fix
+	mdi auto upload
+	mdi autorenew
+	mdi av timer
+	mdi baby
+	mdi backburger
+	mdi backspace
+	mdi backup restore
+	mdi bank
+	mdi barcode
+	mdi barcode scan
+	mdi barley
+	mdi barrel
+	mdi basecamp
+	mdi basket
+	mdi basket fill
+	mdi basket unfill
+	mdi battery
+	mdi battery 10
+	mdi battery 20
+	mdi battery 30
+	mdi battery 40
+	mdi battery 50
+	mdi battery 60
+	mdi battery 70
+	mdi battery 80
+	mdi battery 90
+	mdi battery alert
+	mdi battery charging
+	mdi battery charging 100
+	mdi battery charging 20
+	mdi battery charging 30
+	mdi battery charging 40
+	mdi battery charging 60
+	mdi battery charging 80
+	mdi battery charging 90
+	mdi battery minus
+	mdi battery negative
+	mdi battery outline
+	mdi battery plus
+	mdi battery positive
+	mdi battery unknown
+	mdi beach
+	mdi flask
+	mdi flask empty
+	mdi flask empty outline
+	mdi flask outline
+	mdi beats
+	mdi beer
+	mdi behance
+	mdi bell
+	mdi bell off
+	mdi bell outline
+	mdi bell plus
+	mdi bell ring
+	mdi bell ring outline
+	mdi bell sleep
+	mdi beta
+	mdi bible
+	mdi bike
+	mdi bing
+	mdi binoculars
+	mdi bio
+	mdi biohazard
+	mdi bitbucket
+	mdi black mesa
+	mdi blackberry
+	mdi blender
+	mdi blinds
+	mdi block helper
+	mdi blogger
+	mdi bluetooth
+	mdi bluetooth audio
+	mdi bluetooth connect
+	mdi bluetooth off
+	mdi bluetooth settings
+	mdi bluetooth transfer
+	mdi blur
+	mdi blur linear
+	mdi blur off
+	mdi blur radial
+	mdi bone
+	mdi book
+	mdi book multiple
+	mdi book multiple variant
+	mdi book open
+	mdi book open variant
+	mdi book variant
+	mdi bookmark
+	mdi bookmark check
+	mdi bookmark music
+	mdi bookmark outline
+	mdi bookmark plus outline
+	mdi bookmark plus
+	mdi bookmark remove
+	mdi border all
+	mdi border bottom
+	mdi border color
+	mdi border horizontal
+	mdi border inside
+	mdi border left
+	mdi border none
+	mdi border outside
+	mdi border right
+	mdi border style
+	mdi border top
+	mdi border vertical
+	mdi bowling
+	mdi box
+	mdi box cutter
+	mdi briefcase
+	mdi briefcase check
+	mdi briefcase download
+	mdi briefcase upload
+	mdi brightness 1
+	mdi brightness 2
+	mdi brightness 3
+	mdi brightness 4
+	mdi brightness 5
+	mdi brightness 6
+	mdi brightness 7
+	mdi brightness auto
+	mdi broom
+	mdi brush
+	mdi bug
+	mdi bulletin board
+	mdi bullhorn
+	mdi bus
+	mdi cached
+	mdi cake
+	mdi cake layered
+	mdi cake variant
+	mdi calculator
+	mdi calendar
+	mdi calendar blank
+	mdi calendar check
+	mdi calendar clock
+	mdi calendar multiple
+	mdi calendar multiple check
+	mdi calendar plus
+	mdi calendar remove
+	mdi calendar text
+	mdi calendar today
+	mdi call made
+	mdi call merge
+	mdi call missed
+	mdi call received
+	mdi call split
+	mdi camcorder
+	mdi camcorder box
+	mdi camcorder box off
+	mdi camcorder off
+	mdi camera
+	mdi camera enhance
+	mdi camera front
+	mdi camera front variant
+	mdi camera iris
+	mdi camera party mode
+	mdi camera rear
+	mdi camera rear variant
+	mdi camera switch
+	mdi camera timer
+	mdi candycane
+	mdi car
+	mdi car battery
+	mdi car connected
+	mdi car wash
+	mdi carrot
+	mdi cart
+	mdi cart outline
+	mdi cart plus
+	mdi case sensitive alt
+	mdi cash
+	mdi cash 100
+	mdi cash multiple
+	mdi cash usd
+	mdi cast
+	mdi cast connected
+	mdi castle
+	mdi cat
+	mdi cellphone
+	mdi cellphone android
+	mdi cellphone basic
+	mdi cellphone dock
+	mdi cellphone iphone
+	mdi cellphone link
+	mdi cellphone link off
+	mdi cellphone settings
+	mdi certificate
+	mdi chair school
+	mdi chart arc
+	mdi chart areaspline
+	mdi chart bar
+	mdi chart histogram
+	mdi chart line
+	mdi chart pie
+	mdi check
+	mdi check all
+	mdi checkbox blank
+	mdi checkbox blank circle
+	mdi checkbox blank circle outline
+	mdi checkbox blank outline
+	mdi checkbox marked
+	mdi checkbox marked circle
+	mdi checkbox marked circle outline
+	mdi checkbox marked outline
+	mdi checkbox multiple blank
+	mdi checkbox multiple blank outline
+	mdi checkbox multiple marked
+	mdi checkbox multiple marked outline
+	mdi checkerboard
+	mdi chemical weapon
+	mdi chevron double down
+	mdi chevron double left
+	mdi chevron double right
+	mdi chevron double up
+	mdi chevron down
+	mdi chevron left
+	mdi chevron right
+	mdi chevron up
+	mdi church
+	mdi cisco webex
+	mdi city
+	mdi clipboard
+	mdi clipboard account
+	mdi clipboard alert
+	mdi clipboard arrow down
+	mdi clipboard arrow left
+	mdi clipboard check
+	mdi clipboard outline
+	mdi clipboard text
+	mdi clippy
+	mdi clock
+	mdi clock end
+	mdi clock fast
+	mdi clock in
+	mdi clock out
+	mdi clock start
+	mdi close
+	mdi close box
+	mdi close box outline
+	mdi close circle
+	mdi close circle outline
+	mdi close network
+	mdi close octagon
+	mdi close octagon outline
+	mdi closed caption
+	mdi cloud
+	mdi cloud check
+	mdi cloud circle
+	mdi cloud download
+	mdi cloud outline
+	mdi cloud off outline
+	mdi cloud print
+	mdi cloud print outline
+	mdi cloud upload
+	mdi code array
+	mdi code braces
+	mdi code brackets
+	mdi code equal
+	mdi code greater than
+	mdi code greater than or equal
+	mdi code less than
+	mdi code less than or equal
+	mdi code not equal
+	mdi code not equal variant
+	mdi code parentheses
+	mdi code string
+	mdi code tags
+	mdi codepen
+	mdi coffee
+	mdi coffee to go
+	mdi coin
+	mdi color helper
+	mdi comment
+	mdi comment account
+	mdi comment account outline
+	mdi comment alert
+	oct device desktop
+	mdi comment alert outline
+	mdi comment check
+	mdi comment check outline
+	mdi comment multiple outline
+	mdi comment outline
+	mdi comment plus outline
+	mdi comment processing
+	mdi comment processing outline
+	mdi comment question outline
+	mdi comment remove outline
+	mdi comment text
+	mdi comment text outline
+	mdi compare
+	mdi compass
+	mdi compass outline
+	mdi console
+	mdi contact mail
+	mdi content copy
+	mdi content cut
+	mdi content duplicate
+	mdi content paste
+	mdi content save
+	mdi content save all
+	mdi contrast
+	mdi contrast box
+	mdi contrast circle
+	mdi cookie
+	mdi counter
+	mdi cow
+	mdi credit card
+	mdi credit card multiple
+	mdi credit card scan
+	mdi crop
+	mdi crop free
+	mdi crop landscape
+	mdi crop portrait
+	mdi crop square
+	mdi crosshairs
+	mdi crosshairs gps
+	mdi crown
+	mdi cube
+	mdi cube outline
+	mdi cube send
+	mdi cube unfolded
+	mdi cup
+	mdi cup water
+	mdi currency btc
+	mdi currency eur
+	mdi currency gbp
+	mdi currency inr
+	mdi currency ngn
+	mdi currency rub
+	mdi currency try
+	mdi currency usd
+	mdi cursor default
+	mdi cursor default outline
+	mdi cursor move
+	mdi cursor pointer
+	mdi database
+	mdi database minus
+	mdi database plus
+	mdi debug step into
+	mdi debug step out
+	mdi debug step over
+	mdi decimal decrease
+	mdi decimal increase
+	mdi delete
+	mdi delete variant
+	mdi delta
+	mdi deskphone
+	mdi desktop mac
+	mdi desktop tower
+	mdi details
+	mdi deviantart
+	mdi diamond
+	mdi creation
+	mdi dice 1
+	mdi dice 2
+	mdi dice 3
+	mdi dice 4
+	mdi dice 5
+	mdi dice 6
+	mdi directions
+	mdi disk alert
+	mdi disqus
+	mdi disqus outline
+	mdi division
+	mdi division box
+	mdi dns
+	mdi domain
+	mdi dots horizontal
+	mdi dots vertical
+	mdi download
+	mdi drag
+	mdi drag horizontal
+	mdi drag vertical
+	mdi drawing
+	mdi drawing box
+	mdi dribbble
+	mdi dribbble box
+	mdi drone
+	mdi dropbox
+	mdi drupal
+	mdi duck
+	mdi dumbbell
+	mdi earth
+	mdi earth off
+	mdi edge
+	mdi eject
+	mdi elevation decline
+	mdi elevation rise
+	mdi elevator
+	mdi email
+	mdi email open
+	mdi email outline
+	mdi email secure
+	mdi emoticon
+	mdi emoticon cool
+	mdi emoticon devil
+	mdi emoticon happy
+	mdi emoticon neutral
+	mdi emoticon poop
+	mdi emoticon sad
+	mdi emoticon tongue
+	mdi engine
+	mdi engine outline
+	mdi equal
+	mdi equal box
+	mdi eraser
+	mdi escalator
+	mdi ethernet
+	mdi ethernet cable
+	mdi ethernet cable off
+	mdi etsy
+	mdi evernote
+	mdi exclamation
+	mdi exit to app
+	mdi export
+	mdi eye
+	mdi eye off
+	mdi eyedropper
+	mdi eyedropper variant
+	mdi facebook
+	mdi facebook box
+	mdi facebook messenger
+	mdi factory
+	mdi fan
+	mdi fast forward
+	mdi fax
+	mdi ferry
+	mdi file
+	mdi file chart
+	mdi file check
+	mdi file cloud
+	mdi file delimited
+	mdi file document
+	mdi file document box
+	mdi file excel
+	mdi file excel box
+	mdi file export
+	mdi file find
+	mdi file image
+	mdi file import
+	mdi file lock
+	mdi file multiple
+	mdi file music
+	mdi file outline
+	mdi file pdf
+	mdi file pdf box
+	mdi file powerpoint
+	mdi file powerpoint box
+	mdi file presentation box
+	mdi file send
+	mdi file video
+	mdi file word
+	mdi file word box
+	mdi file xml
+	mdi film
+	mdi filmstrip
+	mdi filmstrip off
+	mdi filter
+	mdi filter outline
+	mdi filter remove
+	mdi filter remove outline
+	mdi filter variant
+	mdi fingerprint
+	mdi fire
+	mdi firefox
+	mdi fish
+	mdi flag
+	mdi flag checkered
+	mdi flag outline
+	mdi flag variant outline
+	mdi flag triangle
+	mdi flag variant
+	mdi flash
+	mdi flash auto
+	mdi flash off
+	mdi flashlight
+	mdi flashlight off
+	mdi flattr
+	mdi flip to back
+	mdi flip to front
+	mdi floppy
+	mdi flower
+	mdi folder
+	mdi folder account
+	mdi folder download
+	mdi folder google drive
+	mdi folder image
+	mdi folder lock
+	mdi folder lock open
+	mdi folder move
+	mdi folder multiple
+	mdi folder multiple image
+	mdi folder multiple outline
+	mdi folder outline
+	mdi folder plus
+	mdi folder remove
+	mdi folder upload
+	mdi food
+	mdi food apple
+	mdi food variant
+	mdi football
+	mdi football australian
+	mdi football helmet
+	mdi format align center
+	mdi format align justify
+	mdi format align left
+	mdi format align right
+	mdi format bold
+	mdi format clear
+	mdi format color fill
+	mdi format float center
+	mdi format float left
+	mdi format float none
+	mdi format float right
+	mdi format header 1
+	mdi format header 2
+	mdi format header 3
+	mdi format header 4
+	mdi format header 5
+	mdi format header 6
+	mdi format header decrease
+	mdi format header equal
+	mdi format header increase
+	mdi format header pound
+	mdi format indent decrease
+	mdi format indent increase
+	mdi format italic
+	mdi format line spacing
+	mdi format list bulleted
+	mdi format list bulleted type
+	mdi format list numbers
+	mdi format paint
+	mdi format paragraph
+	mdi format quote close
+	mdi format size
+	mdi format strikethrough
+	mdi format strikethrough variant
+	mdi format subscript
+	mdi format superscript
+	mdi format text
+	mdi format textdirection l to r
+	mdi format textdirection r to l
+	mdi format underline
+	mdi format wrap inline
+	mdi format wrap square
+	mdi format wrap tight
+	mdi format wrap top bottom
+	mdi forum
+	mdi forward
+	mdi foursquare
+	mdi fridge
+	mdi fridge filled
+	mdi fridge filled bottom
+	mdi fridge filled top
+	mdi fullscreen
+	mdi fullscreen exit
+	mdi function
+	mdi gamepad
+	mdi gamepad variant
+	mdi gas station
+	mdi gate
+	mdi gauge
+	mdi gavel
+	mdi gender female
+	mdi gender male
+	mdi gender male female
+	mdi gender transgender
+	mdi ghost
+	mdi gift
+	mdi git
+	mdi github box
+	mdi github circle
+	mdi glass flute
+	mdi glass mug
+	mdi glass stange
+	mdi glass tulip
+	mdi glassdoor
+	mdi glasses
+	mdi gmail
+	mdi gnome
+	mdi google
+	mdi google cardboard
+	mdi google chrome
+	mdi google circles
+	mdi google circles communities
+	mdi google circles extended
+	mdi google circles group
+	mdi google controller
+	mdi google controller off
+	mdi google drive
+	mdi google earth
+	mdi google glass
+	mdi google nearby
+	mdi google pages
+	mdi google physical web
+	mdi google play
+	mdi google plus
+	mdi google plus box
+	mdi google translate
+	mdi google wallet
+	mdi grid
+	mdi grid off
+	mdi group
+	mdi guitar electric
+	mdi guitar pick
+	mdi guitar pick outline
+	mdi hand pointing right
+	mdi hanger
+	mdi hangouts
+	mdi harddisk
+	mdi headphones
+	mdi headphones box
+	mdi headphones settings
+	mdi headset
+	mdi headset dock
+	mdi headset off
+	mdi heart
+	mdi heart box
+	mdi heart box outline
+	mdi heart broken
+	mdi heart outline
+	mdi help
+	mdi help circle
+	mdi hexagon
+	mdi hexagon outline
+	mdi history
+	mdi hololens
+	mdi home
+	mdi home modern
+	mdi home variant
+	mdi hops
+	mdi hospital
+	mdi hospital building
+	mdi hospital marker
+	mdi hotel
+	mdi houzz
+	mdi houzz box
+	mdi human
+	mdi human child
+	mdi human male female
+	mdi image
+	mdi image album
+	mdi image area
+	mdi image area close
+	mdi image broken
+	mdi image broken variant
+	mdi image filter
+	mdi image filter black white
+	mdi image filter center focus
+	mdi image filter center focus weak
+	mdi image filter drama
+	mdi image filter frames
+	mdi image filter hdr
+	mdi image filter none
+	mdi image filter tilt shift
+	mdi image filter vintage
+	mdi image multiple
+	mdi import
+	mdi inbox arrow down
+	mdi information
+	mdi information outline
+	mdi instagram
+	mdi instapaper
+	mdi internet explorer
+	mdi invert colors
+	mdi jeepney
+	mdi jira
+	mdi jsfiddle
+	mdi keg
+	mdi key
+	mdi key change
+	mdi key minus
+	mdi key plus
+	mdi key remove
+	mdi key variant
+	mdi keyboard
+	mdi keyboard backspace
+	mdi keyboard caps
+	mdi keyboard close
+	mdi keyboard off
+	mdi keyboard return
+	mdi keyboard tab
+	mdi keyboard variant
+	mdi kodi
+	mdi label
+	mdi label outline
+	mdi lan
+	mdi lan connect
+	mdi lan disconnect
+	mdi lan pending
+	mdi language csharp
+	mdi language css3
+	mdi language html5
+	mdi language javascript
+	mdi language php
+	mdi language python
+	mdi language python text
+	mdi laptop
+	mdi laptop chromebook
+	mdi laptop mac
+	mdi laptop windows
+	mdi lastfm
+	mdi launch
+	mdi layers
+	mdi layers off
+	mdi leaf
+	mdi led off
+	mdi led on
+	mdi led outline
+	mdi led variant off
+	mdi led variant on
+	mdi led variant outline
+	mdi library
+	mdi library books
+	mdi library music
+	mdi library plus
+	mdi lightbulb
+	mdi lightbulb outline
+	mdi link
+	mdi link off
+	mdi link variant
+	mdi link variant off
+	mdi linkedin
+	mdi linkedin box
+	mdi linux
+	mdi lock
+	mdi lock open
+	mdi lock open outline
+	mdi lock outline
+	mdi login
+	mdi logout
+	mdi looks
+	mdi loupe
+	mdi lumx
+	mdi magnet
+	mdi magnet on
+	mdi magnify
+	mdi magnify minus
+	mdi magnify plus
+	mdi mail ru
+	mdi map
+	mdi map marker
+	mdi map marker circle
+	mdi map marker multiple
+	mdi map marker off
+	mdi map marker radius
+	mdi margin
+	mdi markdown
+	mdi marker check
+	mdi martini
+	mdi material ui
+	mdi math compass
+	mdi maxcdn
+	mdi medium
+	mdi memory
+	mdi menu
+	mdi menu down
+	mdi menu left
+	mdi menu right
+	mdi menu up
+	mdi message
+	mdi message alert
+	mdi message draw
+	mdi message image
+	mdi message outline
+	mdi message processing
+	mdi message reply
+	mdi message reply text
+	mdi message text
+	mdi message text outline
+	mdi message video
+	mdi microphone
+	mdi microphone off
+	mdi microphone outline
+	mdi microphone settings
+	mdi microphone variant
+	mdi microphone variant off
+	mdi microsoft
+	mdi minecraft
+	mdi minus
+	mdi minus box
+	mdi minus circle
+	mdi minus circle outline
+	mdi minus network
+	mdi monitor
+	mdi monitor multiple
+	mdi more
+	mdi motorbike
+	mdi mouse
+	mdi mouse off
+	mdi mouse variant
+	mdi mouse variant off
+	mdi movie
+	mdi multiplication
+	mdi multiplication box
+	mdi music box
+	mdi music box outline
+	mdi music circle
+	mdi music note
+	mdi music note eighth
+	mdi music note half
+	mdi music note off
+	mdi music note quarter
+	mdi music note sixteenth
+	mdi music note whole
+	mdi nature
+	mdi nature people
+	mdi navigation
+	mdi needle
+	mdi nest protect
+	mdi nest thermostat
+	mdi new box
+	mdi newspaper
+	mdi nfc
+	mdi nfc tap
+	mdi nfc variant
+	mdi nodejs
+	mdi note
+	mdi note outline
+	mdi note plus
+	mdi note plus outline
+	mdi note text
+	mdi notification clear all
+	mdi numeric
+	mdi numeric 0 box
+	mdi numeric 0 box multiple outline
+	mdi numeric 0 box outline
+	mdi numeric 1 box
+	mdi numeric 1 box multiple outline
+	mdi numeric 1 box outline
+	mdi numeric 2 box
+	mdi numeric 2 box multiple outline
+	mdi numeric 2 box outline
+	mdi numeric 3 box
+	mdi numeric 3 box multiple outline
+	mdi numeric 3 box outline
+	mdi numeric 4 box
+	mdi numeric 4 box multiple outline
+	mdi numeric 4 box outline
+	mdi numeric 5 box
+	mdi numeric 5 box multiple outline
+	mdi numeric 5 box outline
+	mdi numeric 6 box
+	mdi numeric 6 box multiple outline
+	mdi numeric 6 box outline
+	mdi numeric 7 box
+	mdi numeric 7 box multiple outline
+	mdi numeric 7 box outline
+	mdi numeric 8 box
+	mdi numeric 8 box multiple outline
+	mdi numeric 8 box outline
+	mdi numeric 9 box
+	mdi numeric 9 box multiple outline
+	mdi numeric 9 box outline
+	mdi numeric 9 plus box
+	mdi numeric 9 plus box multiple outline
+	mdi numeric 9 plus box outline
+	mdi nutrition
+	mdi octagon
+	mdi octagon outline
+	mdi odnoklassniki
+	mdi office
+	mdi oil
+	mdi oil temperature
+	mdi omega
+	mdi onedrive
+	mdi open in app
+	mdi open in new
+	mdi openid
+	mdi opera
+	mdi ornament
+	mdi ornament variant
+	mdi inbox arrow up
+	mdi owl
+	mdi package
+	mdi package down
+	mdi package up
+	mdi package variant
+	mdi package variant closed
+	mdi palette
+	mdi palette advanced
+	mdi panda
+	mdi pandora
+	mdi panorama
+	mdi panorama fisheye
+	mdi panorama horizontal
+	mdi panorama vertical
+	mdi panorama wide angle
+	mdi paper cut vertical
+	mdi paperclip
+	mdi parking
+	mdi pause
+	mdi pause circle
+	mdi pause circle outline
+	mdi pause octagon
+	mdi pause octagon outline
+	mdi paw
+	mdi pen
+	mdi pencil
+	mdi pencil box
+	mdi pencil box outline
+	mdi pencil lock
+	mdi pencil off
+	mdi percent
+	mdi pharmacy
+	mdi phone
+	mdi phone bluetooth
+	mdi phone forward
+	mdi phone hangup
+	mdi phone in talk
+	mdi phone incoming
+	mdi phone locked
+	mdi phone log
+	mdi phone missed
+	mdi phone outgoing
+	mdi phone paused
+	mdi phone settings
+	mdi phone voip
+	mdi pi
+	mdi pi box
+豈	mdi pig
+更	mdi pill
+車	mdi pin
+賈	mdi pin off
+滑	mdi pine tree
+串	mdi pine tree box
+句	mdi pinterest
+龜	mdi pinterest box
+龜	mdi pizza
+契	mdi play
+金	mdi play box outline
+喇	mdi play circle
+奈	mdi play circle outline
+懶	mdi play pause
+癩	mdi play protected content
+羅	mdi playlist minus
+蘿	mdi playlist play
+螺	mdi playlist plus
+裸	mdi playlist remove
+邏	mdi playstation
+樂	mdi plus
+洛	mdi plus box
+烙	mdi plus circle
+珞	mdi plus circle multiple outline
+落	mdi plus circle outline
+酪	mdi plus network
+駱	mdi plus one
+亂	mdi pocket
+卵	mdi pokeball
+欄	mdi polaroid
+爛	mdi poll
+蘭	mdi poll box
+鸞	mdi polymer
+嵐	mdi popcorn
+濫	mdi pound
+藍	mdi pound box
+襤	mdi power
+拉	mdi power settings
+臘	mdi power socket
+蠟	mdi presentation
+廊	mdi presentation play
+朗	mdi printer
+浪	mdi printer 3d
+狼	mdi printer alert
+郎	mdi professional hexagon
+來	mdi projector
+冷	mdi projector screen
+勞	mdi pulse
+擄	mdi puzzle
+櫓	mdi qrcode
+爐	mdi qrcode scan
+盧	mdi quadcopter
+老	mdi quality high
+蘆	mdi quicktime
+虜	mdi radar
+路	mdi radiator
+露	mdi radio
+魯	mdi radio handheld
+鷺	mdi radio tower
+碌	mdi radioactive
+祿	mdi radiobox blank
+綠	mdi radiobox marked
+菉	mdi raspberrypi
+錄	mdi ray end
+鹿	mdi ray end arrow
+論	mdi ray start
+壟	mdi ray start arrow
+弄	mdi ray start end
+籠	mdi ray vertex
+聾	mdi lastpass
+牢	mdi read
+磊	mdi youtube tv
+賂	mdi receipt
+雷	mdi record
+壘	mdi record rec
+屢	mdi recycle
+樓	mdi reddit
+淚	mdi redo
+漏	mdi redo variant
+累	mdi refresh
+縷	mdi regex
+陋	mdi relative scale
+勒	mdi reload
+肋	mdi remote
+凜	mdi rename box
+凌	mdi repeat
+稜	mdi repeat off
+綾	mdi repeat once
+菱	mdi replay
+陵	mdi reply
+讀	mdi reply all
+拏	mdi reproduction
+樂	mdi resize bottom right
+諾	mdi responsive
+丹	mdi rewind
+寧	mdi ribbon
+怒	mdi road
+率	mdi road variant
+異	mdi rocket
+北	mdi rotate 3d
+磻	mdi rotate left
+便	mdi rotate left variant
+復	mdi rotate right
+不	mdi rotate right variant
+泌	mdi router wireless
+數	mdi routes
+索	mdi rss
+參	mdi rss box
+塞	mdi ruler
+省	mdi run fast
+葉	mdi sale
+說	mdi satellite
+殺	mdi satellite variant
+辰	mdi scale
+沈	mdi scale bathroom
+拾	mdi school
+若	mdi screen rotation
+掠	mdi screen rotation lock
+略	mdi screwdriver
+亮	mdi script
+兩	mdi sd
+凉	mdi seal
+梁	mdi seat flat
+糧	mdi seat flat angled
+良	mdi seat individual suite
+諒	mdi seat legroom extra
+量	mdi seat legroom normal
+勵	mdi seat legroom reduced
+呂	mdi seat recline extra
+女	mdi seat recline normal
+廬	mdi security
+旅	mdi security network
+濾	mdi select
+礪	mdi select all
+閭	mdi select inverse
+驪	mdi select off
+麗	mdi selection
+黎	mdi send
+力	mdi server
+曆	mdi server minus
+歷	mdi server network
+轢	mdi server network off
+年	mdi server off
+憐	mdi server plus
+戀	mdi server remove
+撚	mdi server security
+漣	mdi settings
+煉	mdi settings box
+璉	mdi shape plus
+秊	mdi share
+練	mdi share variant
+聯	mdi shield
+輦	mdi shield outline
+蓮	mdi shopping
+連	mdi shopping music
+鍊	mdi shredder
+列	mdi shuffle
+劣	mdi shuffle disabled
+咽	mdi shuffle variant
+烈	mdi sigma
+裂	mdi sign caution
+說	mdi signal
+廉	mdi silverware
+念	mdi silverware fork
+捻	mdi silverware spoon
+殮	mdi silverware variant
+簾	mdi sim
+獵	mdi sim alert
+令	mdi sim off
+囹	mdi sitemap
+寧	mdi skip backward
+嶺	mdi skip forward
+怜	mdi skip next
+玲	mdi skip previous
+瑩	mdi skype
+羚	mdi skype business
+聆	mdi slack
+鈴	mdi sleep
+零	mdi sleep off
+靈	mdi smoking
+領	mdi smoking off
+例	mdi snapchat
+禮	mdi snowman
+醴	mdi soccer
+隸	mdi sofa
+惡	mdi sort
+了	mdi sort alphabetical
+僚	mdi sort ascending
+寮	mdi sort descending
+尿	mdi sort numeric
+料	mdi sort variant
+樂	mdi soundcloud
+燎	mdi source fork
+療	mdi source pull
+蓼	mdi speaker
+遼	mdi speaker off
+龍	mdi speedometer
+暈	mdi spellcheck
+阮	mdi spotify
+劉	mdi spotlight
+杻	mdi spotlight beam
+柳	mdi square inc
+流	mdi square inc cash
+溜	mdi stack overflow
+琉	mdi stairs
+留	mdi star
+硫	mdi star circle
+紐	mdi star half
+類	mdi star off
+六	mdi star outline
+戮	mdi steam
+陸	mdi steering
+倫	mdi step backward
+崙	mdi step backward 2
+淪	mdi step forward
+輪	mdi step forward 2
+律	mdi stethoscope
+慄	mdi stocking
+栗	mdi stop
+率	mdi store
+隆	mdi store 24 hour
+利	mdi stove
+吏	mdi subway variant
+履	mdi sunglasses
+易	mdi swap horizontal
+李	mdi swap vertical
+梨	mdi swim
+泥	mdi switch
+理	mdi sword
+痢	mdi sync
+罹	mdi sync alert
+裏	mdi sync off
+裡	mdi tab
+里	mdi tab unselected
+離	mdi table
+匿	mdi table column plus after
+溺	mdi table column plus before
+吝	mdi table column remove
+燐	mdi table column width
+璘	mdi table edit
+藺	mdi table large
+隣	mdi table row height
+鱗	mdi table row plus after
+麟	mdi table row plus before
+林	mdi table row remove
+淋	mdi tablet
+臨	mdi tablet android
+立	mdi tablet ipad
+笠	mdi tag
+粒	mdi tag faces
+狀	mdi tag multiple
+炙	mdi tag outline
+識	mdi tag text outline
+什	mdi target
+茶	mdi taxi
+刺	mdi teamviewer
+切	mdi telegram
+度	mdi television
+拓	mdi television guide
+糖	mdi temperature celsius
+宅	mdi temperature fahrenheit
+洞	mdi temperature kelvin
+暴	mdi tennis
+輻	mdi tent
+行	mdi terrain
+降	mdi text to speech
+見	mdi text to speech off
+廓	mdi texture
+兀	mdi theater
+嗀	mdi theme light dark
+﨎	mdi thermometer
+﨏	mdi thermometer lines
+塚	mdi thumb down
+﨑	mdi thumb down outline
+晴	mdi thumb up
+﨓	mdi thumb up outline
+﨔	mdi thumbs up down
+凞	mdi ticket
+猪	mdi ticket account
+益	mdi ticket confirmation
+礼	mdi tie
+神	mdi timelapse
+祥	mdi timer
+福	mdi timer 10
+靖	mdi timer 3
+精	mdi timer off
+羽	mdi timer sand
+﨟	mdi timetable
+蘒	mdi toggle switch
+﨡	mdi toggle switch off
+諸	mdi tooltip
+﨣	mdi tooltip edit
+﨤	mdi tooltip image
+逸	mdi tooltip outline
+都	mdi tooltip outline plus
+﨧	mdi tooltip text
+﨨	mdi tooth
+﨩	mdi tor
+飯	mdi traffic light
+飼	mdi train
+館	mdi tram
+鶴	mdi transcribe
+郞	mdi transcribe close
+隷	mdi transfer
+侮	mdi tree
+僧	mdi trello
+免	mdi trending down
+勉	mdi trending neutral
+勤	mdi trending up
+卑	mdi triangle
+喝	mdi triangle outline
+嘆	mdi trophy
+器	mdi trophy award
+塀	mdi trophy outline
+墨	mdi trophy variant
+層	mdi trophy variant outline
+屮	mdi truck
+悔	mdi truck delivery
+慨	mdi tshirt crew
+憎	mdi tshirt v
+懲	mdi tumblr
+敏	mdi tumblr reblog
+既	mdi twitch
+暑	mdi twitter
+梅	mdi twitter box
+海	mdi twitter circle
+渚	mdi twitter retweet
+漢	mdi ubuntu
+煮	mdi umbraco
+爫	mdi umbrella
+琢	mdi umbrella outline
+碑	mdi undo
+社	mdi undo variant
+祉	mdi unfold less horizontal
+祈	mdi unfold more horizontal
+祐	mdi ungroup
+祖	mdi untappd
+祝	mdi upload
+禍	mdi usb
+禎	mdi vector arrange above
+穀	mdi vector arrange below
+突	mdi vector circle
+節	mdi vector circle variant
+練	mdi vector combine
+縉	mdi vector curve
+繁	mdi vector difference
+署	mdi vector difference ab
+者	mdi vector difference ba
+臭	mdi vector intersection
+艹	mdi vector line
+艹	mdi vector point
+著	mdi vector polygon
+褐	mdi vector polyline
+視	mdi vector selection
+謁	mdi vector triangle
+謹	mdi vector union
+賓	mdi verified
+贈	mdi vibrate
+辶	mdi video
+逸	mdi video off
+難	mdi video switch
+響	mdi view agenda
+頻	mdi view array
+恵	mdi view carousel
+𤋮	mdi view column
+舘	mdi view dashboard
+﩮	mdi view day
+﩯	mdi view grid
+並	mdi view headline
+况	mdi view list
+全	mdi view module
+侀	mdi view quilt
+充	mdi view stream
+冀	mdi view week
+勇	mdi vimeo
+勺	mdi venmo
+喝	mdi vk
+啕	mdi vk box
+喙	mdi vk circle
+嗢	mdi vlc
+塚	mdi voicemail
+墳	mdi volume high
+奄	mdi volume low
+奔	mdi volume medium
+婢	mdi volume off
+嬨	mdi vpn
+廒	mdi walk
+廙	mdi wallet
+彩	mdi wallet giftcard
+徭	mdi wallet membership
+惘	mdi wallet travel
+慎	mdi wan
+愈	mdi watch
+憎	mdi watch export
+慠	mdi watch import
+懲	mdi water
+戴	mdi water off
+揄	mdi water percent
+搜	mdi water pump
+摒	mdi weather cloudy
+敖	mdi weather fog
+晴	mdi weather hail
+朗	mdi weather lightning
+望	mdi weather night
+杖	mdi weather partlycloudy
+歹	mdi weather pouring
+殺	mdi weather rainy
+流	mdi weather snowy
+滛	mdi weather sunny
+滋	mdi weather sunset
+漢	mdi weather sunset down
+瀞	mdi weather sunset up
+煮	mdi weather windy
+瞧	mdi weather windy variant
+爵	mdi web
+犯	mdi webcam
+猪	mdi weight
+瑱	mdi weight kilogram
+甆	mdi whatsapp
+画	mdi wheelchair accessibility
+瘝	mdi white balance auto
+瘟	mdi white balance incandescent
+益	mdi white balance iridescent
+盛	mdi white balance sunny
+直	mdi wifi
+睊	mdi wifi off
+着	mdi wii
+磌	mdi wikipedia
+窱	mdi window close
+節	mdi window closed
+类	mdi window maximize
+絛	mdi window minimize
+練	mdi window open
+缾	mdi window restore
+者	mdi windows
+荒	mdi wordpress
+華	mdi worker
+蝹	mdi wrap
+襁	mdi wrench
+覆	mdi wunderlist
+視	mdi xbox
+調	mdi xbox controller
+諸	mdi xbox controller off
+請	mdi xda
+謁	mdi xing
+諾	mdi xing box
+諭	mdi xing circle
+謹	mdi xml
+變	mdi yeast
+贈	mdi yelp
+輸	mdi youtube play
+遲	mdi zip box
+醙	mdi surround sound
+鉶	mdi vector rectangle
+陼	mdi playlist check
+難	mdi format line style
+靖	mdi format line weight
+韛	mdi translate
+響	mdi voice
+頋	mdi opacity
+頻	mdi near me
+鬒	mdi clock alert
+龜	mdi human pregnant
+𢡊	mdi sticker
+𢡄	mdi scale balance
+𣏕	mdi account card details
+㮝	mdi account multiple minus
+䀘	mdi airplane landing
+䀹	mdi airplane takeoff
+𥉉	mdi alert circle outline
+𥳐	mdi altimeter
+𧻓	mdi animation
+齃	mdi book minus
+龎	mdi book open page variant
+﫚	mdi book plus
+﫛	mdi boombox
+﫜	mdi bullseye
+﫝	mdi comment remove
+﫞	mdi camera off
+﫟	mdi check circle
+﫠	mdi check circle outline
+﫡	mdi candle
+﫢	mdi chart bubble
+﫣	mdi credit card off
+﫤	mdi cup off
+﫥	mdi copyright
+﫦	mdi cursor text
+﫧	mdi delete forever
+﫨	mdi delete sweep
+﫩	mdi dice d20
+﫪	mdi dice d4
+﫫	mdi dice d6
+﫬	mdi dice d8
+﫭	mdi disk
+﫮	mdi email open outline
+﫯	mdi email variant
+﫰	mdi ev station
+﫱	mdi food fork drink
+﫲	mdi food off
+﫳	mdi format title
+﫴	mdi google maps
+﫵	mdi heart pulse
+﫶	mdi highway
+﫷	mdi home map marker
+﫸	mdi incognito
+﫹	mdi kettle
+﫺	mdi lock plus
+﫻	mdi login variant
+﫼	mdi logout variant
+﫽	mdi music note bluetooth
+﫾	mdi music note bluetooth off
+﫿	mdi page first
+ﬀ	mdi page last
+ﬁ	mdi phone classic
+ﬂ	mdi priority high
+ﬃ	mdi priority low
+ﬄ	mdi qqchat
+ﬅ	mdi pool
+ﬆ	mdi rounded corner
+﬇	mdi rowing
+﬈	mdi saxophone
+﬉	mdi signal variant
+﬊	mdi stackexchange
+﬋	mdi subdirectory arrow left
+﬌	mdi subdirectory arrow right
+﬍	mdi textbox
+﬎	mdi violin
+﬏	mdi visualstudio
+﬐	mdi wechat
+﬑	mdi watermark
+﬒	mdi file hidden
+ﬓ	mdi application
+ﬔ	mdi arrow collapse
+ﬕ	mdi arrow expand
+ﬖ	mdi bowl
+ﬗ	mdi bridge
+﬘	mdi buffer
+﬙	mdi chip
+﬚	mdi content save settings
+﬛	mdi dialpad
+﬜	mdi dictionary
+יִ	mdi format horizontal align center
+ﬞ	mdi format horizontal align left
+ײַ	mdi format horizontal align right
+ﬠ	mdi format vertical align bottom
+ﬡ	mdi format vertical align center
+ﬢ	mdi format vertical align top
+ﬣ	mdi hackernews
+ﬤ	mdi help circle outline
+ﬥ	mdi json
+ﬦ	mdi lambda
+ﬧ	mdi matrix
+ﬨ	mdi meteor
+﬩	mdi mixcloud
+שׁ	mdi sigma lower
+שׂ	mdi source branch
+שּׁ	mdi source merge
+שּׂ	mdi tune
+אַ	mdi webhook
+אָ	mdi account settings
+אּ	mdi account settings variant
+בּ	mdi apple keyboard caps
+גּ	mdi apple keyboard command
+דּ	mdi apple keyboard control
+הּ	mdi apple keyboard option
+וּ	mdi apple keyboard shift
+זּ	mdi box shadow
+﬷	mdi cards
+טּ	mdi cards outline
+יּ	mdi cards playing outline
+ךּ	mdi checkbox multiple blank circle
+כּ	mdi checkbox multiple blank circle outline
+לּ	mdi checkbox multiple marked circle
+﬽	mdi checkbox multiple marked circle outline
+מּ	mdi cloud sync
+﬿	mdi collage
+נּ	mdi directions fork
+סּ	mdi eraser variant
+﭂	mdi face
+ףּ	mdi face profile
+פּ	mdi file tree
+﭅	mdi format annotation plus
+צּ	mdi gas cylinder
+קּ	mdi grease pencil
+רּ	mdi human female
+שּ	mdi human greeting
+תּ	mdi human handsdown
+וֹ	mdi human handsup
+בֿ	mdi human male
+כֿ	mdi information variant
+פֿ	mdi lead pencil
+ﭏ	mdi map marker minus
+ﭐ	mdi map marker plus
+ﭑ	mdi marker
+ﭒ	mdi message plus
+ﭓ	mdi microscope
+ﭔ	mdi move resize
+ﭕ	mdi move resize variant
+ﭖ	mdi paw off
+ﭗ	mdi phone minus
+ﭘ	mdi phone plus
+ﭙ	mdi pot
+ﭚ	mdi pot mix
+ﭛ	mdi serial port
+ﭜ	mdi shape circle plus
+ﭝ	mdi shape polygon plus
+ﭞ	mdi shape rectangle plus
+ﭟ	mdi shape square plus
+ﭠ	mdi skip next circle
+ﭡ	mdi skip next circle outline
+ﭢ	mdi skip previous circle
+ﭣ	mdi skip previous circle outline
+ﭤ	mdi spray
+ﭥ	mdi stop circle
+ﭦ	mdi stop circle outline
+ﭧ	mdi test tube
+ﭨ	mdi text shadow
+ﭩ	mdi tune vertical
+ﭪ	mdi cart off
+ﭫ	mdi chart gantt
+ﭬ	mdi chart scatterplot hexbin
+ﭭ	mdi chart timeline
+ﭮ	mdi discord
+ﭯ	mdi file restore
+ﭰ	mdi language c
+ﭱ	mdi language cpp
+ﭲ	mdi xaml
+ﭳ	mdi bandcamp
+ﭴ	mdi credit card plus
+ﭵ	mdi itunes
+ﭶ	mdi bow tie
+ﭷ	mdi calendar range
+ﭸ	mdi currency usd off
+ﭹ	mdi flash red eye
+ﭺ	mdi oar
+ﭻ	mdi piano
+ﭼ	mdi weather lightning rainy
+ﭽ	mdi weather snowy rainy
+ﭾ	mdi yin yang
+ﭿ	mdi tower beach
+ﮀ	mdi tower fire
+ﮁ	mdi delete circle
+ﮂ	mdi dna
+ﮃ	mdi hamburger
+ﮄ	mdi gondola
+ﮅ	mdi inbox
+ﮆ	mdi reorder horizontal
+ﮇ	mdi reorder vertical
+ﮈ	mdi security home
+ﮉ	mdi tag heart
+ﮊ	mdi skull
+ﮋ	mdi solid
+ﮌ	mdi alarm snooze
+ﮍ	mdi baby buggy
+ﮎ	mdi beaker
+ﮏ	mdi bomb
+ﮐ	mdi calendar question
+ﮑ	mdi camera burst
+ﮒ	mdi code tags check
+ﮓ	mdi coins
+ﮔ	mdi crop rotate
+ﮕ	mdi developer board
+ﮖ	mdi do not disturb
+ﮗ	mdi do not disturb off
+ﮘ	mdi douban
+ﮙ	mdi emoticon dead
+ﮚ	mdi emoticon excited
+ﮛ	mdi folder star
+ﮜ	mdi format color text
+ﮝ	mdi format section
+ﮞ	mdi gradient
+ﮟ	mdi home outline
+ﮠ	mdi message bulleted
+ﮡ	mdi message bulleted off
+ﮢ	mdi nuke
+ﮣ	mdi power plug
+ﮤ	mdi power plug off
+ﮥ	mdi publish
+ﮦ	mdi restore
+ﮧ	mdi robot
+ﮨ	mdi format rotate 90
+ﮩ	mdi scanner
+ﮪ	mdi subway
+ﮫ	mdi timer sand empty
+ﮬ	mdi transit transfer
+ﮭ	mdi unity
+ﮮ	mdi update
+ﮯ	mdi watch vibrate
+ﮰ	mdi angular
+ﮱ	mdi dolby
+﮲	mdi emby
+﮳	mdi lamp
+﮴	mdi menu down outline
+﮵	mdi menu up outline
+﮶	mdi note multiple
+﮷	mdi note multiple outline
+﮸	mdi plex
+﮹	mdi plane shield
+﮺	mdi account edit
+﮻	mdi alert decagram
+﮼	mdi all inclusive
+﮽	mdi angularjs
+﮾	mdi arrow down box
+﮿	mdi arrow left box
+﯀	mdi arrow right box
+﯁	mdi arrow up box
+﯂	mdi asterisk
+﯃	mdi bomb off
+﯄	mdi bootstrap
+﯅	mdi cards variant
+﯆	mdi clipboard flow
+﯇	mdi close outline
+﯈	mdi coffee outline
+﯉	mdi contacts
+﯊	mdi delete empty
+﯋	mdi earth box
+﯌	mdi earth box off
+﯍	mdi email alert
+﯎	mdi eye outline
+﯏	mdi eye off outline
+﯐	mdi fast forward outline
+﯑	mdi feather
+﯒	mdi find replace
+ﯓ	mdi flash outline
+ﯔ	mdi format font
+ﯕ	mdi format page break
+ﯖ	mdi format pilcrow
+ﯗ	mdi garage
+ﯘ	mdi garage open
+ﯙ	mdi github face
+ﯚ	mdi google keep
+ﯛ	mdi google photos
+ﯜ	mdi heart half full
+ﯝ	mdi heart half
+ﯞ	mdi heart half outline
+ﯟ	mdi hexagon multiple
+ﯠ	mdi hook
+ﯡ	mdi hook off
+ﯢ	mdi infinity
+ﯣ	mdi language swift
+ﯤ	mdi language typescript
+ﯥ	mdi laptop off
+ﯦ	mdi lightbulb on
+ﯧ	mdi lightbulb on outline
+ﯨ	mdi lock pattern
+ﯩ	mdi loop
+ﯪ	mdi magnify minus outline
+ﯫ	mdi magnify plus outline
+ﯬ	mdi mailbox
+ﯭ	mdi medical bag
+ﯮ	mdi message settings
+ﯯ	mdi message settings variant
+ﯰ	mdi minus box outline
+ﯱ	mdi network
+ﯲ	mdi download network
+ﯳ	mdi help network
+ﯴ	mdi upload network
+ﯵ	mdi npm
+ﯶ	mdi nut
+ﯷ	mdi octagram
+ﯸ	mdi page layout body
+ﯹ	mdi page layout footer
+ﯺ	mdi page layout header
+ﯻ	mdi page layout sidebar left
+ﯼ	mdi page layout sidebar right
+ﯽ	mdi pencil circle
+ﯾ	mdi pentagon
+ﯿ	mdi pentagon outline
+ﰀ	mdi pillar
+ﰁ	mdi pistol
+ﰂ	mdi plus box outline
+ﰃ	mdi plus outline
+ﰄ	mdi prescription
+ﰅ	mdi printer settings
+ﰆ	mdi react
+ﰇ	mdi restart
+ﰈ	mdi rewind outline
+ﰉ	mdi rhombus
+ﰊ	mdi rhombus outline
+ﰋ	mdi roomba
+ﰌ	mdi run
+ﰍ	mdi search web
+ﰎ	mdi shovel
+ﰏ	mdi shovel off
+ﰐ	mdi signal 2g
+ﰑ	mdi signal 3g
+ﰒ	mdi signal 4g
+ﰓ	mdi signal hspa
+ﰔ	mdi signal hspa plus
+ﰕ	mdi snowflake
+ﰖ	mdi source commit
+ﰗ	mdi source commit end
+ﰘ	mdi source commit end local
+ﰙ	mdi source commit local
+ﰚ	mdi source commit next local
+ﰛ	mdi source commit start
+ﰜ	mdi source commit start next local
+ﰝ	mdi speaker wireless
+ﰞ	mdi stadium
+ﰟ	mdi svg
+ﰠ	mdi tag plus
+ﰡ	mdi tag remove
+ﰢ	mdi ticket percent
+ﰣ	mdi tilde
+ﰤ	mdi treasure chest
+ﰥ	mdi truck trailer
+ﰦ	mdi view parallel
+ﰧ	mdi view sequential
+ﰨ	mdi washing machine
+ﰩ	mdi webpack
+ﰪ	mdi widgets
+ﰫ	mdi wiiu
+ﰬ	mdi arrow down bold
+ﰭ	mdi arrow down bold box
+ﰮ	mdi arrow down bold box outline
+ﰯ	mdi arrow left bold
+ﰰ	mdi arrow left bold box
+ﰱ	mdi arrow left bold box outline
+ﰲ	mdi arrow right bold
+ﰳ	mdi arrow right bold box
+ﰴ	mdi arrow right bold box outline
+ﰵ	mdi arrow up bold
+ﰶ	mdi arrow up bold box
+ﰷ	mdi arrow up bold box outline
+ﰸ	mdi cancel
+ﰹ	mdi file account
+ﰺ	mdi gesture double tap
+ﰻ	mdi gesture swipe down
+ﰼ	mdi gesture swipe left
+ﰽ	mdi gesture swipe right
+ﰾ	mdi gesture swipe up
+ﰿ	mdi gesture tap
+ﱀ	mdi gesture two double tap
+ﱁ	mdi gesture two tap
+ﱂ	mdi humble bundle
+ﱃ	mdi kickstarter
+ﱄ	mdi netflix
+ﱅ	mdi onenote
+ﱆ	mdi periscope
+ﱇ	mdi uber
+ﱈ	mdi vector radius
+ﱉ	mdi xbox controller battery alert
+ﱊ	mdi xbox controller battery empty
+ﱋ	mdi xbox controller battery full
+ﱌ	mdi xbox controller battery low
+ﱍ	mdi xbox controller battery medium
+ﱎ	mdi xbox controller battery unknown
+ﱏ	mdi clipboard plus
+ﱐ	mdi file plus
+ﱑ	mdi format align bottom
+ﱒ	mdi format align middle
+ﱓ	mdi format align top
+ﱔ	mdi format list checks
+ﱕ	mdi format quote open
+ﱖ	mdi grid large
+ﱗ	mdi heart off
+ﱘ	mdi music
+ﱙ	mdi music off
+ﱚ	mdi tab plus
+ﱛ	mdi volume plus
+ﱜ	mdi volume minus
+ﱝ	mdi volume mute
+ﱞ	mdi unfold less vertical
+ﱟ	mdi unfold more vertical
+ﱠ	mdi taco
+ﱡ	mdi square outline
+ﱢ	mdi square
+ﱣ	mdi circle
+ﱤ	mdi circle outline
+ﱥ	mdi alert octagram
+ﱦ	mdi atom
+ﱧ	mdi ceiling light
+ﱨ	mdi chart bar stacked
+ﱩ	mdi chart line stacked
+ﱪ	mdi decagram
+ﱫ	mdi decagram outline
+ﱬ	mdi dice multiple
+ﱭ	mdi dice d10
+ﱮ	mdi folder open
+ﱯ	mdi guitar acoustic
+ﱰ	mdi loading
+ﱱ	mdi lock reset
+ﱲ	mdi ninja
+ﱳ	mdi octagram outline
+ﱴ	mdi pencil circle outline
+ﱵ	mdi selection off
+ﱶ	mdi set all
+ﱷ	mdi set center
+ﱸ	mdi set center right
+ﱹ	mdi set left
+ﱺ	mdi set left center
+ﱻ	mdi set left right
+ﱼ	mdi set none
+ﱽ	mdi set right
+ﱾ	mdi shield half full
+ﱿ	mdi sign direction
+ﲀ	mdi sign text
+ﲁ	mdi signal off
+ﲂ	mdi square root
+ﲃ	mdi sticker emoji
+ﲄ	mdi summit
+ﲅ	mdi sword cross
+ﲆ	mdi truck fast
+ﲇ	mdi yammer
+ﲈ	mdi cast off
+ﲉ	mdi help box
+ﲊ	mdi timer sand full
+ﲋ	mdi waves
+ﲌ	mdi alarm bell
+ﲍ	mdi alarm light
+ﲎ	mdi android head
+ﲏ	mdi approval
+ﲐ	mdi arrow collapse down
+ﲑ	mdi arrow collapse left
+ﲒ	mdi arrow collapse right
+ﲓ	mdi arrow collapse up
+ﲔ	mdi arrow expand down
+ﲕ	mdi arrow expand left
+ﲖ	mdi arrow expand right
+ﲗ	mdi arrow expand up
+ﲘ	mdi book secure
+ﲙ	mdi book unsecure
+ﲚ	mdi bus articulated end
+ﲛ	mdi bus articulated front
+ﲜ	mdi bus double decker
+ﲝ	mdi bus school
+ﲞ	mdi bus side
+ﲟ	mdi camera gopro
+ﲠ	mdi camera metering center
+ﲡ	mdi camera metering matrix
+ﲢ	mdi camera metering partial
+ﲣ	mdi camera metering spot
+ﲤ	mdi cannabis
+ﲥ	mdi car convertible
+ﲦ	mdi car estate
+ﲧ	mdi car hatchback
+ﲨ	mdi car pickup
+ﲩ	mdi car side
+ﲪ	mdi car sports
+ﲫ	mdi caravan
+ﲬ	mdi cctv
+ﲭ	mdi chart donut
+ﲮ	mdi chart donut variant
+ﲯ	mdi chart line variant
+ﲰ	mdi chili hot
+ﲱ	mdi chili medium
+ﲲ	mdi chili mild
+ﲳ	mdi cloud braces
+ﲴ	mdi cloud tags
+ﲵ	mdi console line
+ﲶ	mdi corn
+ﲷ	mdi currency chf
+ﲸ	mdi currency cny
+ﲹ	mdi currency eth
+ﲺ	mdi currency jpy
+ﲻ	mdi currency krw
+ﲼ	mdi currency sign
+ﲽ	mdi currency twd
+ﲾ	mdi desktop classic
+ﲿ	mdi dip switch
+ﳀ	mdi donkey
+ﳁ	mdi dots horizontal circle
+ﳂ	mdi dots vertical circle
+ﳃ	mdi ear hearing
+ﳄ	mdi elephant
+ﳅ	mdi eventbrite
+ﳆ	mdi food croissant
+ﳇ	mdi forklift
+ﳈ	mdi fuel
+ﳉ	mdi gesture
+ﳊ	mdi google analytics
+ﳋ	mdi google assistant
+ﳌ	mdi headphones off
+ﳍ	mdi high definition
+ﳎ	mdi home assistant
+ﳏ	mdi home automation
+ﳐ	mdi home circle
+ﳑ	mdi language go
+ﳒ	mdi language r
+ﳓ	mdi lava lamp
+ﳔ	mdi led strip
+ﳕ	mdi locker
+ﳖ	mdi locker multiple
+ﳗ	mdi map marker outline
+ﳘ	mdi metronome
+ﳙ	mdi metronome tick
+ﳚ	mdi micro sd
+ﳛ	mdi mixer
+ﳜ	mdi movie roll
+ﳝ	mdi mushroom
+ﳞ	mdi mushroom outline
+ﳟ	mdi nintendo switch
+ﳠ	mdi null
+ﳡ	mdi passport
+ﳢ	mdi periodic table co2
+ﳣ	mdi pipe
+ﳤ	mdi pipe disconnected
+ﳥ	mdi power socket eu
+ﳦ	mdi power socket uk
+ﳧ	mdi power socket us
+ﳨ	mdi rice
+ﳩ	mdi ring
+ﳪ	mdi sass
+ﳫ	mdi send secure
+ﳬ	mdi soy sauce
+ﳭ	mdi standard definition
+ﳮ	mdi surround sound 2 0
+ﳯ	mdi surround sound 3 1
+ﳰ	mdi surround sound 5 1
+ﳱ	mdi surround sound 7 1
+ﳲ	mdi television classic
+ﳳ	mdi textbox password
+ﳴ	mdi thought bubble
+ﳵ	mdi thought bubble outline
+ﳶ	mdi trackpad
+ﳷ	mdi ultra high definition
+ﳸ	mdi van passenger
+ﳹ	mdi van utility
+ﳺ	mdi vanish
+ﳻ	mdi video 3d
+ﳼ	mdi wall
+ﳽ	mdi xmpp
+ﳾ	mdi account multiple plus outline
+ﳿ	mdi account plus outline
+ﴀ	mdi allo
+ﴁ	mdi artist
+ﴂ	mdi atlassian
+ﴃ	mdi azure
+ﴄ	mdi basketball
+ﴅ	mdi battery charging wireless
+ﴆ	mdi battery charging wireless 10
+ﴇ	mdi battery charging wireless 20
+ﴈ	mdi battery charging wireless 30
+ﴉ	mdi battery charging wireless 40
+ﴊ	mdi battery charging wireless 50
+ﴋ	mdi battery charging wireless 60
+ﴌ	mdi battery charging wireless 70
+ﴍ	mdi battery charging wireless 80
+ﴎ	mdi battery charging wireless 90
+ﴏ	mdi battery charging wireless alert
+ﴐ	mdi battery charging wireless outline
+ﴑ	mdi bitcoin
+ﴒ	mdi briefcase outline
+ﴓ	mdi cellphone wireless
+ﴔ	mdi clover
+ﴕ	mdi comment question
+ﴖ	mdi content save outline
+ﴗ	mdi delete restore
+ﴘ	mdi door
+ﴙ	mdi door closed
+ﴚ	mdi door open
+ﴛ	mdi fan off
+ﴜ	mdi file percent
+ﴝ	mdi finance
+ﴞ	mdi flash circle
+ﴟ	mdi floor plan
+ﴠ	mdi forum outline
+ﴡ	mdi golf
+ﴢ	mdi google home
+ﴣ	mdi guy fawkes mask
+ﴤ	mdi home account
+ﴥ	mdi home heart
+ﴦ	mdi hot tub
+ﴧ	mdi hulu
+ﴨ	mdi ice cream
+ﴩ	mdi image off
+ﴪ	mdi karate
+ﴫ	mdi ladybug
+ﴬ	mdi notebook
+ﴭ	mdi phone return
+ﴮ	mdi poker chip
+ﴯ	mdi shape
+ﴰ	mdi shape outline
+ﴱ	mdi ship wheel
+ﴲ	mdi soccer field
+ﴳ	mdi table column
+ﴴ	mdi table of contents
+ﴵ	mdi table row
+ﴶ	mdi table settings
+ﴷ	mdi television box
+ﴸ	mdi television classic off
+ﴹ	mdi television off
+ﴺ	mdi towing
+ﴻ	mdi upload multiple
+ﴼ	mdi video 4k box
+ﴽ	mdi video input antenna
+﴾	mdi video input component
+﴿	mdi video input hdmi
+﵀	mdi video input svideo
+﵁	mdi view dashboard variant
+﵂	mdi vuejs
+﵃	mdi xamarin
+﵄	mdi xamarin outline
+﵅	mdi youtube creator studio
+﵆	mdi youtube gaming
