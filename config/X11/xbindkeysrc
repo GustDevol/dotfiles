@@ -52,11 +52,17 @@
   
 # ===============================================
 
-# Emojipicker
-# ===========
+# Emojipicker / NerdIconPicker
+# ============================
+# Emoji
+# -----
 "emojipicker"
   control + shift + e
-  
+
+# NerdIcon
+# --------
+"nerd_icon_picker"
+  control + shift + n
 # ===============================================
 
 # Screenshots
