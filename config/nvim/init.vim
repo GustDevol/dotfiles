@@ -10,6 +10,7 @@ set laststatus=2
 set bs=2 
 set path+=**
 set encoding=utf-8
+set nohlsearch incsearch
 set tabstop=4 softtabstop=0 expandtab smarttab
 set clipboard=unnamedplus
 set magic

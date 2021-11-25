@@ -15,6 +15,7 @@ set smartindent
 set nocompatible
 set t_Co=256
 set path+=**
+set nohlsearch incsearch
 " set cursorline
 " set guifont=Hack
 
@@ -48,6 +49,11 @@ map pon :set paste
 map pno :set nopaste
 map ;, :tabp<CR>
 map ;. :tabn<CR>
+
+nmap <C-j> ddp
+nmap <C-k> ddkkp
+nmap <C-l> dlp
+nmap <C-h> dlhhp
 
 " autocmd VimEnter * silent exec "! echo -ne '\e[1 q'"
 " autocmd VimLeave * silent exec "! echo -ne '\e[5 q'" 
@@ -374,5 +380,5 @@ function! ToggleHidden()
   endif
 endfunction
 
-nnoremap <C-h> :call ToggleHidden()<CR>
+nnoremap <C-s> :call ToggleHidden()<CR>
 colorscheme gruvbox
