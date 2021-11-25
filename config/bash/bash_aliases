@@ -15,6 +15,7 @@ alias py='python3'
 alias nano='nano -lm$'
 alias diff='diff --color'
 alias media='cd /media/$USER/; cd '
+alias ccat='highlight -O ansi --force'
 alias mycodes='cd /media/$USER/F/mycodes'
 alias clr_cache='sudo sh -c "sync; echo 3 > /proc/sys/vm/drop_caches"'
   
