@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
+# This is an older implementation using gnome-screenshot
+# for newer and current script check the file named 
+# screenshot that uses scrot as screenshot tool.
+
 from sys import argv
 from os import system as command
 from datetime import datetime
