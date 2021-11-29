@@ -72,7 +72,7 @@ xterm*color15:            #eeeeec
 !term*.colorUL:      #87afd7
 
 ! Fonts
-xterm*faceName: monospace,Hack Nerd Font
+xterm*faceName: Hack Nerd Font
 xterm*fontWarnings: 2
 xterm*faceSize: 10
 xterm*allowBoldFonts: true
