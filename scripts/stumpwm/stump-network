@@ -1,4 +1,4 @@
 #!/bin/sh
 
 ping -c 1 8.8.8.8 1>/dev/null 2>/dev/null
-[ $? = 0 ] && echo -n E || echo -n X
+[ $? = 0 ] && echo Connected || echo Not Connected

@@ -53,7 +53,7 @@
 (define-key *root-map* (kbd "M-k") "delete")
 (define-key *root-map* (kbd "q") "delete")
 
-;; Create command and set keybind for checking audio & brightness status
+;; Create command and set keybind for checking audio, brightness & network status
 (defcommand get-audio-status () ()
   (echo 
     (concat 
@@ -66,6 +66,12 @@
     (concat "Backlight : "
         (run-shell-command "xbacklight" t))))
 (define-key *top-map* (kbd "M-B") "get-backlight-status")
+
+(defcommand get-ethernet-status () ()
+  (echo
+    (concat "Ethernet : "
+        (run-shell-command "stump-network" t))))
+(define-key *top-map* (kbd "M-E") "get-ethernet-status")
 
 ;; Modeline
 (setf stumpwm:*mode-line-timeout* 10)
