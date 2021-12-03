@@ -96,6 +96,7 @@ xterm*jumpScroll: true
 xterm*multiScroll: true
 xterm*toolBar: false
 XTerm*TrimSelection: true
+XTerm*termName: xterm-256color
 ! Multiple fonts in xterm
 xterm*font2:            5x7
 
