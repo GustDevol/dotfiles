@@ -50,9 +50,22 @@
 (define-key *root-map* (kbd "X") "logout") ;; Quits StumpWM
 
 ;; Set keybind for window & frame management
+;; Kill/Delete Window
 (define-key *root-map* (kbd "Q") "kill")
 (define-key *root-map* (kbd "M-k") "delete")
 (define-key *root-map* (kbd "q") "delete")
+;; Change frame focus
+(define-key *root-map* (kbd "h") "move-focus left")
+(define-key *root-map* (kbd "j") "move-focus down")
+(define-key *root-map* (kbd "k") "move-focus up")
+(define-key *root-map* (kbd "l") "move-focus right")
+;; Move focused window to other frame
+(define-key *root-map* (kbd "H") "move-window left")
+(define-key *root-map* (kbd "J") "move-window down")
+(define-key *root-map* (kbd "K") "move-window up")
+(define-key *root-map* (kbd "L") "move-window right")
+;; Make focused window fullscreen
+(define-key *root-map* (kbd "M-f") "fullscreen")
 
 ;; Create command and set keybind for checking audio, brightness & network status
 (defcommand get-audio-status () ()
