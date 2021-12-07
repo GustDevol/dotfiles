@@ -3,16 +3,16 @@
 dmenu -v 1>/dev/null 2>/dev/null || exit 0
 
 function launch_configs {
-    conf_path=/home/$USER
-    config=$(ls -a $conf_path | grep -E '^\.' | dmenu -l)
+    conf_path=/home/$USER/.config
+    # config=$(ls -a $conf_path | grep -E '^\.' | dmenu -l)
     while true
     do
-	[ $config == '~~' ] && return 0
-	conf_path=$conf_path/$config
-	[ -d $conf_path ] || break
-	config=$(ls -a $conf_path | dmenu -l 10)
+        config=$(ls -A $conf_path | dmenu -l 10 -p '~~ to exit')
+        [ $config == '~~' ] && return 0
+        conf_path=$conf_path/$config
+        [ -d $conf_path ] || break
     done
-    $TERMINAL -e "$EDITOR $conf_path"
+    $TERMINAL -e $EDITOR $conf_path
     return 0
 }
 
@@ -20,12 +20,12 @@ function launch_scripts {
     script_path=/home/$USER/.scripts
     while true
     do
-	script=$(ls -a $script_path | dmenu -l 10)
-	[ $script == '~~' ] && return 0
-	script_path=$script_path/$script
-	[ -d $script_path ] || break
+        script=$(ls -A $script_path | dmenu -l 10 -p '~~ to exit')
+        [ $script == '~~' ] && return 0
+        script_path=$script_path/$script
+        [ -d $script_path ] || break
     done
-    $TERMINAL -e "$EDITOR $script_path"
+    $TERMINAL -e $EDITOR $script_path
     return 0
 }
 
