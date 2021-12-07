@@ -28,9 +28,8 @@ fi
 
 PATH="$(du $HOME/.scripts/ | awk '{ print $2 }' | tr '\n' ':')$PATH"
 
-export EDITOR=vim
+export EDITOR=nvim
 export TERMINAL=alacritty
 export SUDO_ASKPASS="$HOME/.scripts/dpasswd"
-. "/media/gourish/F/Rust/cargo/env"
 
 export LISP=sbcl
