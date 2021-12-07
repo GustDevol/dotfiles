@@ -117,3 +117,17 @@
   mod4 + shift + z
 
 # ===============================================
+
+# Configs / Scripts Launcher
+# ==========================
+# Configs
+# -------
+"conf_script_launcher configs"
+  mod4 + c
+
+# Scripts
+# -------
+"conf_script_launcher scripts"
+  mod4 + s
+
+# ===============================================
