@@ -36,8 +36,8 @@ highlight Comment cterm=italic gui=italic
 " map leader=" "
 map <F2> :bprev<CR>
 map <F3> :bnext<CR>
-map <F6> :source ~/.vimrc
-map <F4> :e ~/.vimrc 
+map <F6> :source ~/.config/vim/vimrc
+map <F4> :e ~/.config/vim/vimrc 
 map <F9> :w<CR> 
 map <F5> :set relativenumber!<CR>
 " map no :set nonu
@@ -50,10 +50,19 @@ map pno :set nopaste
 map ;, :tabp<CR>
 map ;. :tabn<CR>
 
-nmap <C-j> ddp
-nmap <C-k> ddkkp
-nmap <C-l> dlp
-nmap <C-h> dlhhp
+" Move Text
+" lines up/dowm ( Normal Mode )
+nnoremap <C-j> :m .+1<CR>
+nnoremap <C-k> :m .-2<CR>
+" char left/right ( Normal Mode )
+nnoremap <C-h> dlhP
+nnoremap <C-l> dlp
+" selected up/dowm ( Visual Mode )
+vnoremap <C-j> :m '>+1<CR>gv
+vnoremap <C-k> :m '<-2<CR>gv
+" equally selected block left/right ( Visual Mode )
+vnoremap <C-h> dhPgvhoho
+vnoremap <C-l> dpgvlolo
 
 " autocmd VimEnter * silent exec "! echo -ne '\e[1 q'"
 " autocmd VimLeave * silent exec "! echo -ne '\e[5 q'" 
@@ -217,12 +226,6 @@ let g:NERDToggleCheckAllLines = 1
 
 " X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X
 
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
-
 call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
@@ -355,7 +358,7 @@ Plug 'alvan/vim-closetag'
 
 " Vim Move
 " --------
-Plug 'matze/vim-move'
+" Plug 'matze/vim-move'
 
 " Initialize plugin system
 call plug#end()
