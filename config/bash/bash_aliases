@@ -8,13 +8,13 @@
 # Common Aliases
 # ===============
 
-alias v='vim'
 alias nv='nvim'
 alias rm='rm -i'
 alias py='python3'
 alias less='less -r'
 alias nano='nano -lm$'
 alias diff='diff --color'
+alias v='vim -u ~/.config/vim/vimrc'
 alias media='cd /media/$USER/; cd '
 alias ccat='highlight -lO xterm256 --force'
 alias mycodes='cd /media/$USER/F/mycodes'
