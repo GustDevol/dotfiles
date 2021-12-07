@@ -221,10 +221,7 @@ let g:NERDCommentEmptyLines = 1
 " Enable NERDCommenterToggle to check all selected lines is commented or not 
 let g:NERDToggleCheckAllLines = 1
 
-"-------------------------------------------------------------------------
-
-
-" X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X
+"=========================================================================
 
 call plug#begin('~/.vim/plugged')
 
