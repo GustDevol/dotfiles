@@ -1,0 +1,52 @@
+[global]
+    font = Hack Nerd Font 13 
+    monitor = 0
+    follow = keyboard
+    alignment = center
+    ignore_newline = no
+    format = "<b>%s</b>\n%b"
+    bounce_freq = 0
+    show_age_threshold = -1
+    show_indicators = no
+    stack_duplicates = yes
+    hide_duplicate_count = yes
+    stack_history = yes
+    history_length = 10
+
+    frame_width = 1
+    line_height = 3
+    separator_height = 1
+    padding = 3
+    horizontal_padding = 3
+    width = 600
+    height = 400
+    geometry = "0x0-10+50"
+    offset = 0x20
+    separator_color = frame
+    transparency = 13
+
+[shortcuts]
+    close = ctrl+space
+    close_all = ctrl+shift+space
+    history = ctrl+grave
+    context = ctrl+shift+period
+
+[urgency_low]
+    timeout = 5
+    background = "#2e2e2e"
+    foreground = "#2288ff"
+    frame_color = "#2288ff"
+
+[urgency_normal]
+    timeout = 6
+    background = "#2e2e2e"
+    foreground = "#33ff99"
+    frame_color = "#33ff99"
+
+[urgency_critical]
+    timeout = 10
+    background = "#2e2e2e"
+    foreground = "#ff3344"
+    frame_color = "#ff3344"
+
+# vim: ft=cfg

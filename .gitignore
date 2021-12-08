@@ -6,6 +6,7 @@
 
 !/config/alacritty/
 !/config/bash/
+!/config/dunst/
 !/config/less/
 !/config/nvim/
 !/config/openbox/
