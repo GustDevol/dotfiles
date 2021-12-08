@@ -1,3 +1,3 @@
 #!/bin/sh
 
-notify-send "Memory Usage" "`free -h | awk '{ if (NR == 2) print "\n"$3"\t\t"$6"\n"; else if (NR == 3) print $3 }'`"
+notify-send -u low "💽 Memory Usage" "`free -h | awk '{ if (NR == 2) print "\n"$3"\t\t"$6"\n"; else if (NR == 3) print $3 }'`"
