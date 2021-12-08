@@ -1,5 +1,22 @@
 #!/usr/bin/python3
 
+##
+## A cow with its tongue out, so named it toungie
+## Place the below cow in the file specified
+## /usr/share/cowsay/cows/toungie.cow
+## to use this cow with the wrapper script.
+##
+"""
+$eyes = "@ @";
+$the_cow = <<EOC;
+        $thoughts   ^___^
+         $thoughts  ($eyes)\\_______
+            (_ _)\\       )\\/\\
+              u$tongue ||--WW |
+                  ||    ||
+EOC
+"""
+
 from random import choice
 from os import system
 
