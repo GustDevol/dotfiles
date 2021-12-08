@@ -140,3 +140,17 @@
   mod4 + w
 
 # ===============================================
+
+# Dunst
+# =====
+# Suspend Notifications
+# ---------------------
+"pkill -u $USER -USR1 dunst"
+  mod1 + control + n
+
+# Resume Notifications
+# ---------------------
+"pkill -u $USER -USR2 dunst"
+  mod1 + n
+
+# ===============================================
