@@ -31,5 +31,6 @@ PATH="$(du $HOME/.scripts/ | awk '{ print $2 }' | tr '\n' ':')$PATH"
 export LISP=sbcl
 export EDITOR=nvim
 export TERMINAL=alacritty
+export BROWSER=brave-browser
 export SUDO_ASKPASS="$HOME/.scripts/dpasswd"
 export VIMINIT='let $VIMRC="$HOME/.config/vim/vimrc" | source $VIMRC'
