@@ -1,13 +1,13 @@
 [global]
-    font = Hack Nerd Font 13 
+    font = Hack Nerd Font 11
     monitor = 0
     follow = keyboard
     alignment = center
     ignore_newline = no
     format = "<b>%s</b>\n%b"
-    bounce_freq = 0
+    word_wrap = yes
     show_age_threshold = -1
-    show_indicators = no
+    show_indicators = yes
     stack_duplicates = yes
     hide_duplicate_count = yes
     stack_history = yes
@@ -17,10 +17,10 @@
     line_height = 3
     separator_height = 1
     padding = 3
-    horizontal_padding = 3
+    horizontal_padding = 5
+    geometry = "0x0-10+50"
     width = 600
     height = 400
-    geometry = "0x0-10+50"
     offset = 0x20
     separator_color = frame
     transparency = 13
@@ -34,8 +34,8 @@
 [urgency_low]
     timeout = 5
     background = "#2e2e2e"
-    foreground = "#2288ff"
-    frame_color = "#2288ff"
+    foreground = "#11aaff"
+    frame_color = "#11aaff"
 
 [urgency_normal]
     timeout = 6
