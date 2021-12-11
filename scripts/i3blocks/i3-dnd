@@ -1,40 +1,20 @@
 #!/bin/bash
 
-function mute_notifications {
-        pkill -u "$USER" -USR1 dunst
-        touch /tmp/dnd
-        echo ""
+# silent_bell=
+# bell=
+bell=🔔
+silent_bell=🔕
+
+if [ $BLOCK_BUTTON ] && [ $BLOCK_BUTTON -eq 1 ]; then
+        toggle_notify
+fi
+
+if [ -f /tmp/dnd ]; then
+        echo "$silent_bell"
         echo ""
         echo "#FF5000"
-}
-
-function unmute_notifications {
-        pkill -u "$USER" -USR2 dunst
-        rm /tmp/dnd
-        echo ""
+else
+        echo "$bell"
         echo ""
         echo "#00FF00"
-}
-
-function toggle_notification {
-        if [ -f /tmp/dnd ]; then
-                unmute_notifications
-        else
-                mute_notifications
-        fi
-}
-
-if [ -z $BLOCK_BUTTON ] || [ $BLOCK_BUTTON -eq 1 ];
-then
-        toggle_notification
-else
-        if [ -f /tmp/dnd ]; then
-                echo ""
-                echo ""
-                echo "#FF5000"
-        else
-                echo ""
-                echo ""
-                echo "#00FF00"
-        fi
 fi

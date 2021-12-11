@@ -27,9 +27,11 @@ def status(device):
     muted = is_muted(device)
     status = ''
     if device == "spk":
-        status += '' if muted else ''
+        status += '🔇' if muted else '🔊'
+        # status += '' if muted else ''
     else:
-        status += '' if muted else ''
+        status += '📵' if muted else '🎤'
+        # status += '' if muted else ''
 
     color = "#FF0000" if muted else '#FF8800'
     

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-bat=`acpi | cut -d ' ' -f3-5 | sed -e "s/,//g;s/Discharging//g;s/Charging//g;s/Full//g;s/Unknown//g;s/ 0*/ /g;s/ :/ /g"`
+bat=`acpi | cut -d ' ' -f3-5 | sed -e "s/,//g;s/Discharging/ /g;s/Charging/ /g;s/Full/ /g;s/Unknown/ /g;s/ 0*/ /g;s/ :/ /g"`
 
 val=${bat:2}
 val=${val%%%*}

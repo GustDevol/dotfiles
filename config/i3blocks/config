@@ -1,0 +1,105 @@
+# Custom Separator
+full_text=][
+align=center
+color=#00f666
+separator=false
+separator_block_width=1
+
+# [title]
+# command=xtitle -sl
+# interval=persist
+# separator=false
+# color=#00FFF6
+
+# [separator]
+
+# [free-memory]
+# label=
+# interval=20
+# command=freememory
+
+# [separator]
+
+# [load-avg]
+# label=
+# interval=5
+# command=i3-load
+# color=#AAFF66
+
+
+[start]
+full_text=[
+
+[battery]
+interval=10
+command=i3-battery
+color=#00FE66
+
+
+[separator]
+
+[microphone]
+command=i3-mixer mic
+interval=5
+signal=5
+
+[speaker]
+command=i3-mixer spk
+interval=5
+signal=4
+
+[separator]
+
+[brightness]
+# label=
+label=💡
+command=i3-brightness
+interval=once
+signal=2
+color=#FFCC00
+
+[separator]
+
+# [wifi-net]
+# command=ipnet -w
+# interval=10
+
+[internet]
+label=🌐
+command=i3-networkdata
+interval=10
+color=#66f6ff
+
+[separator]
+
+
+[weather]
+interval=7200
+command=i3-openweather.py
+color=#1FF9FF
+
+[separator]
+
+[date]
+# command=echo " `date +"%Y-%m-%d"`" 
+command=echo "📆 `date +"%Y-%m-%d"`" 
+color=#9969FF
+interval=5
+
+[time]
+# command=echo "  `date +"%T"`"
+command=echo " ⏰ `date +"%T"`"
+color=#68EEFF
+interval=5
+
+[separator]
+
+[notification]
+command=i3-dnd
+interval=once
+signal=3
+
+[end]
+full_text=]
+
+# vim: ft=cfg

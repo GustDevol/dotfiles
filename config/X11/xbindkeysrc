@@ -2,32 +2,32 @@
 # =====
 # Increase Sink Volume
 # --------------------
-"audioctl spk -i 5"
+"audioctl spk -i 5 && pkill -SIGRTMIN+4 i3blocks"
   XF86AudioRaiseVolume
 
 # Decrease Sink Volume
 # --------------------
-"audioctl spk -d 5"
+"audioctl spk -d 5 && pkill -SIGRTMIN+4 i3blocks"
   XF86AudioLowerVolume
 
 # Mute Sink
 # ---------
-"audioctl spk -m"
+"audioctl spk -m && pkill -SIGRTMIN+4 i3blocks"
   XF86AudioMute
 
 # Increase Source Volume
 # ----------------------
-"audioctl mic -i 5"
+"audioctl mic -i 5 && pkill -SIGRTMIN+5 i3blocks"
   shift + XF86AudioRaiseVolume
 
 # Decrease Source Volume
 # ----------------------
-"audioctl mic -d 5"
+"audioctl mic -d 5 && pkill -SIGRTMIN+5 i3blocks"
   shift + XF86AudioLowerVolume
 
 # Mute Source
 # -----------
-"audioctl mic -m"
+"audioctl mic -m && pkill -SIGRTMIN+5 i3blocks"
   shift + XF86AudioMute
   
 # ===============================================
@@ -36,18 +36,18 @@
 # =========
 # Backlight Increase
 # ------------------
-"xbacklight +5"
+"xbacklight +5 && pkill -SIGRTMIN+2 i3blocks"
   XF86MonBrightnessUp
 
-"xbacklight +5"
+"xbacklight +5 && pkill -SIGRTMIN+2 i3blocks"
   XF86Explorer
 
 # Backlight Decrease
 # ------------------
-"xbacklight -5"
+"xbacklight -5 && pkill -SIGRTMIN+2 i3blocks"
   XF86MonBrightnessDown
 
-"xbacklight -5"
+"xbacklight -5 && pkill -SIGRTMIN+2 i3blocks"
   XF86Tools
   
 # ===============================================
@@ -128,7 +128,7 @@
 # Scripts
 # -------
 "conf_script_launcher scripts"
-  mod4 + s
+  mod4 + shift + s
 
 # ===============================================
 
@@ -143,14 +143,9 @@
 
 # Dunst
 # =====
-# Suspend Notifications
-# ---------------------
-"pkill -u $USER -USR1 dunst"
-  mod1 + control + n
-
-# Resume Notifications
-# ---------------------
-"pkill -u $USER -USR2 dunst"
-  mod1 + n
+# Suspend / Resume (Toggle) Notifications
+# ---------------------------------------
+"toggle_notify && pkill -SIGRTMIN+3 i3blocks"
+  mod4 + n
 
 # ===============================================

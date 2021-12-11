@@ -25,9 +25,11 @@ if ARGV.include? "-f"
   temperature = (temperature * 1.8) + 32
   temp_unit = "°F"
 end
-weather += "" + temperature.to_i.to_s + temp_unit
+# weather += "" + temperature.to_i.to_s + temp_unit
+weather += "🌡️" + temperature.to_i.to_s + temp_unit
 
 wind_speed = result["wind"]["speed"].to_f * 3.6
-weather += " 煮" + wind_speed.to_i.to_s + "km/h"
+# weather += " 煮" + wind_speed.to_i.to_s + "km/h"
+weather += " 🍃" + wind_speed.to_i.to_s + "km/h"
 
 puts weather
