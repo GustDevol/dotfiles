@@ -67,7 +67,8 @@
 ;; Make focused window fullscreen
 (define-key *root-map* (kbd "M-f") "fullscreen")
 
-;; Create command and set keybind for checking audio, brightness & network status
+;; Create command and set keybind for checking status of
+;; audio, brightness, network & notifications
 (defcommand get-audio-status () ()
 "Command executes the script stump-audio and gives audio status"
   (echo 
@@ -89,6 +90,14 @@
     (concat "Ethernet : "
         (run-shell-command "stump-network" t))))
 (define-key *top-map* (kbd "M-E") "get-ethernet-status")
+
+(defcommand get-notify-status () ()
+"Command checks for the pressence of '/tmp/dnd' file and 
+returns status if Do not disturb is active or not"
+  (echo 
+    (concat "Do Not Disturb : "
+      (run-shell-command "[ -f /tmp/dnd ] && echo Yes || echo No" t))))
+(define-key *top-map* (kbd "M-N") "get-notify-status")
 
 ;; Modeline
 (setf stumpwm:*mode-line-timeout* 10)
