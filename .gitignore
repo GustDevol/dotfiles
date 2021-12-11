@@ -1,3 +1,4 @@
+/local/share/fonts/.uuid
 /config/*
 
 !/config/compton.conf
