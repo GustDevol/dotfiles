@@ -3,11 +3,11 @@
 dmenu -v 1>/dev/null 2>/dev/null || exit 0
 
 function launch_configs {
-    conf_path=/home/$USER/.config
+    conf_path=$HOME/.config
     # config=$(ls -a $conf_path | grep -E '^\.' | dmenu -l)
     while true
     do
-        config=$(ls -a $conf_path | grep -vE '^\.$' | dmenu -l 10 -p '~~ to exit')
+        config=$(ls -a $conf_path | grep -vE '^\.$' | dmenu -l 10 -p "~~ to exit | `readlink -f $conf_path`")
         [ $config == '~~' ] && return 0
         conf_path=$conf_path/$config
         [ -d $conf_path ] || break
@@ -17,10 +17,10 @@ function launch_configs {
 }
 
 function launch_scripts {
-    script_path=/home/$USER/.scripts
+    script_path=$HOME/.scripts
     while true
     do
-        script=$(ls -a $script_path | grep -vE '^\.$' | dmenu -l 10 -p '~~ to exit')
+        script=$(ls -a $script_path | grep -vE '^\.$' | dmenu -l 10 -p "~~ to exit | `readlink -f $script_path`")
         [ $script == '~~' ] && return 0
         script_path=$script_path/$script
         [ -d $script_path ] || break
