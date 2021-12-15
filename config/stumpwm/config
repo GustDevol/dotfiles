@@ -15,6 +15,17 @@
       stumpwm::*float-window-border* 4
       stumpwm::*float-window-title-height* 20
       *mouse-focus-policy* :click)
+;;    *new-window-preferred-frame* :empty)
+
+;; Add modules to load path
+(stumpwm:add-to-load-path "~/.config/stumpwm/modules/swm-gaps")
+;; Load contrib modules
+(load-module "swm-gaps")
+
+;; Setting size of Gaps
+(setf swm-gaps:*inner-gaps-size* 5)
+(setf swm-gaps:*outer-gaps-size* 5)
+;;(toggle-gaps-on)
 
 ;; Set Prefix key to Meta-m
 (set-prefix-key (kbd "M-m"))
@@ -115,6 +126,5 @@ returns status if Do not disturb is active or not"
 Defined for easier binding purposes."
   (stumpwm:toggle-mode-line (stumpwm:current-screen) (stumpwm:current-head)))
 (define-key *root-map* (kbd "t") "modeline-toggle")
-
 
  ; vim: syntax=lisp
