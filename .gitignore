@@ -13,6 +13,7 @@
 !/config/less/
 !/config/nvim/
 !/config/openbox/
+!/config/polybar/
 !/config/shell/
 !/config/stumpwm/
 !/config/sxiv/

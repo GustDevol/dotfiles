@@ -2,32 +2,32 @@
 # =====
 # Increase Sink Volume
 # --------------------
-"audioctl spk -i 5 && pkill -SIGRTMIN+4 i3blocks"
+"audioctl spk -i 5 && statuptrigger 4"
   XF86AudioRaiseVolume
 
 # Decrease Sink Volume
 # --------------------
-"audioctl spk -d 5 && pkill -SIGRTMIN+4 i3blocks"
+"audioctl spk -d 5 && statuptrigger 4"
   XF86AudioLowerVolume
 
 # Mute Sink
 # ---------
-"audioctl spk -m && pkill -SIGRTMIN+4 i3blocks"
+"audioctl spk -m && statuptrigger 4"
   XF86AudioMute
 
 # Increase Source Volume
 # ----------------------
-"audioctl mic -i 5 && pkill -SIGRTMIN+5 i3blocks"
+"audioctl mic -i 5 && statuptrigger 5"
   shift + XF86AudioRaiseVolume
 
 # Decrease Source Volume
 # ----------------------
-"audioctl mic -d 5 && pkill -SIGRTMIN+5 i3blocks"
+"audioctl mic -d 5 && statuptrigger 5"
   shift + XF86AudioLowerVolume
 
 # Mute Source
 # -----------
-"audioctl mic -m && pkill -SIGRTMIN+5 i3blocks"
+"audioctl mic -m && statuptrigger 5"
   shift + XF86AudioMute
   
 # ===============================================
@@ -36,18 +36,18 @@
 # =========
 # Backlight Increase
 # ------------------
-"xbacklight +5 && pkill -SIGRTMIN+2 i3blocks"
+"xbacklight +5 && statuptrigger 2"
   XF86MonBrightnessUp
 
-"xbacklight +5 && pkill -SIGRTMIN+2 i3blocks"
+"xbacklight +5 && statuptrigger 2"
   XF86Explorer
 
 # Backlight Decrease
 # ------------------
-"xbacklight -5 && pkill -SIGRTMIN+2 i3blocks"
+"xbacklight -5 && statuptrigger 2"
   XF86MonBrightnessDown
 
-"xbacklight -5 && pkill -SIGRTMIN+2 i3blocks"
+"xbacklight -5 && statuptrigger 2"
   XF86Tools
   
 # ===============================================
@@ -145,7 +145,7 @@
 # =====
 # Suspend / Resume (Toggle) Notifications
 # ---------------------------------------
-"toggle_notify && pkill -SIGRTMIN+3 i3blocks"
+"toggle_notify && statuptrigger 3"
   mod4 + n
 
 # ===============================================

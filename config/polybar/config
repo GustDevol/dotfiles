@@ -1,0 +1,202 @@
+;===========================================================
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;===========================================================
+;
+
+[colors]
+background = #1e1e1e
+foreground = #fff7c1
+background-alt = #4f4f4f
+primary = #3399ff
+secondary = #00ff33
+alert = #dd2c40
+
+;===========================================================================================
+
+[bar/pbar]
+width = 100%
+height = 23
+border-size = 3
+line-size = 2
+padding-left = 0
+padding-right = 0
+background = ${colors.background}
+foreground = ${colors.foreground}
+border-color = ${colors.background}
+
+font-0 = Hack Nerd Font:size=11
+font-1 = Noto Color Emoji:scale=11
+font-2 = NotoEmoji Nerd Font:pixelsize=11
+font-3 = IPAGothic:size=11
+
+; module-margin-left = 1
+module-margin-right = 1
+module-padding-left = 1
+module-padding-right = 1
+; modules-center = 
+modules-left = i3
+modules-right = battery volmic volspk backlight internet weather datetime dnd
+
+enable-ipc = true
+override-redirect = false
+wm-restack = i3
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+;===========================================================================================
+
+[module/i3]
+type = internal/i3
+format = <label-state> <label-mode>
+wrapping-scroll = false
+
+label-mode-padding = 0
+label-mode-foreground = #000
+label-mode-background = ${colors.primary}
+
+; Available Tokens
+;	  %name%
+;	  %icon%
+;	  %index%
+;	  %output%
+; focused = Active workspace on focused monitor
+label-focused = %name%
+label-focused-background = ${colors.background-alt}
+label-focused-underline= #ff9900
+label-focused-padding = 1
+
+; unfocused = Inactive workspace on any monitor
+label-unfocused = %name%
+label-unfocused-padding = 1
+
+; visible = Active workspace on unfocused monitor
+label-visible = %name%
+label-visible-background = ${self.label-focused-background}
+label-visible-underline = ${self.label-focused-underline}
+label-visible-padding = ${self.label-focused-padding}
+
+; urgent = Workspace with urgency hint set
+label-urgent = %name%
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 1
+
+
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+
+; strip-wsnumbers = true
+; ws-icon-0 = 一;
+; ws-icon-1 = 二;喇
+
+;===========================================================
+
+[module/battery]
+type = custom/script
+exec = echo " `i3-battery | head -n 1` "
+interval = 10
+format = <label>
+format-background = ${colors.background-alt}
+format-underline = ${colors.secondary}
+
+;===========================================================
+
+[module/volmic]
+type = custom/ipc
+hook-0 = echo " `i3-mixer mic | head -1` "  
+initial = 1
+click-right = polybar-msg hook volmic 1
+click-left = audioctl mic -m && polybar-msg hook volmic 1
+scroll-up = audioctl mic -i 5 && polybar-msg hook volmic 1
+scroll-down = audioctl mic -d 5 && polybar-msg hook volmic 1
+format = <output>
+format-background = ${colors.background-alt}
+format-underline = ${colors.primary}
+
+;===========================================================
+
+[module/volspk]
+type = custom/ipc
+hook-0 = echo " `i3-mixer spk | head -1` "  
+initial = 1
+click-right = polybar-msg hook volspk 1
+click-left = audioctl spk -m && polybar-msg hook volspk 1
+scroll-up = audioctl spk -i 5 && polybar-msg hook volspk 1
+scroll-down = audioctl spk -d 5 && polybar-msg hook volspk 1
+format = <output>
+format-background = ${colors.background-alt}
+format-underline = ${colors.primary}
+format-offset = -10
+
+;===========================================================
+
+[module/backlight]
+type = custom/ipc
+hook-0 = echo " 💡 `i3-brightness` "
+initial = 1
+click-left = polybar-msg hook backlight 1
+scroll-up = xbacklight +5 && polybar-msg hook backlight 1 
+scroll-down = xbacklight -5 && polybar-msg hook backlight 1 
+format = <output>
+format-background = ${colors.background-alt}
+format-underline = ${colors.secondary}
+
+;===========================================================
+
+[module/internet]
+type = custom/script
+exec = echo " 🌐 `i3-networkdata` "
+interval = 10
+format = <label>
+format-background = ${colors.background-alt}
+format-underline = ${colors.primary}
+
+;===========================================================
+
+[module/weather]
+type = custom/ipc
+hook-0 = echo " `i3-openweather.rb | head -1` "
+initial = 1
+click-right = polybar-msg hook weather 1
+format = <output>
+format-background = ${colors.background-alt}
+format-underline = ${colors.secondary}
+
+;===========================================================
+
+[module/datetime]
+type = custom/script
+exec = echo " 📆 `date +"%Y-%m-%d"` ⏰ `date +"%T"` "  
+interval = 10
+format = <label>
+format-background = ${colors.background-alt}
+format-underline = ${colors.primary}
+
+;===========================================================
+
+[module/dnd]
+type = custom/ipc
+hook-0 = echo " `i3-dnd | head -n 1` "
+initial = 1
+click_right = polybar-msg hook dnd 1
+click-left = toggle_notify && polybar-msg hook dnd 1
+format = <output>
+format-background = ${colors.background-alt}
+format-underline = ${colors.secondary}
+
+;===========================================================
+
+[settings]
+throttle-output = 5
+throttle-output-for = 10
+screenchange-reload = true
+
+;===========================================================
+
+; vim:ft=dosini
