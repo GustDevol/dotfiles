@@ -1,11 +1,10 @@
 ! font settings --------------------------------------------------------------
-
-Xft.autohint: true
+Xft.autohint: false
 Xft.antialias: true
 Xft.hinting: true
-Xft.hintstyle: hintslight
-Xft.dpi: 96
-Xft.rgba: rgb
+Xft.hintstyle: hintfull
+Xft.dpi: 96 
+Xft.rgba: none
 Xft.lcdfilter: lcddefault
 
 ! xscreensaver ---------------------------------------------------------------
@@ -20,9 +19,7 @@ xscreensaver.Dialog.dateFont:           -*-fixed-medium-r-*-*-12-*-*-*-*-*-*-*
 xscreensaver.passwd.passwdFont:         -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
 !general dialog box (affects main hostname, username, password text)
 xscreensaver.Dialog.foreground:         #101010
-xscreensaver.Dialog.background:         #D8D8D8
-xscreensaver.Dialog.topShadowColor:     #D8D8D8
-xscreensaver.Dialog.bottomShadowColor:  #D8D8D8
+xscreensaver.Dialog.background:         #D8D8D8 xscreensaver.Dialog.topShadowColor:     #D8D8D8 xscreensaver.Dialog.bottomShadowColor:  #D8D8D8
 xscreensaver.Dialog.Button.foreground:  #101010
 xscreensaver.Dialog.Button.background:  #E5E5E5
 !username/password input box and date text colour
@@ -42,7 +39,7 @@ xscreensaver.passwd.thermometer.width:       8
 
 xterm*background:         #262626
 xterm*foreground:         #eeeeec
-xterm*cursorColor:        #606060
+xterm*cursorColor:        #f06060
 xterm*colorUL:            #8ae234
 xterm*underlineColor:     #92659a
 
@@ -109,3 +106,74 @@ xterm*translations: #override \
     Ctrl <Key> plus: larger-vt-font() \n\
     Ctrl <Key> KP_Subtract: smaller-vt-font() \n\
     Ctrl <Key> KP_Add: larger-vt-font()
+
+! URxvt ----------------------------------------------------------------------
+
+!! URxvt Colorscheme
+URxvt.color0:  #0b0107
+URxvt.color1:  #cc241d
+URxvt.color2:  #98971a
+URxvt.color3:  #d79921
+URxvt.color4:  #4585bb
+URxvt.color5:  #b16286
+URxvt.color6:  #689d6a
+URxvt.color7:  #7c6f64
+URxvt.color8:  #928374
+URxvt.color9:  #9d0006
+URxvt.color10: #79740e
+URxvt.color11: #b57614
+URxvt.color12: #076678
+URxvt.color13: #8f3f71
+URxvt.color14: #427b58
+URxvt.color15: #fbf1c7
+
+
+!! URxvt Appearance
+URxvt.font: xft:Hack:style=Regular:size=9,xft:NotoEmoji Nerd Font:size=9
+URxvt.boldFont: xft:Hack:style=Bold:size=10
+URxvt.italicFont: xft:Hack:style=Italic:size=10
+URxvt.letterSpace: -1
+URxvt.lineSpace: 0
+URxvt.geometry: 92x24
+URxvt.internalBorder: 3
+URxvt.transparent: false
+URxvt.foreground: #fbf1c7
+URxvt.background: [95]#1d1f21
+URxvt.cursorBlink: false
+URxvt.cursorColor: #FF00FF
+URxvt.cursorUnderline: false
+URxvt.saveline: 500
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.urgentOnBell: true
+URxvt.depth: 32
+URxvt.iso14755: false
+
+!! Common Keybinds for Navigations
+URxvt.keysym.Control-Shift-K: command:\033]720;1\007
+URxvt.keysym.Control-Shift-J: command:\033]721;1\007
+URxvt.keysym.Control-Up: \033[1;5A
+URxvt.keysym.Control-Down: \033[1;5B
+URxvt.keysym.Control-Right: \033[1;5C
+URxvt.keysym.Control-Left: \033[1;5D
+
+!! Copy Paste & Other Extensions
+URxvt.perl-lib: /home/gourish/.scripts/urxvt/perl
+URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select,resize-font
+URxvt.copyCommand: xclip -i -selection clipboard
+URxvt.pasteCommand: xclip -o -selection clipboard
+URxvt.keyboard-select.clipboard: true
+URxvt.keysym.Control-Shift-C: perl:clipboard:copy
+URxvt.keysym.Control-Shift-V: perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.Control-Shift-X: perl:keyboard-select:search
+URxvt.keysym.Control-Shift-U: perl:url-select:select_next
+URxvt.keysym.C-minus: resize-font:smaller
+URxvt.keysym.C-plus: resize-font:bigger
+URxvt.keysym.C-equal: resize-font:reset
+URxvt.keysym.C-question: resize-font:show
+URxvt.resize-font.step: 1
+URxvt.urlLauncher: xdg-open
+URxvt.underlineURLs: true
+URxvt.urlButton: 1
