@@ -166,7 +166,7 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        font pango:Hack Nerd Font 12
+        font pango:Hack Nerd Font 11
         position top
         status_command i3blocks
         tray_output primary
@@ -200,10 +200,66 @@ bar {
 for_window [class="^.*"] border pixel 0
 new_window 1pixel
 
-# remove edge borders
-hide_edge_borders both
+# Remove edge borders
+# hide_edge_borders both 
 
 client.focused #859900 #00ffaa #000000 #859900
+
+# i3 Gaps
+# =======
+hide_edge_borders smart_no_gaps
+
+# Activate smart borders (always)
+smart_borders on
+
+# Activate smart borders (only when there are effectively no gaps)
+smart_borders no_gaps
+
+# Only enable gaps on a workspace when there is at least one container
+smart_gaps on
+
+# Only enable outer gaps when there is exactly one container
+smart_gaps inverse_outer
+
+set $mode_gaps Gaps: (g) gaps, (n) no gaps, (o) outer, (i) inner
+set $mode_gaps_outer Outer Gaps: k|j|0 (global), Shift + k|j|0 (local)
+set $mode_gaps_inner Inner Gaps: k|j|0 (global), Shift + k|j|0 (local)
+bindsym $mod+shift+t mode "$mode_gaps"
+
+mode "$mode_gaps" {
+        bindsym g      gaps inner all set 6; gaps outer all set 2
+        bindsym n      gaps inner all set 0; gaps outer all set 0
+        bindsym o      mode "$mode_gaps_outer"
+        bindsym i      mode "$mode_gaps_inner"
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+mode "$mode_gaps_inner" {
+        bindsym k gaps inner all plus 5
+        bindsym j gaps inner all minus 5
+        bindsym 0 gaps inner all set 0
+
+        bindsym Shift+k gaps inner current plus 5
+        bindsym Shift+j gaps inner current minus 5
+        bindsym Shift+0 gaps inner current set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+mode "$mode_gaps_outer" {
+        bindsym k gaps outer all plus 5
+        bindsym j gaps outer all minus 5
+        bindsym 0 gaps outer all set 0
+
+        bindsym Shift+k gaps outer current plus 5
+        bindsym Shift+j gaps outer current minus 5
+        bindsym Shift+0 gaps outer current set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
 
 # Web browser
 bindsym $mod+shift+w exec brave-browser

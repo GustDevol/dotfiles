@@ -5,8 +5,9 @@ bat=`acpi | cut -d ' ' -f3-5 | sed -e "s/,//g;s/Discharging/ï‰‚ /g;s/Charging/ï‡
 val=${bat:2}
 val=${val%%%*}
 
-echo $bat
-echo "$val"
+echo "$bat"
+# echo "$val"
+echo ""
 if [ $val -gt 60 ]; then
         echo "#00FE66"
 elif [ $val -gt 30 ]; then

@@ -25,12 +25,12 @@ volume=$(audioctl -v $device)%
     
 if [ $mute_status == 'yes' ]; then
     # [ $device == 'spk' ] && echo ''$volume || echo ''$volume
-    [ $device == 'spk' ] && echo '🔇'$volume || echo '📵'$volume
+    [ $device == 'spk' ] && echo '🔇 '$volume || echo '📵 '$volume
     echo ''
     echo '#FF0000'
 else
     # [ $device == 'spk' ] && echo ''$volume || echo ''$volume
-    [ $device == 'spk' ] && echo '🔊'$volume || echo '🎤'$volume
+    [ $device == 'spk' ] && echo '🔊 '$volume || echo '🎤 '$volume
     echo ''
     echo '#FF8800'
 fi

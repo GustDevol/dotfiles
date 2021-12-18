@@ -3,7 +3,7 @@ full_text=][
 align=center
 color=#00f666
 separator=false
-separator_block_width=1
+separator_block_width=2
 
 # [title]
 # command=xtitle -sl
@@ -42,6 +42,9 @@ color=#00FE66
 command=i3-mixer mic
 interval=5
 signal=5
+
+[spacer]
+full_text= 
 
 [speaker]
 command=i3-mixer spk
@@ -84,13 +87,13 @@ color=#1FF9FF
 # command=echo " `date +"%Y-%m-%d"`" 
 command=echo "📆 `date +"%Y-%m-%d"`" 
 color=#9969FF
-interval=5
+interval=10
 
 [time]
 # command=echo "  `date +"%T"`"
 command=echo " ⏰ `date +"%T"`"
 color=#68EEFF
-interval=5
+interval=10
 
 [separator]
 
