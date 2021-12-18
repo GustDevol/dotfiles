@@ -26,12 +26,12 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-PATH="$(du $HOME/.scripts/ | awk '{ print $2 }' | tr '\n' ':')$PATH"
+PATH="$(du $HOME/.scripts/ | awk '{ print $2 }' | grep -vE '(urxvt|helpers|deprecated)' | tr '\n' ':')$PATH"
 
 export LISP=sbcl
 export EDITOR=nvim
 export TERMINAL=alacritty
-export STATUSBAR=i3blocks
 export BROWSER=brave-browser
+export LOCKER="xscreensaver-command -lock"
 export SUDO_ASKPASS="$HOME/.scripts/dpasswd"
 export VIMINIT='let $VIMRC="$HOME/.config/vim/vimrc" | source $VIMRC'
