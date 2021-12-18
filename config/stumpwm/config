@@ -15,20 +15,43 @@
       stumpwm::*float-window-border* 4
       stumpwm::*float-window-title-height* 20
       *mouse-focus-policy* :click)
-;;    *new-window-preferred-frame* :empty)
+;    *new-window-preferred-frame* :empty)
 
 ;; Add modules to load path
 (stumpwm:add-to-load-path "~/.config/stumpwm/modules/swm-gaps")
 ;; Load contrib modules
 (load-module "swm-gaps")
 
-;; Setting size of Gaps
-(setf swm-gaps:*inner-gaps-size* 5)
-(setf swm-gaps:*outer-gaps-size* 5)
-;;(toggle-gaps-on)
-
 ;; Set Prefix key to Meta-m
 (set-prefix-key (kbd "M-m"))
+
+;; Setting size of Gaps
+(setf swm-gaps:*inner-gaps-size* 6)
+; (setf swm-gaps:*outer-gaps-size* 6)
+;; Set keybind for toggling Gaps
+(define-key *root-map* (kbd "T") "toggle-gaps")
+
+;; Command to change gaps on the fly
+;; Reset Gap
+(defcommand reset-gap () ()
+"Reset inner gap to 6"
+  (setf swm-gaps:*inner-gaps-size* 6)
+  (swm-gaps:toggle-gaps-on))
+;; Decrease Gap
+(defcommand dec-gap () ()
+"Decrease inner gap by 2"
+  (if (> swm-gaps:*inner-gaps-size* 0)
+    (setf swm-gaps:*inner-gaps-size* (- swm-gaps:*inner-gaps-size* 2)))
+  (swm-gaps:toggle-gaps-on))
+;; Increase Gap
+(defcommand inc-gap () ()
+"Increase inner gap by 2"
+  (setf swm-gaps:*inner-gaps-size* (+ swm-gaps:*inner-gaps-size* 2))
+  (swm-gaps:toggle-gaps-on))
+;; Set keybind for changing gaps
+(define-key *root-map* (kbd "+") "reset-gap")
+(define-key *root-map* (kbd "=") "inc-gap")
+(define-key *root-map* (kbd "-") "dec-gap")
 
 ;; Setting up Groups/Workspaces name
 (defvar *workspaces* (list "1" "2" "3" "4" "5" "6" "7" "8" "9" "10"))
@@ -36,6 +59,8 @@
 ;; Create Groups/Workspaces
 (dolist (workspace (cdr *workspaces*))
   (stumpwm:gnewbg workspace))
+;; Create a floating group
+(stumpwm:gnewbg-float "Floaty")
 
 ;; Set keymaps for changing groups and moving windows to groups
 (defvar *move-group-kbd* (list ")" "!" "@" "#" "$" "%" "^" "&" "*" "("))
@@ -43,6 +68,9 @@
   (let ((workspace (write-to-string y)))
     (define-key *root-map* (kbd workspace) (concat "gselect " workspace))
     (define-key *root-map* (kbd (nth y *move-group-kbd*)) (concat "gmove-and-follow " workspace))))
+;; Keybind to switch / Move to floating group
+(define-key *root-map* (kbd "`") "gselect Floaty")
+(define-key *root-map* (kbd "~") "gmove-and-follow Floaty")
 
 ;; Set keybind for stumpwm exec and dmenu
 (define-key *root-map* (kbd "D") "exec")
@@ -114,12 +142,12 @@ returns status if Do not disturb is active or not"
 (setf stumpwm:*mode-line-timeout* 10)
 (stumpwm:toggle-mode-line (stumpwm:current-screen) (stumpwm:current-head))
 (setf stumpwm:*screen-mode-line-format*
-      (list "%n | "
-            "%W | "
+      (list "%g | "
+            "%W"
             "^>"
             ; '(:eval (concat (run-shell-command "stump-network" t) " | "))
-            '(:eval (concat (run-shell-command "stump-battery" t) " | "))
-            '(:eval (run-shell-command "stump-datetime" t))))
+            '(:eval (concat " | " (run-shell-command "stump-battery" t)))
+            '(:eval (concat " | " (run-shell-command "stump-datetime" t)))))
 
 (defcommand modeline-toggle () ()
 "Command toggles stump modeline by calling stumpwm:toggle-mode-line.
@@ -127,4 +155,4 @@ Defined for easier binding purposes."
   (stumpwm:toggle-mode-line (stumpwm:current-screen) (stumpwm:current-head)))
 (define-key *root-map* (kbd "t") "modeline-toggle")
 
- ; vim: syntax=lisp
+ ; vim: filetype=lisp
