@@ -16,5 +16,5 @@ if [ $polybar = 1 ]; then
     esac
 else
     pgrep i3blocks > /dev/null && bar=i3blocks || bar=lemon
-    pkill -SIGRTMIN+$arg $bar
+    pkill -x -SIGRTMIN+$arg $bar
 fi
