@@ -19,14 +19,17 @@ try:
         temperature = (temperature * 1.8) + 32
         temp_unit = "°F"
 
-    weather += "🌡️" + str(int(temperature)) + temp_unit
-    # weather += "" + str(int(temperature)) + temp_unit
-
     wind_speed = float(result["wind"]["speed"]) * 3.6
-    weather += " 🍃" + str(int(wind_speed)) + "km/h"
-    # weather += " 煮" + str(int(wind_speed)) + "km/h"
 
-    print(weather)
+    if "--nerd" in argv:
+        weather += "" + str(int(temperature)) + temp_unit
+        weather += " 煮" + str(int(wind_speed)) + "km/h"
+    else:
+        weather += "🌡️" + str(int(temperature)) + temp_unit
+        weather += " 🍃" + str(int(wind_speed)) + "km/h"
+
+    print(weather, end="\n\n")
+    print('#1FF9FF')
 except error.URLError as err:
     print("  ", end="\n\n")
     print('#FF0000')

@@ -1,0 +1,22 @@
+#!/bin/sh
+
+# Stop lemonbar and related processes
+pkill -x lemonbar
+pkill -x lemon
+
+# Launch lemonbar and feed it with output of script lemon.
+~/.config/lemonbar/lemon | lemonbar -p -a 25 -u 2 \
+    -F '#fff7c1' -B '#1e1e1e' \
+    -f 'Hack-11' \
+    -f 'NotoEmoji Nerd Font-11' \
+    -f 'IPAGothic' | $SHELL &
+    # -f 'Noto Color Emoji' \
+
+if [ `pgrep -x i3` ]; then
+    i3-msg -t subscribe -m '["workspace"]' | \
+        while read line
+        do
+            echo $line | grep -vE '"change":"init"' >> /dev/null \
+                && pkill -x -SIGRTMIN+6 lemon
+        done
+fi

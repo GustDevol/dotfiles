@@ -1,0 +1,122 @@
+#!/bin/bash
+
+# Declare necessary variables
+bgalt="#4f4f4f"
+bat=
+spk=
+mic=
+bklt=
+net=
+temp=
+dt=
+dnd=
+
+# Trap signal to update statuses
+trap 'backlight' RTMIN+2
+trap 'notification_dnd' RTMIN+3
+trap 'speaker' RTMIN+4
+trap 'microphone' RTMIN+5
+trap 'workspaces' RTMIN+6
+trap 'weather' RTMIN+7
+
+
+workspaces() {
+    wks=$( wmctrl -d | awk '{ if ($2 == "*") printf "%%{B#4f4f4f}%%{U#ff6633}%%{+u} %s %%{-u}%%{U-}%%{B-}",$9; else printf "%%{A:wmctrl -s %s:} %s %%{A}",$1,$9 }' )
+}
+
+
+battery() {
+    batinfo=($(i3-battery))
+    bilen=$((${#batinfo[@]}-1))
+
+    bat="%{B$bgalt}%{U${batinfo[-1]}}%{+u} ${batinfo[@]:0:$bilen} %{-u}%{U-}%{B-}" 
+}
+
+
+microphone() {
+    micinfo=($(i3-mixer mic))
+    right_click="pkill -x -SIGRTMIN+5 lemon"
+    left_click="audioctl mic -m && $right_click"
+    scroll_up="audioctl mic -i 5 && $right_click"
+    scroll_down="audioctl mic -d 5 && $right_click"
+
+    mic="%{A:$left_click:}%{A3:$right_click:}%{A4:$scroll_up:}%{A5:$scroll_down:}\
+%{B$bgalt}%{U${micinfo[-1]}}%{+u} ${micinfo[@]:0:2} %{-u}%{U-}%{B-}\
+%{A}%{A}%{A}%{A}"
+}
+
+
+speaker() {
+    spkinfo=($(i3-mixer spk))
+    right_click="pkill -x -SIGRTMIN+4 lemon"
+    left_click="audioctl spk -m && $right_click"
+    scroll_up="audioctl spk -i 5 && $right_click"
+    scroll_down="audioctl spk -d 5 && $right_click"
+
+    spk="%{A:$left_click:}%{A3:$right_click:}%{A4:$scroll_up:}%{A5:$scroll_down:}\
+%{B$bgalt}%{U${spkinfo[-1]}}%{+u} ${spkinfo[@]:0:2} %{-u}%{U-}%{B-}\
+%{A}%{A}%{A}%{A}"
+}
+
+
+backlight() {
+    right_click="pkill -x -SIGRTMIN+2 lemon"
+    scroll_up="xbacklight +5 && $right_click"
+    scroll_down="xbacklight -5 && $right_click"
+
+    bklt="%{A3:$right_click:}%{A4:$scroll_up:}%{A5:$scroll_down:}\
+%{B$bgalt}%{U#ffaa00}%{+u} 💡 `i3-brightness` %{U-}%{-u}%{B-}\
+%{A}%{A}%{A}"
+}
+
+
+weather() {
+    tinfo=($(i3-openweather.rb --nerd))
+    tilen=$((${#tinfo[@]}-1))
+    right_click="pkill -x -SIGRTMIN+7 lemon"
+
+    temp="%{A3:$right_click:}%{B$bgalt}%{U${tinfo[-1]}}%{+u} ${tinfo[@]:0:$tilen} %{-u}%{U-}%{B-}%{A}"
+}
+
+
+network() {
+    net="%{B$bgalt}%{U#999aff}%{+u} 🌐 `i3-networkdata` %{U-}%{-u}%{B-}"
+}
+
+
+datetime() {
+    dt="%{B$bgalt}%{U#3399ff}%{+u} 📆 `date +'%Y-%m-%d'` ⏰ `date +'%T'` %{U-}%{-u}%{B-}"
+}
+
+
+notification_dnd() {
+    dndinfo=($(i3-dnd))
+    left_click="pkill -x -SIGRTMIN+3 lemon"
+
+    dnd="%{A:$left_click:}%{B$bgalt}%{U${dndinfo[-1]}}%{+u} ${dndinfo[0]} %{-u}%{U-}%{B-}%{A}"
+}
+
+
+update() {
+    battery
+    network
+    datetime
+    echo "$wks %{r}$bat $mic$spk $bklt $net $temp $dt $dnd"
+}
+
+
+# Initialize statuses
+workspaces
+speaker
+microphone
+backlight
+weather
+notification_dnd
+
+# Start update loop of 10s.
+while :
+do
+    update
+    sleep 10 &
+    wait
+done
