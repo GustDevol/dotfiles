@@ -5,7 +5,7 @@ pkill -x lemonbar
 pkill -x lemon
 
 # Launch lemonbar and feed it with output of script lemon.
-~/.config/lemonbar/lemon | lemonbar -p -a 25 -u 2 \
+~/.config/lemonbar/lemon | lemonbar -p -a 25 -u 3 \
     -F '#fff7c1' -B '#1e1e1e' \
     -f 'Hack-11' \
     -f 'NotoEmoji Nerd Font-11' \

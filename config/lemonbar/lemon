@@ -80,7 +80,7 @@ weather() {
 
 
 network() {
-    net="%{B$bgalt}%{U#999aff}%{+u} 🌐 `i3-networkdata` %{U-}%{-u}%{B-}"
+    net="%{B$bgalt}%{U#779aff}%{+u} 🌐 `i3-networkdata` %{U-}%{-u}%{B-}"
 }
 
 
