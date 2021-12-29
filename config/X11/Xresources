@@ -19,7 +19,9 @@ xscreensaver.Dialog.dateFont:           -*-fixed-medium-r-*-*-12-*-*-*-*-*-*-*
 xscreensaver.passwd.passwdFont:         -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
 !general dialog box (affects main hostname, username, password text)
 xscreensaver.Dialog.foreground:         #101010
-xscreensaver.Dialog.background:         #D8D8D8 xscreensaver.Dialog.topShadowColor:     #D8D8D8 xscreensaver.Dialog.bottomShadowColor:  #D8D8D8
+xscreensaver.Dialog.background:         #D8D8D8
+xscreensaver.Dialog.topShadowColor:     #D8D8D8
+xscreensaver.Dialog.bottomShadowColor:  #D8D8D8
 xscreensaver.Dialog.Button.foreground:  #101010
 xscreensaver.Dialog.Button.background:  #E5E5E5
 !username/password input box and date text colour

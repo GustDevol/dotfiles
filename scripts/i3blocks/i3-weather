@@ -1,5 +1,5 @@
 #!/bin/sh
 
-weather_data=`curl wttr.in/Asansol?format=2`
+weather_data=`curl wttr.in/Asansol?format=2 | sed 's/🌬️/🍃/'`
 
 [ $? -eq 6 ] && echo "  " && echo "" && echo "#FF0000" || echo $weather_data
