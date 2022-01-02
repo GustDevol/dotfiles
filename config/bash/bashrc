@@ -130,10 +130,14 @@ if ! shopt -oq posix; then
 fi
 
 [ -f ~/.config/less/lessrc ] && source ~/.config/less/lessrc
+[ -f ~/bin/lsx ] && source ~/bin/lsx
 
-export PATH="$PATH:/media/$USER/F/node/bin"
+PATH="$PATH:/media/$USER/F/node/bin"
+PATH="$PATH:/media/gourish/F/go/bin"
+export PATH
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 [ -f /media/$USER/F/Rust/cargo/env  ] && source "/media/$USER/F/Rust/cargo/env"
 
-$HOME/.scripts/cowsay_wrapper
+# $HOME/.scripts/cowsay_wrapper
+$HOME/.scripts/term_art/hny22

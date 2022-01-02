@@ -35,3 +35,7 @@ export BROWSER=brave-browser
 export LOCKER="xscreensaver-command -lock"
 export SUDO_ASKPASS="$HOME/.scripts/dpasswd"
 export VIMINIT='let $VIMRC="$HOME/.config/vim/vimrc" | source $VIMRC'
+export GOPATH="/media/$USER/F/go/.go"
+export GOENV="/media/$USER/F/go/.config/go/env"
+export GOCACHE="/media/$USER/F/go/.cache/go-build"
+export GOMODCACHE="$GOPATH/pkg/mod"
