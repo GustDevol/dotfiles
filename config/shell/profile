@@ -28,14 +28,20 @@ fi
 
 PATH="$(du $HOME/.scripts/ | awk '{ print $2 }' | grep -vE '(urxvt|helpers|deprecated)' | tr '\n' ':')$PATH"
 
+# Defaults
 export LISP=sbcl
 export EDITOR=nvim
 export TERMINAL=alacritty
 export BROWSER=brave-browser
 export LOCKER="xscreensaver-command -lock"
 export SUDO_ASKPASS="$HOME/.scripts/dpasswd"
+# Vimrc
 export VIMINIT='let $VIMRC="$HOME/.config/vim/vimrc" | source $VIMRC'
+# Go dirs
 export GOPATH="/media/$USER/F/go/.go"
 export GOENV="/media/$USER/F/go/.config/go/env"
 export GOCACHE="/media/$USER/F/go/.cache/go-build"
 export GOMODCACHE="$GOPATH/pkg/mod"
+# Rust dirs
+export RUSTUP_HOME="/media/gourish/F/Rust/rustup"
+export CARGO_HOME="/media/gourish/F/Rust/cargo"
