@@ -36,18 +36,18 @@
 # =========
 # Backlight Increase
 # ------------------
-"xbacklight +5 && statuptrigger 2"
+"light -A 5 && statuptrigger 2"
   XF86MonBrightnessUp
 
-"xbacklight +5 && statuptrigger 2"
+"light -A 5 && statuptrigger 2"
   XF86Explorer
 
 # Backlight Decrease
 # ------------------
-"xbacklight -5 && statuptrigger 2"
+"light -U 5 && statuptrigger 2"
   XF86MonBrightnessDown
 
-"xbacklight -5 && statuptrigger 2"
+"light -U 5 && statuptrigger 2"
   XF86Tools
   
 # ===============================================
@@ -141,6 +141,13 @@
 
 # ===============================================
 
+# Launch Terminal
+# ===============
+"$TERMINAL"
+  mod4 + Return
+
+# ===============================================
+
 # Dunst
 # =====
 # Suspend / Resume (Toggle) Notifications
@@ -149,3 +156,12 @@
   mod4 + n
 
 # ===============================================
+
+# # Launcher
+# # ========
+# # dmenu
+# # -----
+# "dmnu_run"
+#   mod4 + d
+
+# # ===============================================

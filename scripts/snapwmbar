@@ -1,0 +1,37 @@
+#!/bin/bash
+
+function mic {
+    ismuted=$( audioctl -mst mic | cut -c8- )
+    volume=$( audioctl -v mic )
+    [ $ismuted == "yes" ] && echo -e "\ue04c" || echo -e "\ue04c $volume"
+}
+
+function spk {
+    ismuted=$( audioctl -mst spk | cut -c8- )
+    volume=$( audioctl -v spk )
+    [ $ismuted == "yes" ] && echo -e "\ue052" || echo -e "\ue05d $volume"
+}
+
+function bat {
+    batinfo=$( acpi | cut -d ' ' -f3-5 | \
+        sed -e  "s#,##g;s#Discharging#e040#g;s#Charging#e042#g;s#Full#e03f#g;s#Unknown#e0b3#g;s# 0*# #g;s# :# #g" )
+   echo -e "\u$batinfo"
+}
+
+function net {
+    ping -W1 -c1 8.8.8.8 1>/dev/null 2>&1 && echo -e '\ue048' || echo -e '\ue076'
+}
+
+function dtm {
+    echo -e "\ue015" $( date +"%Y-%h-%d %H:%M" )
+}
+
+function status {
+    echo "| $( bat ) | $( mic ) | $( spk ) | $( net ) | $( dtm ) |"
+}
+
+while :
+do
+    xsetroot -name "$( status )"
+    sleep 1m
+done

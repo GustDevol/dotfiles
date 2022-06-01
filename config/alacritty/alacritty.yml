@@ -1,14 +1,14 @@
 shell:
   program: /bin/bash
-  args:
-    - --login
+  # args:
+  #   - --login
 
 
 window:
   opacity: 0.95
 
   # Allow terminal applications to change Alacritty's window title.
-  dynamic_title: true
+  dynamic_title: false
 
 
 scrolling:
@@ -24,7 +24,7 @@ draw_bold_text_with_bright_colors: true
 
 
 font:
-  size: 9.0
+  size: 12.0
   offset:
       x: 0
       y: 0
@@ -34,28 +34,28 @@ font:
   use_thin_strokes: false
 
   # # Normal (roman) font face
-  # normal:
+  normal:
   #   # Default:
   #   #   - (macOS) Menlo
   #   #   - (Linux/BSD) monospace
   #   #   - (Windows) Consolas
-  #   family: Hack
-  #   style: Regular
+    family: Hack
+    style: Regular
 
-  # # Bold font face
-  # bold:
-  #   family: Hack
-  #   style: Bold
+  # Bold font face
+  bold:
+    family: Hack
+    style: Bold
 
-  # # Italic font face
-  # italic:
-  #   family: Hack
-  #   style: Italic
+  # Italic font face
+  italic:
+    family: Hack
+    style: Italic
 
-  # # Bold italic font face
-  # bold_italic:
-  #   family: Hack
-  #   style: Bold Italic
+  # Bold italic font face
+  bold_italic:
+    family: Hack
+    style: Bold Italic
 
 
 mouse:
@@ -97,26 +97,30 @@ live_config_reload: false
 
 
 # # Gruvbox
-# colors:
-#   normal:
-#     black   : "#0b0107"
-#     red     : "#cc241d"
-#     green   : "#98971a"
-#     yellow  : "#d79921"
-#     blue    : "#4585bb"
-#     magenta : "#b16286"
-#     cyan    : "#689d6a"
-#     white   : "#7c6f64"
+colors:
+  primary:
+    background: "#000000"
+    foreground: "#fdf1f7"
 
-#   bright:
-#     black   : "#928374"
-#     red     : "#9d0006"
-#     green   : "#79740e"
-#     yellow  : "#b57614"
-#     blue    : "#076678"
-#     magenta : "#8f3f71"
-#     cyan    : "#427b58"
-#     white   : "#fbf1c7"
+  normal:
+    black   : "#0b0107"
+    red     : "#cc241d"
+    green   : "#98971a"
+    yellow  : "#d79921"
+    blue    : "#4585bb"
+    magenta : "#b16286"
+    cyan    : "#689d6a"
+    white   : "#7c6f64"
+
+  bright:
+    black   : "#928374"
+    red     : "#9d0006"
+    green   : "#79740e"
+    yellow  : "#b57614"
+    blue    : "#076678"
+    magenta : "#8f3f71"
+    cyan    : "#427b58"
+    white   : "#fbf1c7"
 
 
 key_bindings:

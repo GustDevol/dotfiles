@@ -1,0 +1,7 @@
+require('user.plugins')
+require('user.keybinds')
+require('user.cmp')
+require('user.lsp')
+require('user.impatient')
+require('user.toggleterm')
+require('user.opts')

@@ -31,7 +31,7 @@ floating_modifier $mod
 
 # start a terminal
 # bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec alacritty
+# bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+q kill
@@ -177,10 +177,10 @@ bar {
    colors {
 	# separator #444444
 	background #222222
-	statusline #B1B1B1
-	focused_workspace #ffffff #2e2e2e #ffffff
+	statusline #F3F7F1
+	focused_workspace #00ff60 #0e0e0e #00ff60
 	# active_workspace #333333 #333333 #888888
-	inactive_workspace #2e2e2e #ffffff #333333
+	inactive_workspace #f3f7f1 #2e2e2e #eeeeee
 	# urgent_workspace #eb709b #eb709b #ffffff
    }
 }

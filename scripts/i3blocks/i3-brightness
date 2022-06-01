@@ -1,14 +1,32 @@
 #!/bin/sh
 
-case $BLOCK_BUTTON in
-    4)
-	xbacklight +2
-	;;
-    5)
-	xbacklight -2
-	;;
-    *)
-	;;
-esac
+xbacklight > /dev/null 2>&1 
+status=$?
 
-xbacklight | cut -d "." -f 1 | xargs printf "%s%%"
+if [ status = 0 ]; then
+	case $BLOCK_BUTTON in
+		4)
+		xbacklight +2
+		;;
+		5)
+		xbacklight -2
+		;;
+		*)
+		;;
+	esac
+
+	xbacklight | cut -d "." -f 1 | xargs printf "%s%%"
+else
+	case $BLOCK_BUTTON in
+		4)
+		light -A 2
+		;;
+		5)
+		light -U 2
+		;;
+		*)
+		;;
+	esac
+
+	light | cut -d "." -f 1 | xargs printf "%s%%"
+fi

@@ -11,10 +11,10 @@ fi
 
 if [ -f /tmp/dnd ]; then
         echo "$silent_bell"
-        echo ""
-        echo "#FF5000"
+        # echo ""
+        # echo "#FF5000"
 else
         echo "$bell"
-        echo ""
-        echo "#00FF00"
+        # echo ""
+        # echo "#00FF00"
 fi

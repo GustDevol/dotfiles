@@ -1,0 +1,4 @@
+#!/bin/sh
+
+wallpaper_file=/media/gourish/F/Wallpaper/Coffu.jpg
+feh --bg-scale --no-fehbg $wallpaper_file

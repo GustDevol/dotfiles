@@ -8,13 +8,19 @@
 # Common Aliases
 # ===============
 
-alias v='vim'
-alias nv='nvim'
+alias v='/usr/local/bin/nvim'
+alias vim='/usr/bin/nvim'
 alias rm='rm -i'
 alias py='python3'
 alias less='less -r'
 alias nano='nano -lm$'
 alias diff='diff --color'
+alias ls='ls --color=auto'
+alias dir='dir --color=auto'
+alias vdir='vdir --color=auto'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
 alias media='cd /media/$USER/; cd '
 alias ccat='highlight -lO xterm256 --force'
 alias mycodes='cd /media/$USER/F/mycodes'
@@ -27,4 +33,8 @@ alias clr_cache='sudo sh -c "sync; echo 3 > /proc/sys/vm/drop_caches"'
 
 # Debian ( APT )
 # --------------
-alias a='sudo apt'
+## alias a='sudo apt'
+
+# OpenSUSE ( ZYPPER )
+# --------------
+alias zy='sudo zypper'

@@ -39,31 +39,53 @@ xscreensaver.passwd.thermometer.width:       8
 
 ! Colors for xterm
 
-xterm*background:         #262626
-xterm*foreground:         #eeeeec
-xterm*cursorColor:        #f06060
+!xterm*background:         #262626
+!xterm*foreground:         #eeeeec
+!xterm*cursorColor:        #f06060
 xterm*colorUL:            #8ae234
 xterm*underlineColor:     #92659a
 
+xterm*background: #1d2021
+xterm*foreground: #d5c4a1
+xterm*cursor: #d5c4a1
+
 ! Tango color palette
 ! Normal Colors
-xterm*color0:             #2e3436
-xterm*color1:             #cc0000
-xterm*color2:             #4e9a06
-xterm*color3:             #edd400
-xterm*color4:             #3465a4
-xterm*color5:             #92659a
-xterm*color6:             #07c7ca
-xterm*color7:             #d3d7cf
-! Bright Colors
-xterm*color8:             #6e706b
-xterm*color9:             #ef2929
-xterm*color10:            #8ae234
-xterm*color11:            #fce94f
-xterm*color12:            #729fcf
-xterm*color13:            #c19fbe
-xterm*color14:            #63e9e9
-xterm*color15:            #eeeeec
+! xterm*color0:             #2e3436
+! xterm*color1:             #cc0000
+! xterm*color2:             #4e9a06
+! xterm*color3:             #edd400
+! xterm*color4:             #3465a4
+! xterm*color5:             #92659a
+! xterm*color6:             #07c7ca
+! xterm*color7:             #d3d7cf
+! ! Bright Colors
+! xterm*color8:             #6e706b
+! xterm*color9:             #ef2929
+! xterm*color10:            #8ae234
+! xterm*color11:            #fce94f
+! xterm*color12:            #729fcf
+! xterm*color13:            #c19fbe
+! xterm*color14:            #63e9e9
+! xterm*color15:            #eeeeec
+
+! Gruvbox
+xterm*color0:   #1d2021
+xterm*color1:   #fb4934
+xterm*color2:   #b8bb26
+xterm*color3:   #fabd2f
+xterm*color4:   #83a598
+xterm*color5:   #d3869b
+xterm*color6:   #8ec07c
+xterm*color7:   #d5c4a1
+xterm*color8:   #665c54
+xterm*color9:   #fb4934
+xterm*color10:  #b8bb26
+xterm*color11:  #fabd2f
+xterm*color12:  #83a598
+xterm*color13:  #d3869b
+xterm*color14:  #8ec07c
+xterm*color15:  #fbf1c7
 
 ! Color to man pages
 !term*.colorIT:      #87af5f
@@ -73,7 +95,7 @@ xterm*color15:            #eeeeec
 ! Fonts
 xterm*faceName: Hack Nerd Font
 xterm*fontWarnings: 2
-xterm*faceSize: 10
+xterm*faceSize: 11
 xterm*allowBoldFonts: true
 xterm*assumeAllChars: true
 
@@ -131,9 +153,9 @@ URxvt.color15: #fbf1c7
 
 
 !! URxvt Appearance
-URxvt.font: xft:Hack:style=Regular:size=9,xft:NotoEmoji Nerd Font:size=9
-URxvt.boldFont: xft:Hack:style=Bold:size=10
-URxvt.italicFont: xft:Hack:style=Italic:size=10
+URxvt.font: xft:Hack:style=Regular:size=11,xft:NotoEmoji Nerd Font:size=9
+URxvt.boldFont: xft:Hack:style=Bold:size=11
+URxvt.italicFont: xft:Hack:style=Italic:size=11
 URxvt.letterSpace: -1
 URxvt.lineSpace: 0
 URxvt.geometry: 92x24

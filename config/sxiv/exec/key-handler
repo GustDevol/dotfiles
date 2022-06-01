@@ -4,6 +4,10 @@ while read file
 do
     file=$PWD/$file
     case "$1" in
+        "W")
+            sed -i "s|wallpaper_file=.*|wallpaper_file=$file|g" ~/.scripts/setwallpaper
+            setwallpaper
+            ;;
         "y")
             xclip -selection clipboard -t image/png "$file" &&
                 notify-send "Sxiv Copy Image" "$file copied to clipboard"

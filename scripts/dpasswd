@@ -1,4 +1,3 @@
-#!/bin/bash
+#!/bin/sh
 
-# /usr/bin/dmenu -nb "#000" -nf "#000" -p "Password" <&- && echo
-dmenu -nb "#000" -nf "#000" -p "Password" <&- | xargs echo
+/usr/local/bin/dmenu -nb "#000" -nf "#000" -p "Password" <&- | xargs echo

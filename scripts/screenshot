@@ -6,7 +6,7 @@ from datetime import datetime
 
 currtime = datetime.now().strftime("%Y-%m-%d_%H:%M:%S")
 
-dirloc = "$HOME/images/Screenshots/"
+dirloc = "$HOME/Pictures/Screenshots/"
 filename = "screenshot_" + currtime + ".png"
 
 
