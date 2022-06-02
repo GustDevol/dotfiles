@@ -5,7 +5,6 @@ SAVEHIST=1000
 setopt autocd extendedglob
 setopt HIST_IGNORE_SPACE HIST_IGNORE_DUPS
 bindkey -v
-# End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/gourish/.zshrc'
 zstyle ":completion:*:commands" rehash 1
@@ -71,5 +70,5 @@ setopt interactive_comments
 $HOME/.scripts/term_art/alpha
 
 # Plugins
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $ZDOTDIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $ZDOTDIR/zsh-autosuggestions/zsh-autosuggestions.zsh
