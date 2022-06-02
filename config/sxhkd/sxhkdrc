@@ -1,0 +1,160 @@
+# vim: filetype=config
+
+super + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+# focus or send to the given desktop
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+# focus and send to the given desktop
+alt + {1-9,0}
+	bspc node -d '^{1-9,10}' && bspc desktop -f '^{1-9,10}' 
+
+# focus the node for the given path jump
+super + {p,b,comma,period}
+	bspc node -f @{parent,brother,first,second}
+
+# preselect the direction
+super + ctrl + {h,j,k,l}
+	bspc node -p {west,south,north,east}
+
+# preselect the ratio
+super + ctrl + {1-9}
+	bspc node -o 0.{1-9}
+
+# cancel the preselection for the focused node
+super + ctrl + space
+	bspc node -p cancel
+
+# cancel the preselection for the focused desktop
+super + ctrl + shift + space
+	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+
+# Swap nodes the tree from the current nodes parent
+super + control + {Up, Down}
+  bspc node @parent -C {forward, backward}
+
+# Rotate the tree from the current nodes parent
+super + control + {Right, Left}
+	bspc node @parent --rotate {90,270}
+
+# Flip the tree from the current nodes parent
+super + control + {h,j,k,l}
+  bspc node @parent -F {vertical,horizontal,horizontal,vertical}
+
+# Toggle floating on and off
+super + shift + f
+  bspc node focused.tiled -t floating || bspc node focused.floating -t tiled
+
+# expand a window by moving one of its side outward
+super + alt + {h,j,k,l}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+# contract a window by moving one of its side inward
+super + alt + shift + {h,j,k,l}
+	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+# move a floating window
+super + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# set the window state
+super + {t,shift + t,s,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# set the node flags
+super + ctrl + {m,x,y,z}
+	bspc node -g {marked,locked,sticky,private}
+
+super + {_,shift + }i
+    bspc node -R {90,-90}
+
+super + shift + c
+    killandrestart sxhkd
+
+super + shift + r
+    bspc wm -r
+
+super + q
+    bspc node -c
+
+super + d
+    dmenu_run
+
+super + w
+    $BROWSER
+
+super + Return
+    $TERMINAL
+
+super + x
+    prompt 'Wanna Quit bspwm?' 'bspc quit'
+
+super + ctrl + alt + {Left,Down,Up,Right}
+  n=10; \
+  { d1=left;   d2=right;  dx=-$n; dy=0;   \
+  , d1=bottom; d2=top;    dx=0;   dy=$n;  \
+  , d1=top;    d2=bottom; dx=0;   dy=-$n; \
+  , d1=right;  d2=left;   dx=$n;  dy=0;   \
+  } \
+  bspc node --resize $d1 $dx $dy || bspc node --resize $d2 $dx $dy
+
+
+#####################################################################
+
+
+# Screen Backlight
+{XF86MonBrightnessUp,XF86MonBrightnessDown}
+    light -{A,U} && statuptrigger 2
+
+{XF86Explorer,XF86Tools}
+    light -{A,U} && statuptrigger 2
+
+# ===================================================================
+
+# Audio
+{XF86AudioRaiseVolume,XF86AudioLowerVolume,XF86AudioMute}
+    audioctl spk -{i 5,d 5,m} && statuptrigger 4
+
+shift + {XF86AudioRaiseVolume,XF86AudioLowerVolume,XF86AudioMute}
+    audioctl mic -{i 5,d 5,m} && statuptrigger 5
+
+# ===================================================================
+
+# Emoji and NerdIcons
+ctrl + shift + {e,n}
+    {emojipicker,nerd_icon_picker}
+
+# ===================================================================
+
+# Screenshot
+Print
+    screenshot
+
+{ctrl,super,shift,super + ctrl,super + shift} + Print
+    screenshot -{d 6,w,s,w -d 3,c}
+
+# ===================================================================
+
+# Dunst Notifications
+super + n
+    toggle_notify && statuptrigger 3
+
+# ===================================================================
+
+# Lockscreen, Reboot & Poweroff
+super + shift + x
+    slock
+
+super + {_,shift + }z
+    prompt {'Wanna Reboot?' 'sudo -A reboot','Wanna Poweroff?' 'sudo -A poweroff'}
+
+# ===================================================================
+
+# Configs / Scripts Launcher
+super + {c,shift + s}
+    conf_script_launcher {configs,scripts}
+
+# ===================================================================
+

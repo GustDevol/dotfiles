@@ -103,7 +103,7 @@
 # =============================
 # Lockscreen
 # ----------
-"xscreensaver-command -lock"
+"slock"
   mod4 + shift + x
 
 # Reboot

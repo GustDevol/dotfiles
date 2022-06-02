@@ -1,0 +1,5 @@
+#!/bin/sh
+
+pkill -x "$1"
+"$1" &
+notify-send "Kill and Restart" "Restarted $1"

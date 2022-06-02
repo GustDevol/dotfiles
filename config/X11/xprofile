@@ -4,9 +4,10 @@ xcompmgr &
 # nitrogen --restore
 setwallpaper
 xmodmap $HOME/.config/X11/Xmodmap
-xbindkeys
+# pgrep -x sxhkd > /dev/null || sxhkd &
+pgrep -x xbindkeys > /dev/null || xbindkeys
 xrdb $HOME/.config/X11/Xresources
-xset +fp /home/gourish/.local/share/fonts
+xset +fp $HOME/.local/share/fonts
 xset fp rehash
 xinput --set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
 xsetroot -cursor_name left_ptr
