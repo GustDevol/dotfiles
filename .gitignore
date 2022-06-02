@@ -1,6 +1,8 @@
 /local/share/fonts/.uuid
 /config/nvim/coc-settings.json
 /config/*
+/config/zsh/.zcompdump
+/config/zsh/.zcompcache/
 
 !/config/compton.conf
 !/config/user-dirs.dirs
