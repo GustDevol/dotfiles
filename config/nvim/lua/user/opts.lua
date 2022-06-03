@@ -37,7 +37,7 @@ vim.b.mapleader = ' '
 -- Colorscheme Gruvbox Config
 vim.g.gruvbox_contrast_dark = 'hard'
 vim.cmd('colorscheme gruvbox')
-vim.g.termguicolors = true
+vim.o.termguicolors = true
 vim.g.background = 'dark'
 vim.api.nvim_command[[
     autocmd ColorScheme * highlight Comment cterm=bolditalic gui=bolditalic

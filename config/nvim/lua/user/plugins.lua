@@ -16,14 +16,12 @@ if fn.empty(fn.glob(install_path)) > 0 then
 end
 
 -- Autocommand that reloads neovim whenever you save the plugins.lua file
---[[
 vim.cmd [[
   augroup packer_user_config
     autocmd!
     autocmd BufWritePost plugins.lua source <afile> | PackerSync
   augroup end
 ]]
---]]
 
 -- Use a protected call so we don't error out on first use
 local status_ok, packer = pcall(require, "packer")
@@ -43,20 +41,23 @@ packer.init {
 return packer.startup(
     function()
         use 'wbthomason/packer.nvim'
+
         use {'scrooloose/nerdtree', opt = true, cmd = 'NERDTreeToggle'}
         use 'vim-syntastic/syntastic'
         use 'vim-scripts/indentpython.vim'
-        use 'jiangmiao/auto-pairs'
-        use 'ap/vim-css-color'
         use 'mattn/emmet-vim'
         use 'alvan/vim-closetag'
 
         use 'tpope/vim-surround'
-        use 'tpope/vim-commentary'
         use 'tpope/vim-fugitive'
 
-        use "akinsho/toggleterm.nvim"
-        use 'morhetz/gruvbox' 
+        use 'akinsho/toggleterm.nvim'
+        use "ellisonleao/gruvbox.nvim"
+        use "terrortylor/nvim-comment"
+        use 'norcalli/nvim-colorizer.lua'
+        use 'windwp/nvim-autopairs'
+
+        use 'lewis6991/gitsigns.nvim'
 
         -- cmp / lsp / snippets
         use 'neovim/nvim-lspconfig'

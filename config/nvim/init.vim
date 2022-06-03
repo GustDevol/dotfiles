@@ -26,7 +26,7 @@ nnoremap <C-s> :call ToggleHidden()<CR>
 " if split(vrs)[1] =~ 'v0.[5-9]..'
 
 let uselua = 1
-if has('nvim-0.6') && uselua
+if has('nvim-0.7') && uselua
     lua require('init')
 else
     """ Sourcing Plugins and Mappings
