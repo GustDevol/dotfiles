@@ -1,0 +1,6 @@
+#!/bin/bash
+
+pgrep -x xbindkeys > /dev/null || xbindkeys
+sh $HOME/.config/X11/xprofile
+snapwmbar &
+exec /usr/local/bin/snapwm

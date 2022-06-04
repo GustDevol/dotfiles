@@ -5,7 +5,7 @@ xcompmgr &
 setwallpaper
 xmodmap $HOME/.config/X11/Xmodmap
 # pgrep -x sxhkd > /dev/null || sxhkd &
-pgrep -x xbindkeys > /dev/null || xbindkeys
+# pgrep -x xbindkeys > /dev/null || xbindkeys
 xrdb $HOME/.config/X11/Xresources
 xset +fp $HOME/.local/share/fonts
 xset fp rehash

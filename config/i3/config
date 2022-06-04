@@ -179,9 +179,9 @@ bar {
 	background #222222
 	statusline #F3F7F1
 	focused_workspace #00ff60 #0e0e0e #00ff60
-	# active_workspace #333333 #333333 #888888
+	active_workspace #333333 #333333 #888888
 	inactive_workspace #f3f7f1 #2e2e2e #eeeeee
-	# urgent_workspace #eb709b #eb709b #ffffff
+	urgent_workspace #eb709b #eb709b #ffffff
    }
 }
 
@@ -261,12 +261,10 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
-# Web browser
-bindsym $mod+shift+w exec brave-browser
-
 # Logout
 bindsym $mod+x exec prompt 'Wanna quit i3wm?' "i3-msg exit"
 
+exec_always "pgrep -x xbindkeys > /dev/null || xbindkeys"
 exec_always "sh $HOME/.config/X11/xprofile"
 
 # vim: ft=cfg
