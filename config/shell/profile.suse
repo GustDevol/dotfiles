@@ -68,3 +68,6 @@ export GOMODCACHE="$GOPATH/pkg/mod"
 # Rust dirs
 export RUSTUP_HOME="/media/gourish/F/Rust/rustup"
 export CARGO_HOME="/media/gourish/F/Rust/cargo"
+
+# SESSION_NAME="i3"
+# pgrep -x $SESSION_NAME > /dev/null || startx $SESSION_NAME

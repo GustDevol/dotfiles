@@ -1,1 +1,0 @@
-/home/gourish/.config/zsh/../shell/profile

@@ -28,6 +28,9 @@ fi
 
 PATH="$(du $HOME/.scripts/ | awk '{ print $2 }' | grep -vE '(urxvt|helpers|deprecated)' | tr '\n' ':')$PATH"
 
+# ZSH
+export ZDOTDIR="$HOME/.config/zsh"
+
 # Defaults
 export LISP=sbcl
 export EDITOR=nvim
