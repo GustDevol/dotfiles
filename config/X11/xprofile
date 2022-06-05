@@ -1,6 +1,6 @@
 # xscreensaver &
 # compton &
-xcompmgr &
+xcompmgr -cCfD 6 &
 # nitrogen --restore
 setwallpaper
 xmodmap $HOME/.config/X11/Xmodmap

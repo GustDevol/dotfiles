@@ -31,9 +31,6 @@ vim.bo.smartindent = true
 vim.bo.shiftwidth = 4
 vim.bo.omnifunc = 'syntaxcomplete#Complete'
 
-vim.g.mapleader = ' '
-vim.b.mapleader = ' '
-
 -- Colorscheme Gruvbox Config
 vim.g.gruvbox_contrast_dark = 'hard'
 vim.cmd('colorscheme gruvbox')
