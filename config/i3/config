@@ -221,6 +221,9 @@ smart_gaps on
 # Only enable outer gaps when there is exactly one container
 smart_gaps inverse_outer
 
+gaps inner 6
+gaps outer 2
+
 set $mode_gaps Gaps: (g) gaps, (n) no gaps, (o) outer, (i) inner
 set $mode_gaps_outer Outer Gaps: k|j|0 (global), Shift + k|j|0 (local)
 set $mode_gaps_inner Inner Gaps: k|j|0 (global), Shift + k|j|0 (local)

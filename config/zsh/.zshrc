@@ -66,6 +66,7 @@ setopt interactive_comments
 
 [ -f ~/.config/bash/aliases ] && source ~/.config/bash/aliases
 [ -f ~/.config/less/lessrc ] && source ~/.config/less/lessrc
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 $HOME/.scripts/term_art/alpha
 
