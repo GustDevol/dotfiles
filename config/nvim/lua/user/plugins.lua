@@ -42,7 +42,6 @@ return packer.startup(
     function()
         use 'wbthomason/packer.nvim'
 
-        use {'scrooloose/nerdtree', opt = true, cmd = 'NERDTreeToggle'}
         use 'vim-syntastic/syntastic'
         use 'vim-scripts/indentpython.vim'
         use 'mattn/emmet-vim'
@@ -74,6 +73,20 @@ return packer.startup(
 
         -- improve startup
         use "lewis6991/impatient.nvim"
+
+        -- Lualine
+        use {
+          'nvim-lualine/lualine.nvim',
+          requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+        }
+
+        -- NvimTree
+        use {
+            'kyazdani42/nvim-tree.lua',
+            requires = {
+              'kyazdani42/nvim-web-devicons', -- optional, for file icon
+            },
+        }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
