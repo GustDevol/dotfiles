@@ -22,8 +22,9 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias media='cd /media/$USER/; cd '
-alias ccat='highlight -lO xterm256 --force'
 alias mycodes='cd /media/$USER/F/mycodes'
+alias ccat='highlight -lO xterm256 --force'
+alias startx='startx $HOME/.config/X11/xinitrc'
 alias clr_cache='sudo sh -c "sync; echo 3 > /proc/sys/vm/drop_caches"'
   
 #=========================================================================== 
@@ -33,7 +34,7 @@ alias clr_cache='sudo sh -c "sync; echo 3 > /proc/sys/vm/drop_caches"'
 
 # Debian ( APT )
 # --------------
-## alias a='sudo apt'
+alias ap='sudo apt'
 
 # OpenSUSE ( ZYPPER )
 # --------------
