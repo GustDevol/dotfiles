@@ -70,6 +70,7 @@ return packer.startup(
         use 'L3MON4D3/LuaSnip'
         use 'saadparwaiz1/cmp_luasnip'
         use "rafamadriz/friendly-snippets"
+        -- use 'mfussenegger/nvim-jdtls'
 
         -- improve startup
         use "lewis6991/impatient.nvim"
@@ -86,6 +87,14 @@ return packer.startup(
             requires = {
               'kyazdani42/nvim-web-devicons', -- optional, for file icon
             },
+        }
+
+        -- Treesitter
+        use {
+            'nvim-treesitter/nvim-treesitter',
+            run = function()
+                require('nvim-treesitter.install').update({ with_sync = true })
+            end,
         }
 
   -- Automatically set up your configuration after cloning packer.nvim

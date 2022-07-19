@@ -6,6 +6,7 @@ call plug#begin('~/.local/share/nvim/plugins')
   Plug 'jiangmiao/auto-pairs'
   Plug 'ap/vim-css-color'
   Plug 'mattn/emmet-vim'
+  Plug 'nathanalderson/yang.vim' 
   Plug 'alvan/vim-closetag'
   Plug 'tpope/vim-surround' | Plug 'tpope/vim-commentary' | Plug 'tpope/vim-fugitive'
   Plug 'airblade/vim-gitgutter'
