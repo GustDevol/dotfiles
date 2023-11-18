@@ -7,5 +7,3 @@ edition = "2021"
 
 [dependencies]
 signal-hook = "0.3.17"
-# nix = {version = "0.27.1", features = ["signal"]}
-
